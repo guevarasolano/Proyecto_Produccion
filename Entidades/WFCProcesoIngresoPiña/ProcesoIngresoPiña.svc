@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="WFCProcesoIngresoPiña.ProcesoIngresoPiña" CodeBehind="ProcesoIngresoPiña.svc.cs" %>
