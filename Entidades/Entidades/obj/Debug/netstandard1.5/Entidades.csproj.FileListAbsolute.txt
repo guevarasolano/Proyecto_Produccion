@@ -6,3 +6,12 @@ C:\Users\aguevara\source\repos\Entidades\Entidades\obj\Debug\netstandard1.5\Enti
 C:\Users\aguevara\source\repos\Entidades\Entidades\obj\Debug\netstandard1.5\Entidades.AssemblyInfo.cs
 C:\Users\aguevara\source\repos\Entidades\Entidades\obj\Debug\netstandard1.5\Entidades.dll
 C:\Users\aguevara\source\repos\Entidades\Entidades\obj\Debug\netstandard1.5\Entidades.pdb
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Entidades\bin\Debug\netstandard1.5\Entidades.deps.json
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Entidades\bin\Debug\netstandard1.5\Entidades.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Entidades\bin\Debug\netstandard1.5\Entidades.pdb
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Entidades\obj\Debug\netstandard1.5\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Entidades\obj\Debug\netstandard1.5\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Entidades\obj\Debug\netstandard1.5\Entidades.AssemblyInfoInputs.cache
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Entidades\obj\Debug\netstandard1.5\Entidades.AssemblyInfo.cs
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Entidades\obj\Debug\netstandard1.5\Entidades.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Entidades\obj\Debug\netstandard1.5\Entidades.pdb
