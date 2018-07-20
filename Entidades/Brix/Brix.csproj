@@ -118,6 +118,7 @@
     <None Include="packages.config" />
     <Content Include="Views\Brix\Listado.cshtml" />
     <Content Include="Views\Brix\agregarBrix.cshtml" />
+    <Content Include="Views\Brix\modificarBrix.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
