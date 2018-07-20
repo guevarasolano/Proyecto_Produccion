@@ -1,31 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace Entidades{
-
-    public class Modulo{
-
+namespace Configuracion
+{
+    public class Modulo
+    {
         public int Id_Modulo { get; set; }
-        public int FK_Id_Aplicacion { get; set; }
-        public String Codigo { get; set; }
-        public String Descripcion { get; set; }
-        public String Controlador { get; set; }
-        public Boolean Estado { get; set; }
-        public String Estado_Accion { get; set; }
-        public String Usuario_Ingreso { get; set; }
+        public int Id_Aplicacion { get; set; }
+        public string Codigo { get; set; }
+        public string Descripcion { get; set; }
+        public string Controlador { get; set; }
+        public bool Estado { get; set; }
+        public string Estado_Accion { get; set; }
+        public string Usuario_Ingreso { get; set; }
         public DateTime Fecha_Ingreso { get; set; }
-        public String Usuario_Modificacion { get; set; }
+        public string Usuario_Modificacion { get; set; }
         public DateTime Fecha_Modificacion { get; set; }
+        public List<Modulo> Listado_Acciones { get; set; }
 
-        public Modulo(int Id_Modulo, int FK_Id_Aplicacion, String Codigo,
-                               String Descripcion, String Controlador,
-                               Boolean Estado, String Estado_Accion,
-                               String Usuario_Ingreso, DateTime Fecha_Ingreso,
-                               String Usuario_Modificacion, DateTime Fecha_Modificacion){
-
+        public Modulo(int Id_Modulo, int Id_Aplicacion, string Codigo, string Descripcion, string Controlador,
+                      bool Estado, string Estado_Accion, string Usuario_Ingreso, DateTime Fecha_Ingreso,
+                      string Usuario_Modificacion, DateTime Fecha_Modificacion, List<Modulo> Listado_Acciones)
+        {
             this.Id_Modulo = Id_Modulo;
-            this.FK_Id_Aplicacion = FK_Id_Aplicacion;
+            this.Id_Aplicacion = Id_Aplicacion;
             this.Codigo = Codigo;
             this.Descripcion = Descripcion;
             this.Controlador = Controlador;
@@ -35,9 +36,7 @@ namespace Entidades{
             this.Fecha_Ingreso = Fecha_Ingreso;
             this.Usuario_Modificacion = Usuario_Modificacion;
             this.Fecha_Modificacion = Fecha_Modificacion;
+            this.Listado_Acciones = Listado_Acciones;
         }
-
-        public Modulo() { }
-
     }
 }

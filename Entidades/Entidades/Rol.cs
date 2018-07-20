@@ -1,27 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace Entidades{
-
-    public class Rol{
-
+namespace Configuracion
+{
+    public class Rol
+    {
         public int Id_Rol { get; set; }
-        public String Codigo { get; set; }
-        public String Descripcion { get; set; }
-        public Boolean Estado { get; set; }
-        public String Estado_Accion { get; set; }
-        public String Usuario_Ingreso { get; set; }
+        public string Codigo { get; set; }
+        public string Descripcion { get; set; }
+        public bool Estado { get; set; }
+        public string Estado_Accion { get; set; }
+        public string Usuario_Ingreso { get; set; }
         public DateTime Fecha_Ingreso { get; set; }
-        public String Usuario_Modificacion { get; set; }
+        public string Usuario_Modificacion { get; set; }
         public DateTime Fecha_Modificacion { get; set; }
 
-        public Rol(int Id_Rol, String Codigo,
-                               String Descripcion,
-                               Boolean Estado, String Estado_Accion,
-                               String Usuario_Ingreso, DateTime Fecha_Ingreso,
-                               String Usuario_Modificacion, DateTime Fecha_Modificacion){
-
+        public Rol(int Id_Rol, string Codigo, string Descripcion, bool Estado, string Estado_Accion, string Usuario_Ingreso,
+                   DateTime Fecha_Ingreso, string Usuario_Modificacion, DateTime Fecha_Modificacion)
+        {
             this.Id_Rol = Id_Rol;
             this.Codigo = Codigo;
             this.Descripcion = Descripcion;
@@ -32,8 +31,5 @@ namespace Entidades{
             this.Usuario_Modificacion = Usuario_Modificacion;
             this.Fecha_Modificacion = Fecha_Modificacion;
         }
-
-        public Rol() { }
-
     }
 }
