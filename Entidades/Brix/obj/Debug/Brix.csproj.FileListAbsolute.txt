@@ -150,3 +150,4 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\obj\Debug\
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\obj\Debug\Brix.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\obj\Debug\Brix.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\obj\Debug\Brix.pdb
+C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\obj\Debug\Brix.csprojAssemblyReference.cache
