@@ -7,7 +7,7 @@ using System.Data.SqlClient;
 
 public class ADBrix{
 
-        public Boolean insertarBrix(EBrix brix){
+        public Boolean insertarBrix(Brix.Models.EBrix brix){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -30,7 +30,7 @@ public class ADBrix{
             }
         }
 
-        public void actualizarBrix(EBrix brix){
+        public void actualizarBrix(Brix.Models.EBrix brix){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -68,7 +68,7 @@ public class ADBrix{
 
         public EBrix buscarBrix(int Id_Brix){
 
-            EBrix brix = new EBrix();
+            Brix.Models.EBrix brix = new Brix.Models.EBrix();
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = aux.conectar();
@@ -95,7 +95,7 @@ public class ADBrix{
                 return brix;
             }
 
-        public List<EBrix> listarBrix(){
+        public List<Brix.Models.EBrix> listarBrix(){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -103,11 +103,11 @@ public class ADBrix{
             cmd.CommandText = "ListarBrix";
             cmd.CommandType = CommandType.StoredProcedure;
             SqlDataReader dr = cmd.ExecuteReader();
-            List<EBrix> lista = new List<EBrix>();
+            List<Brix.Models.EBrix> lista = new List<Brix.Models.EBrix>();
 
             while (dr.Read()){
 
-                EBrix brix = new EBrix();
+                Brix.Models.EBrix brix = new Brix.Models.EBrix();
 
                 brix.Id_Brix = Convert.ToInt32(dr["Id_Brix"].ToString());
                 brix.Bris = Convert.ToDouble(dr["Brix"].ToString());

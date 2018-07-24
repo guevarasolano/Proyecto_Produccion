@@ -16,9 +16,11 @@ namespace Brix.Models{
         //[Required(ErrorMessage = "Debe digitar el Brix")]
         public Double Bris { get; set; }
 
+        [Display(Name = "Densidad")]
         //[Required(ErrorMessage = "Debe digitar la Densidad")]
         public Double Densidad { get; set; }
 
+        [Display(Name = "Estado")]
         //[Required(ErrorMessage = "Debe digitar el Estado")]
         public String Estado { get; set; }
 

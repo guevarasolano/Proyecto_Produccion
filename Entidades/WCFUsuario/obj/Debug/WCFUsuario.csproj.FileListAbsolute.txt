@@ -313,6 +313,7 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFUsuario\bin\
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFUsuario\bin\LogicaNegocio.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFUsuario\bin\Prueba.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFUsuario\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFUsuario\obj\Debug\WCFUsuario.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFUsuario\obj\Debug\WCFUsuario.csproj.CoreCompileInputs.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFUsuario\obj\Debug\WCFUsuario.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFUsuario\obj\Debug\WCFUsuario.dll
