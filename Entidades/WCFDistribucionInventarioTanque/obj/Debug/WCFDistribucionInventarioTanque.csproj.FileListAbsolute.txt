@@ -209,8 +209,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDistribucion
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDistribucionInventarioTanque\bin\roslyn\vbc.rsp
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDistribucionInventarioTanque\bin\roslyn\VBCSCompiler.exe
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDistribucionInventarioTanque\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDistribucionInventarioTanque\bin\WCFDistribucionInventarioTanque.dll.CodeAnalysisLog.xml
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDistribucionInventarioTanque\bin\WCFDistribucionInventarioTanque.dll.lastcodeanalysissucceeded
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDistribucionInventarioTanque\bin\Microsoft.Win32.Primitives.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDistribucionInventarioTanque\bin\netstandard.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDistribucionInventarioTanque\bin\System.AppContext.dll

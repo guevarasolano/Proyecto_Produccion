@@ -208,8 +208,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFRol\bin\rosl
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFRol\bin\roslyn\vbc.rsp
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFRol\bin\roslyn\VBCSCompiler.exe
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFRol\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFRol\bin\WCFRol.dll.CodeAnalysisLog.xml
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFRol\bin\WCFRol.dll.lastcodeanalysissucceeded
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFRol\bin\Microsoft.Win32.Primitives.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFRol\bin\netstandard.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFRol\bin\System.AppContext.dll

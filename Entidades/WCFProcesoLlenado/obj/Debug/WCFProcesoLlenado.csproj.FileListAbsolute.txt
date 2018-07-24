@@ -111,8 +111,6 @@ C:\Users\aguevara\source\repos\Entidades\WCFProcesoLlenado\obj\Debug\WCFProcesoL
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoLlenado\bin\WCFProcesoLlenado.dll.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoLlenado\bin\WCFProcesoLlenado.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoLlenado\bin\WCFProcesoLlenado.pdb
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoLlenado\bin\WCFProcesoLlenado.dll.CodeAnalysisLog.xml
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoLlenado\bin\WCFProcesoLlenado.dll.lastcodeanalysissucceeded
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoLlenado\bin\Microsoft.Win32.Primitives.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoLlenado\bin\netstandard.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoLlenado\bin\System.AppContext.dll

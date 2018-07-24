@@ -111,8 +111,6 @@ C:\Users\aguevara\source\repos\Entidades\WCFProductoNoConforme\obj\Debug\WCFProd
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\WCFProductoNoConforme.dll.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\WCFProductoNoConforme.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\WCFProductoNoConforme.pdb
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\WCFProductoNoConforme.dll.CodeAnalysisLog.xml
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\WCFProductoNoConforme.dll.lastcodeanalysissucceeded
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\Microsoft.Win32.Primitives.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\netstandard.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\System.AppContext.dll

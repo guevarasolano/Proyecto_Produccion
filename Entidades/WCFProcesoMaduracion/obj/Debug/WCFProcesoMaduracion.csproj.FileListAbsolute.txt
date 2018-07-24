@@ -209,8 +209,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMadur
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\roslyn\vbc.rsp
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\roslyn\VBCSCompiler.exe
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\WCFProcesoMaduracion.dll.CodeAnalysisLog.xml
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\WCFProcesoMaduracion.dll.lastcodeanalysissucceeded
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\Microsoft.Win32.Primitives.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\netstandard.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\System.AppContext.dll

@@ -105,8 +105,6 @@ C:\Users\aguevara\source\repos\Entidades\Prueba\obj\Debug\Prueba.dll
 C:\Users\aguevara\source\repos\Entidades\Prueba\obj\Debug\Prueba.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\bin\Debug\Prueba.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\bin\Debug\Prueba.pdb
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\bin\Debug\Prueba.dll.CodeAnalysisLog.xml
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\bin\Debug\Prueba.dll.lastcodeanalysissucceeded
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\bin\Debug\Microsoft.Win32.Primitives.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\bin\Debug\netstandard.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\bin\Debug\System.AppContext.dll

@@ -107,8 +107,6 @@ C:\Users\aguevara\source\repos\Entidades\LogicaNegocio\obj\Debug\LogicaNegocio.d
 C:\Users\aguevara\source\repos\Entidades\LogicaNegocio\obj\Debug\LogicaNegocio.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\LogicaNegocio\bin\Debug\LogicaNegocio.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\LogicaNegocio\bin\Debug\LogicaNegocio.pdb
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\LogicaNegocio\bin\Debug\LogicaNegocio.dll.CodeAnalysisLog.xml
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\LogicaNegocio\bin\Debug\LogicaNegocio.dll.lastcodeanalysissucceeded
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\LogicaNegocio\bin\Debug\Microsoft.Win32.Primitives.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\LogicaNegocio\bin\Debug\netstandard.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\LogicaNegocio\bin\Debug\System.AppContext.dll

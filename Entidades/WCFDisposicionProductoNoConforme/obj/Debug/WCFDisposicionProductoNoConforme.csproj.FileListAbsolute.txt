@@ -158,7 +158,6 @@ C:\Users\aguevara\source\repos\Entidades\WCFDisposicionProductoNoConforme\obj\De
 C:\Users\aguevara\source\repos\Entidades\WCFDisposicionProductoNoConforme\obj\Debug\WCFDisposicionProductoNoConforme.csproj.CopyComplete
 C:\Users\aguevara\source\repos\Entidades\WCFDisposicionProductoNoConforme\obj\Debug\WCFDisposicionProductoNoConforme.dll
 C:\Users\aguevara\source\repos\Entidades\WCFDisposicionProductoNoConforme\obj\Debug\WCFDisposicionProductoNoConforme.pdb
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\WCFDisposicionProductoNoConforme.dll.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\WCFDisposicionProductoNoConforme.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\WCFDisposicionProductoNoConforme.pdb
@@ -169,6 +168,7 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionP
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\roslyn\csi.exe.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\roslyn\csi.rsp
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
@@ -209,8 +209,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionP
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\roslyn\vbc.rsp
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\roslyn\VBCSCompiler.exe
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\WCFDisposicionProductoNoConforme.dll.CodeAnalysisLog.xml
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\WCFDisposicionProductoNoConforme.dll.lastcodeanalysissucceeded
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\Microsoft.Win32.Primitives.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\netstandard.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\System.AppContext.dll

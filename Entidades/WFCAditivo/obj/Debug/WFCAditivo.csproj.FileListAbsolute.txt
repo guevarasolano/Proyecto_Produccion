@@ -209,8 +209,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\roslyn\vbc.rsp
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\roslyn\VBCSCompiler.exe
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\WFCAditivo.dll.CodeAnalysisLog.xml
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\WFCAditivo.dll.lastcodeanalysissucceeded
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\Microsoft.Win32.Primitives.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\netstandard.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\System.AppContext.dll
@@ -315,7 +313,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\LogicaNegocio.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\Prueba.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\obj\Debug\WFCAditivo.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\obj\Debug\WFCAditivo.csproj.CoreCompileInputs.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\obj\Debug\WFCAditivo.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\obj\Debug\WFCAditivo.dll

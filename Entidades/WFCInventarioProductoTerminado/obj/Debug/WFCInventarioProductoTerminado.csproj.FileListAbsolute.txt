@@ -209,8 +209,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCInventarioPr
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCInventarioProductoTerminado\bin\roslyn\vbc.rsp
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCInventarioProductoTerminado\bin\roslyn\VBCSCompiler.exe
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCInventarioProductoTerminado\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCInventarioProductoTerminado\bin\WFCInventarioProductoTerminado.dll.CodeAnalysisLog.xml
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCInventarioProductoTerminado\bin\WFCInventarioProductoTerminado.dll.lastcodeanalysissucceeded
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCInventarioProductoTerminado\bin\Microsoft.Win32.Primitives.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCInventarioProductoTerminado\bin\netstandard.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCInventarioProductoTerminado\bin\System.AppContext.dll
