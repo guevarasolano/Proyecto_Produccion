@@ -20,6 +20,8 @@ namespace AccesoDatos{
             }
 
             catch(Exception ex){
+
+                //strConn = "Data Source=ADRIAN\\SQLADRIAN;Initial Catalog=Sistema_Produccion_Pruebas;Integrated Security=True";
                 strConn = "Data Source=SRV-DB01;Initial Catalog=Sistema_Produccion_Pruebas;Integrated Security=True";
             }
 
