@@ -106,9 +106,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\InventarioProductoTerminadoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ADInventarioProductoTerminado.cs" />
     <Compile Include="Models\Conexion.cs" />
     <Compile Include="Models\InventarioProductoTerminado.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -116,6 +118,10 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
+    <Content Include="Views\InventarioProductoTerminado\agregarInventarioProductoTerminado.cshtml" />
+    <Content Include="Views\InventarioProductoTerminado\eliminarInventarioProductoTerminado.cshtml" />
+    <Content Include="Views\InventarioProductoTerminado\Listado.cshtml" />
+    <Content Include="Views\InventarioProductoTerminado\modificarInventarioProductoTerminado.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -125,7 +131,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -312,6 +312,7 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoBPBJC
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoBPBJC\bin\LogicaNegocio.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoBPBJC\bin\Prueba.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoBPBJC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoBPBJC\obj\Debug\WCFProcesoBPBJC.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoBPBJC\obj\Debug\WCFProcesoBPBJC.csproj.CoreCompileInputs.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoBPBJC\obj\Debug\WCFProcesoBPBJC.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoBPBJC\obj\Debug\WCFProcesoBPBJC.dll
