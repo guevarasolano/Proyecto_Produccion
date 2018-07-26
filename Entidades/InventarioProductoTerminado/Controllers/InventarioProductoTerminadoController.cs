@@ -21,8 +21,8 @@ namespace InventarioProductoTerminado.Controllers{
             try{
                 if (ModelState.IsValid){
 
-                    ADInventarioProductoTerminado oAplicacion = new ADInventarioProductoTerminado();
-                    if (oAplicacion.insertarInventarioProductoTerminado(inventario)){
+                    ADInventarioProductoTerminado oInventario = new ADInventarioProductoTerminado();
+                    if (oInventario.insertarInventarioProductoTerminado(inventario)){
                         ViewBag.Menasaje = "Se insertó el Registro correctamente";
                     }else{
                         ViewBag.Menasaje = "No se insertó el Registro";
@@ -39,23 +39,23 @@ namespace InventarioProductoTerminado.Controllers{
         //get: inventarioProductoTerminado/modificarInventarioProductoTerminado/5
         public ActionResult modificarInventarioProductoTerminado(int id){
 
-            ADInventarioProductoTerminado oAplicacion = new ADInventarioProductoTerminado();
-            return View(oAplicacion.listarInventarioProductoTerminado().Find(inv => inv.Id_Inventario_Producto_Terminado== id));
+            ADInventarioProductoTerminado oInventario = new ADInventarioProductoTerminado();
+            return View(oInventario.listarInventarioProductoTerminado().Find(inv => inv.Id_Inventario_Producto_Terminado == id));
         }
 
         [HttpPost]
         public ActionResult modificarInventarioProductoTerminado(int id, InventarioProductoTerminado.Models.InventarioProductoTerminado inventario){
 
-            ADInventarioProductoTerminado oAplicacion = new ADInventarioProductoTerminado();
-            oAplicacion.actualizarInventarioProductoTerminado(inventario);
+            ADInventarioProductoTerminado oInventario = new ADInventarioProductoTerminado();
+            oInventario.actualizarInventarioProductoTerminado(inventario);
             return RedirectToAction("Listado");
         }
 
         public ActionResult eliminarInventarioProductoTerminado(int id){
 
             try{
-                ADInventarioProductoTerminado oAplicacion = new ADInventarioProductoTerminado();
-                if (oAplicacion.eliminarInventarioProductoTerminado(id))
+                ADInventarioProductoTerminado oInventario = new ADInventarioProductoTerminado();
+                if (oInventario.eliminarInventarioProductoTerminado(id))
                 {
                     ViewBag.Mensaje = "Registro Eliminado";
                 }else{

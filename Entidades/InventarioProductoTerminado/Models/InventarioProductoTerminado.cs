@@ -20,13 +20,13 @@ namespace InventarioProductoTerminado.Models{
         //[Required(ErrorMessage = "Debe digitar la Densidad")]
         public Double Producto_Inicial { get; set; }
 
-        [Display(Name = "Producto Final")]
-        //[Required(ErrorMessage = "Debe digitar el Estado")]
-        public Double Producto_Final { get; set; }
-
         [Display(Name = "Producto Proceso")]
         //[Required(ErrorMessage = "Debe digitar el Id del Brix")]
         public Double Producto_Proceso { get; set; }
+
+        [Display(Name = "Producto Final")]
+        //[Required(ErrorMessage = "Debe digitar el Estado")]
+        public Double Producto_Final { get; set; }    
 
         [Display(Name = "Fecha Inicial Periodo")]
         //[Required(ErrorMessage = "Debe digitar el Brix")]

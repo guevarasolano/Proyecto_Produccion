@@ -73,7 +73,7 @@
                                 </thead>
 
                                 @foreach (var item in Model)
-                                {
+                            {
 
                                 <tr>
                                     <td>
@@ -127,22 +127,25 @@
                                     <td>
                                         @Html.ActionLink("Modificar", "modificarInventarioProductoTerminado", new { id = item.Id_Inventario_Producto_Terminado }) |
                                         @Html.ActionLink("Eliminar", "eliminarInventarioProductoTerminado", new { id = item.Id_Inventario_Producto_Terminado },
-                           new { onclick = "return confirm('¿Está seguro de borrar el registro?'" })
+                                 new { onclick = "return confirm('¿Está seguro de borrar el registro?'" })
 
                                     </td>
                                 </tr>
-                                }
+                        }
 
                             </table>
                             <span>
                                 @Html.ActionLink("Nuevo Registro", "agregarInventarioProductoTerminado", "", null,
-                                              new { @class = "btn btn-primary btn.large" })
+                                                    new { @class = "btn btn-primary btn.large" })
                             </span>
                         </fieldset>
                     </div>
                 </div>
             </div>
         </form>
+
+    <footer style="text-align: center; background-color: #006bff; color: #ffffff">Fructa CR S.A</footer>
+
 </body>
 
 </html>
