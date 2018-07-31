@@ -32,7 +32,7 @@ namespace Usuario.Models{
         [Display(Name = "Estado")]
         public Boolean Estado { get; set; }
 
-        [Display(Name = "Fecha_Ultimo_Acceso")]
+        [Display(Name = "Fecha Ultimo Acceso")]
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime Fecha_Ultimo_Acceso { get; set; }
 

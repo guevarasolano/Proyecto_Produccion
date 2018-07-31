@@ -123,10 +123,6 @@
                                 </td>
 
                                 <td>
-                                    @Html.DisplayFor(modelItem => item.Estado_Accion)
-                                </td>
-
-                                <td>
                                     @Html.DisplayFor(modelItem => item.Usuario_Ingreso)
                                 </td>
 
@@ -143,8 +139,8 @@
                                 </td>
 
                                 <td>
-                                    @Html.ActionLink("Modificar", "modificarAplicacion", new { id = item.Id_Usuario }) |
-                                    @Html.ActionLink("Eliminar", "eliminarAplicacion", new { id = item.Id_Usuario },
+                                    @Html.ActionLink("Modificar", "modificarUsuario", new { id = item.Id_Usuario }) |
+                                    @Html.ActionLink("Eliminar", "eliminarUsuario", new { id = item.Id_Usuario },
                                     new { onclick = "return confirm('¿Está seguro de borrar el registro?'" })
 
                                 </td>
@@ -153,7 +149,7 @@
 
                         </table>
                         <span>
-                            @Html.ActionLink("Nuevo Registro", "agregarAplicacion", "", null,
+                            @Html.ActionLink("Nuevo Registro", "agregarUsuario", "", null,
                                                new { @class = "btn btn-primary btn.large" })
                         </span>
                     </fieldset>

@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Prueba{
-
     public class ADUsuario{
 
         public Boolean insertarUsuario(Usuario.Models.Usuario usuario){
@@ -157,4 +155,3 @@ namespace Prueba{
         }
 
     }
-}

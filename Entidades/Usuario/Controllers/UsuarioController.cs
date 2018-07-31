@@ -1,5 +1,4 @@
-﻿using Prueba;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,17 +15,17 @@ namespace Usuario.Controllers{
             return View(oUsuario.listarUsuario());
         }
 
-        public ActionResult agregarAplicacion(Usuario.Models.Usuario usuario){
+        public ActionResult agregarUsuario(Usuario.Models.Usuario usuario){
 
             try{
                 if (ModelState.IsValid){
 
-                    ADUsuario oAplicacion = new ADUsuario();
-                    if (oAplicacion.insertarUsuario(usuario)){
-                        ViewBag.Menasaje = "Se insertó la usuario correctamente";
+                    ADUsuario oUsuario = new ADUsuario();
+                    if (oUsuario.insertarUsuario(usuario)){
+                        ViewBag.Menasaje = "Se insertó el usuario correctamente";
                     }
                     else{
-                        ViewBag.Menasaje = "No se insertó la usuario";
+                        ViewBag.Menasaje = "No se insertó el usuario";
                     }
 
                 }
@@ -55,8 +54,8 @@ namespace Usuario.Controllers{
         public ActionResult eliminarUsuario(int id){
 
             try{
-                ADUsuario oAplicacion = new ADUsuario();
-                if (oAplicacion.eliminarUsuario(id)){
+                ADUsuario oUsuario = new ADUsuario();
+                if (oUsuario.eliminarUsuario(id)){
                     ViewBag.Mensaje = "Registro de Usuario Eliminado";
                 }
                 else{

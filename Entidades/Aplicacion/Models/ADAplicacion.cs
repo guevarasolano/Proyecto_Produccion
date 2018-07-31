@@ -117,7 +117,7 @@ using System.Threading.Tasks;
                 SqlDataReader dr = cmd.ExecuteReader();
                 List<Aplicacion.Models.Aplicacion> lista = new List<Aplicacion.Models.Aplicacion>();
 
-            while (dr.Read()){
+                while (dr.Read()){
 
                 Aplicacion.Models.Aplicacion aplicacion = new Aplicacion.Models.Aplicacion();
 
