@@ -74,4 +74,3 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Madurac
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\obj\Debug\Proceso Maduracion.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\obj\Debug\Proceso Maduracion.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\obj\Debug\Proceso Maduracion.pdb
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\obj\Debug\Proceso Maduracion.csprojResolveAssemblyReference.cache
