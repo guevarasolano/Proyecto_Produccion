@@ -318,8 +318,6 @@ C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\obj\D
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\obj\Debug\WFCAditivo.csproj.CopyComplete
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\obj\Debug\WFCAditivo.dll
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\obj\Debug\WFCAditivo.pdb
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\WFCAditivo.dll.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\WFCAditivo.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\WFCAditivo.pdb
@@ -337,6 +335,7 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\roslyn\Microsoft.CSharp.Core.targets
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\roslyn\Microsoft.VisualBasic.Core.targets
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\roslyn\Microsoft.Win32.Primitives.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\roslyn\System.AppContext.dll
@@ -369,6 +368,7 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\roslyn\vbc.exe.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\roslyn\vbc.rsp
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\roslyn\VBCSCompiler.exe
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\Microsoft.Win32.Primitives.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\netstandard.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\System.AppContext.dll

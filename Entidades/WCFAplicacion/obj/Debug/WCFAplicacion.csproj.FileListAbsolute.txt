@@ -472,6 +472,7 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFAplicacion\b
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFAplicacion\bin\LogicaNegocio.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFAplicacion\bin\Prueba.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFAplicacion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFAplicacion\obj\Debug\WCFAplicacion.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFAplicacion\obj\Debug\WCFAplicacion.csproj.CoreCompileInputs.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFAplicacion\obj\Debug\WCFAplicacion.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFAplicacion\obj\Debug\WCFAplicacion.dll
