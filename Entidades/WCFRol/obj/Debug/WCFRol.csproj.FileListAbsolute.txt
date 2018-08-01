@@ -472,7 +472,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFRol\bin\Enti
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFRol\bin\LogicaNegocio.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFRol\bin\Prueba.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFRol\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFRol\obj\Debug\WCFRol.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFRol\obj\Debug\WCFRol.csproj.CoreCompileInputs.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFRol\obj\Debug\WCFRol.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFRol\obj\Debug\WCFRol.dll

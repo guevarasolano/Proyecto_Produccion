@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ProcesoMaduracion.Models.ProcesoMaduracion>
+﻿@model IEnumerable<Proceso_Maduracion.Models.ProcesoMaduracion>
 <html>
 <head>
     <title>Fructa CR S.A</title>
@@ -23,31 +23,35 @@
                                 <thead class="text-primary">
                                     <tr>
                                         <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Id_Inventario_Producto_Terminado)
+                                            @Html.DisplayNameFor(model => model.Id_Proceso_Maduracion)
                                         </th>
 
                                         <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Tipo_Proceso)
+                                            @Html.DisplayNameFor(model => model.Numero_Recibo)
                                         </th>
 
                                         <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Producto_Inicial)
+                                            @Html.DisplayNameFor(model => model.Numero_Carga)
                                         </th>
 
                                         <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Producto_Proceso)
+                                            @Html.DisplayNameFor(model => model.Fecha_Entrada_Camara)
                                         </th>
 
                                         <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Producto_Final)
+                                            @Html.DisplayNameFor(model => model.Cantidad_Banano_Ingreso_Kg)
                                         </th>
 
                                         <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Fecha_Inicial_Periodo)
+                                            @Html.DisplayNameFor(model => model.Cantidad_Banano_Maduro_Kg)
                                         </th>
 
                                         <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Fecha_Final_Periodo)
+                                            @Html.DisplayNameFor(model => model.Total_Cajas)
+                                        </th>
+
+                                        <th scope="row">
+                                            @Html.DisplayNameFor(model => model.Total_Cajas_Bloqueadas)
                                         </th>
 
                                         <th scope="row">
@@ -77,31 +81,35 @@
 
                                 <tr>
                                     <td>
-                                        @Html.DisplayFor(modelItem => item.Id_Inventario_Producto_Terminado)
+                                        @Html.DisplayFor(modelItem => item.Id_Proceso_Maduracion)
                                     </td>
 
                                     <td>
-                                        @Html.DisplayFor(modelItem => item.Tipo_Proceso)
+                                        @Html.DisplayFor(modelItem => item.Numero_Recibo)
                                     </td>
 
                                     <td>
-                                        @Html.DisplayFor(modelItem => item.Producto_Inicial)
+                                        @Html.DisplayFor(modelItem => item.Numero_Carga)
                                     </td>
 
                                     <td>
-                                        @Html.DisplayFor(modelItem => item.Producto_Proceso)
+                                        @Html.DisplayFor(modelItem => item.Fecha_Entrada_Camara)
                                     </td>
 
                                     <td>
-                                        @Html.DisplayFor(modelItem => item.Producto_Final)
+                                        @Html.DisplayFor(modelItem => item.Cantidad_Banano_Ingreso_Kg)
                                     </td>
 
                                     <td>
-                                        @Html.DisplayFor(modelItem => item.Fecha_Inicial_Periodo)
+                                        @Html.DisplayFor(modelItem => item.Cantidad_Banano_Maduro_Kg)
                                     </td>
 
                                     <td>
-                                        @Html.DisplayFor(modelItem => item.Fecha_Final_Periodo)
+                                        @Html.DisplayFor(modelItem => item.Total_Cajas)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Total_Cajas_Bloqueadas)
                                     </td>
 
                                     <td>
@@ -125,9 +133,9 @@
                                     </td>
 
                                     <td>
-                                        @Html.ActionLink("Modificar", "modificarInventarioProductoTerminado", new { id = item.Id_Inventario_Producto_Terminado }) |
-                                        @Html.ActionLink("Eliminar", "eliminarInventarioProductoTerminado", new { id = item.Id_Inventario_Producto_Terminado },
-                                 new { onclick = "return confirm('¿Está seguro de borrar el registro?'" })
+                                        @Html.ActionLink("Modificar", "modificarProcesoMaduracion", new { id = item.Id_Proceso_Maduracion }) |
+                                        @Html.ActionLink("Eliminar", "eliminarProcesoMaduracion", new { id = item.Id_Proceso_Maduracion },
+                                        new { onclick = "return confirm('¿Está seguro de borrar el registro?'" })
 
                                     </td>
                                 </tr>
@@ -135,7 +143,7 @@
 
                             </table>
                             <span>
-                                @Html.ActionLink("Nuevo Registro", "agregarInventarioProductoTerminado", "", null,
+                                @Html.ActionLink("Nuevo Registro", "agregarProcesoMaduracion", "", null,
                                                     new { @class = "btn btn-primary btn.large" })
                             </span>
                         </fieldset>
