@@ -14,54 +14,54 @@
 </head>
 
 <body style="margin-top: 30px">
-        <form class="form-horizontal" id="form1">
-            <div class="container">
-                <div class="row">
-                    <div class="well well -sm">
-                        <fieldset>
-                            <table class="table table-hover" style="font-size: small">
-                                <thead class="text-primary">
-                                    <tr>
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Id_Proceso_Ingreso_Piña)
-                                        </th>
+    <form class="form-horizontal" id="form1">
+        <div class="container">
+            <div class="row">
+                <div class="well well -sm">
+                    <fieldset>
+                        <table class="table table-hover" style="font-size: small">
+                            <thead class="text-primary">
+                                <tr>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Id_Proceso_Ingreso_Piña)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Numero_Recibo)
-                                        </th>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Numero_Recibo)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Numero_Carga)
-                                        </th>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Numero_Carga)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Cantidad_Piña_Utilizada_Kg)
-                                        </th>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Cantidad_Piña_Utilizada_Kg)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Estado)
-                                        </th>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Estado)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Usuario_Ingreso)
-                                        </th>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Usuario_Ingreso)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Fecha_Ingreso)
-                                        </th>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Fecha_Ingreso)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Usuario_Modificacion)
-                                        </th>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Usuario_Modificacion)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Fecha_Modificacion)
-                                        </th>
-                                    </tr>
-                                </thead>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Fecha_Modificacion)
+                                    </th>
+                                </tr>
+                            </thead>
 
-                                @foreach (var item in Model)
-                                {
+                            @foreach (var item in Model)
+                            {
 
                                 <tr>
                                     <td>
@@ -103,22 +103,25 @@
                                     <td>
                                         @Html.ActionLink("Modificar", "modificarProcesoIngresoPiña", new { id = item.Id_Proceso_Ingreso_Piña }) |
                                         @Html.ActionLink("Eliminar", "eliminarProcesoIngresoPiña", new { id = item.Id_Proceso_Ingreso_Piña },
-                                        new { onclick = "return confirm('¿Está seguro de borrar el registro?'" })
+                                             new { onclick = "return confirm('¿Está seguro de borrar el registro?'" })
 
                                     </td>
                                 </tr>
-                                }
+                            }
 
-                            </table>
-                            <span>
-                                @Html.ActionLink("Nuevo Registro", "agregarProcesoIngresoPiña", "", null,
-                                              new { @class = "btn btn-primary btn.large" })
-                            </span>
-                        </fieldset>
-                    </div>
+                        </table>
+                        <span>
+                            @Html.ActionLink("Nuevo Registro", "agregarProcesoIngresoPiña", "", null,
+                                               new { @class = "btn btn-primary btn.large" })
+                        </span>
+                    </fieldset>
                 </div>
             </div>
-        </form>
+        </div>
+    </form>
+
+    <footer style="text-align: center; background-color: #006bff; color: #ffffff">Fructa CR S.A</footer>
+
 </body>
 
 </html>
