@@ -63,6 +63,7 @@ namespace Prueba{
             cmd.Connection = aux.conectar();
             cmd.Parameters.Add(new SqlParameter("@Id_Proceso_Ingreso_Piña", Id_Proceso_Ingreso_Piña));
             cmd.CommandText = "EliminarProcesoIngresoPiña";
+            cmd.CommandType = CommandType.StoredProcedure;
             int x = cmd.ExecuteNonQuery();
             aux.conectar();
             if (x >= 1){
