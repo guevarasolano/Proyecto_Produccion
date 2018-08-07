@@ -70,6 +70,7 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso BP BJC\
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso BP BJC\bin\es\System.Web.Webpages.Razor.resources.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso BP BJC\bin\es\System.Web.Helpers.resources.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso BP BJC\bin\es\System.Web.Mvc.resources.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso BP BJC\obj\Debug\Proceso BP BJC.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso BP BJC\obj\Debug\Proceso BP BJC.csproj.CoreCompileInputs.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso BP BJC\obj\Debug\Proceso BP BJC.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso BP BJC\obj\Debug\Proceso BP BJC.dll

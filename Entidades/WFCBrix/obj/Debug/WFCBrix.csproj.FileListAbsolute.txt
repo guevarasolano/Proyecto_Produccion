@@ -472,7 +472,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCBrix\bin\Ent
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCBrix\bin\LogicaNegocio.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCBrix\bin\Prueba.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCBrix\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCBrix\obj\Debug\WFCBrix.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCBrix\obj\Debug\WFCBrix.csproj.CoreCompileInputs.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCBrix\obj\Debug\WFCBrix.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCBrix\obj\Debug\WFCBrix.dll

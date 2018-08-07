@@ -1,3 +1,5 @@
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Xml.ReaderWriter.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\Proceso Ingreso Piña.dll.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\Proceso Ingreso Piña.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\Proceso Ingreso Piña.pdb
@@ -12,7 +14,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\Microsoft.CSharp.Core.targets
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
@@ -40,7 +41,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Text.Encoding.CodePages.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Threading.Thread.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.ValueTuple.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Xml.ReaderWriter.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Xml.XmlDocument.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Xml.XPath.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Xml.XPath.XDocument.dll
@@ -70,7 +70,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\es\System.Web.Webpages.Razor.resources.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\es\System.Web.Helpers.resources.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\es\System.Web.Mvc.resources.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\obj\Debug\Proceso Ingreso Piña.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\obj\Debug\Proceso Ingreso Piña.csproj.CoreCompileInputs.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\obj\Debug\Proceso Ingreso Piña.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\obj\Debug\Proceso Ingreso Piña.dll

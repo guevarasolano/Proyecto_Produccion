@@ -34,7 +34,7 @@ namespace Rol.Controllers{
             return View();
         }
 
-        //get: brix/modificarBrix/5
+        //get: rol/modificarRol/5
         public ActionResult modificarRol(int id){
 
             ADRol oRol = new ADRol();
