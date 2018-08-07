@@ -318,8 +318,6 @@ C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMadura
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\obj\Debug\WCFProcesoMaduracion.csproj.CopyComplete
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\obj\Debug\WCFProcesoMaduracion.dll
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\obj\Debug\WCFProcesoMaduracion.pdb
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\WCFProcesoMaduracion.dll.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\WCFProcesoMaduracion.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\WCFProcesoMaduracion.pdb
@@ -329,12 +327,14 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMadur
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\roslyn\csi.exe
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\roslyn\csi.exe.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\roslyn\csi.rsp
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\roslyn\Microsoft.VisualBasic.Core.targets
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoMaduracion\bin\roslyn\Microsoft.Win32.Primitives.dll

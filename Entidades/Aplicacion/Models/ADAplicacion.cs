@@ -69,8 +69,7 @@ using System.Threading.Tasks;
             aux.conectar();
             if (x >= 1){
                 return true;
-            }
-            else{
+            }else{
                 return false;
             }
         }

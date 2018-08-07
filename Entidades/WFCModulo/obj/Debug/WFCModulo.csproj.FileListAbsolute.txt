@@ -317,9 +317,10 @@ C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\obj\De
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\obj\Debug\WFCModulo.csproj.CopyComplete
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\obj\Debug\WFCModulo.dll
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\obj\Debug\WFCModulo.pdb
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\bin\WFCModulo.pdb
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\bin\WFCModulo.dll.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\bin\WFCModulo.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\bin\WFCModulo.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\bin\roslyn\csc.exe
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\bin\roslyn\csc.exe.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\bin\roslyn\csc.rsp
@@ -327,7 +328,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\bin\r
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\bin\roslyn\csi.exe.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\bin\roslyn\csi.rsp
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll

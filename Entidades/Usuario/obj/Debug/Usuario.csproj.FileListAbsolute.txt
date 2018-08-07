@@ -1,9 +1,3 @@
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.IO.Pipes.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.Xml.ReaderWriter.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\Usuario.dll.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\Usuario.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\Usuario.pdb
@@ -20,6 +14,7 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\ros
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\Microsoft.VisualBasic.Core.targets
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\Microsoft.Win32.Primitives.dll
@@ -31,6 +26,10 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\ros
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.Diagnostics.StackTrace.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.IO.Compression.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.IO.Pipes.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.Reflection.Metadata.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.Security.AccessControl.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.Security.Claims.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.Security.Cryptography.Algorithms.dll
@@ -41,6 +40,7 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\ros
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.Text.Encoding.CodePages.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.Threading.Thread.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.ValueTuple.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.Xml.ReaderWriter.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.Xml.XmlDocument.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.Xml.XPath.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.Xml.XPath.XDocument.dll

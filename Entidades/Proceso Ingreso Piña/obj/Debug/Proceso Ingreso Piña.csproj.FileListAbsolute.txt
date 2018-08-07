@@ -1,5 +1,9 @@
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.IO.Compression.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Text.Encoding.CodePages.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\Proceso Ingreso Piña.dll.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\Proceso Ingreso Piña.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\Proceso Ingreso Piña.pdb
@@ -14,6 +18,7 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\Microsoft.CSharp.Core.targets
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
@@ -22,25 +27,20 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.AppContext.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Collections.Immutable.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Console.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Diagnostics.Process.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.IO.Compression.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.IO.FileSystem.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.IO.FileSystem.Primitives.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.IO.Pipes.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Reflection.Metadata.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Security.AccessControl.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Security.Claims.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Security.Cryptography.Primitives.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Security.Principal.Windows.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Text.Encoding.CodePages.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Threading.Thread.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.ValueTuple.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Xml.ReaderWriter.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Xml.XmlDocument.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Xml.XPath.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Xml.XPath.XDocument.dll
