@@ -78,8 +78,9 @@ namespace Prueba{
             }
         }
 
-        public List<InventarioProductoTerminado.Models.InventarioProductoTerminado> buscarInventarioProductoTerminado(int Id_Inventario_Producto_Terminado){
+        public InventarioProductoTerminado.Models.InventarioProductoTerminado buscarInventarioProductoTerminado(int Id_Inventario_Producto_Terminado){
 
+            InventarioProductoTerminado.Models.InventarioProductoTerminado inventarioProductoTerminado = new InventarioProductoTerminado.Models.InventarioProductoTerminado();
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = aux.conectar();
@@ -87,10 +88,8 @@ namespace Prueba{
             cmd.CommandText = "ConsultarInventarioProductoTerminado";
             cmd.CommandType = CommandType.StoredProcedure;
             SqlDataReader dr = cmd.ExecuteReader();
-            List<InventarioProductoTerminado.Models.InventarioProductoTerminado> lista = new List<InventarioProductoTerminado.Models.InventarioProductoTerminado>();
-            InventarioProductoTerminado.Models.InventarioProductoTerminado inventarioProductoTerminado = new InventarioProductoTerminado.Models.InventarioProductoTerminado();
 
-            while (dr.Read()){
+            if (dr.Read()){
 
                 inventarioProductoTerminado.Id_Inventario_Producto_Terminado = Convert.ToInt32(dr["Id_Inventario_Producto_Terminado"].ToString());
                 inventarioProductoTerminado.Tipo_Proceso = dr["Tipo_Proceso"].ToString();
@@ -105,10 +104,11 @@ namespace Prueba{
                 inventarioProductoTerminado.Usuario_Modificacion = dr["Usuario_Modificacion"].ToString();
                 inventarioProductoTerminado.Fecha_Modificacion = Convert.ToDateTime(dr["Fecha_Modificacion"].ToString());
 
-                lista.Add(inventarioProductoTerminado);
+            }else{
+                inventarioProductoTerminado = null;
             }
             aux.conectar();
-            return lista;
+            return inventarioProductoTerminado;
         }
 
         public List<InventarioProductoTerminado.Models.InventarioProductoTerminado> listarInventarioProductoTerminado(){

@@ -70,6 +70,7 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Madurac
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\bin\es\System.Web.Webpages.Razor.resources.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\bin\es\System.Web.Helpers.resources.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\bin\es\System.Web.Mvc.resources.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\obj\Debug\Proceso Maduracion.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\obj\Debug\Proceso Maduracion.csproj.CoreCompileInputs.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\obj\Debug\Proceso Maduracion.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\obj\Debug\Proceso Maduracion.dll

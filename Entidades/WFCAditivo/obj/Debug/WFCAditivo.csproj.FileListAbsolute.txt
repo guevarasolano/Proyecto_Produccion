@@ -473,7 +473,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\LogicaNegocio.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\Prueba.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\obj\Debug\WFCAditivo.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\obj\Debug\WFCAditivo.csproj.CoreCompileInputs.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\obj\Debug\WFCAditivo.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAditivo\obj\Debug\WFCAditivo.dll
