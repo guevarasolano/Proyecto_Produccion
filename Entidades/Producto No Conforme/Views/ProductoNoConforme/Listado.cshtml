@@ -27,7 +27,7 @@
                                         </th>
 
                                         <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Id_Articulo_SAP)
+                                            @Html.DisplayNameFor(model => model.FK_Id_Articulo_SAP)
                                         </th>
 
                                         <th scope="row">
@@ -112,8 +112,7 @@
                                     </tr>
                                 </thead>
 
-                                @foreach (var item in Model)
-                            {
+                                @foreach (var item in Model){
 
                                 <tr>
                                     <td>
@@ -121,7 +120,7 @@
                                     </td>
 
                                     <td>
-                                        @Html.DisplayFor(modelItem => item.Id_Articulo_SAP)
+                                        @Html.DisplayFor(modelItem => item.FK_Id_Articulo_SAP)
                                     </td>
 
                                     <td>

@@ -35,7 +35,7 @@ namespace Producto_No_Conforme.Controllers{
             return View();
         }
 
-        //get: procesoProcesoBPBJC/modificarProcesoBPBJC/5
+        //get: productoNoConforme/modificarProductoNoConforme/5
         public ActionResult modificarProductoNoConforme(int id){
 
             ADProductoNoConforme oPro = new ADProductoNoConforme();

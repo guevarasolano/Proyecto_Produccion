@@ -16,7 +16,7 @@ namespace Prueba{
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = aux.conectar();
-            cmd.Parameters.Add(new SqlParameter("@FK_Id_Articulo_SAP", producto_No_Conforme.Id_Articulo_SAP));
+            cmd.Parameters.Add(new SqlParameter("@FK_Id_Articulo_SAP", producto_No_Conforme.FK_Id_Articulo_SAP));
             cmd.Parameters.Add(new SqlParameter("@Lote_Producto", producto_No_Conforme.Lote_Producto));
             cmd.Parameters.Add(new SqlParameter("@Numero_Unidad", producto_No_Conforme.Numero_Unidad));
             cmd.Parameters.Add(new SqlParameter("@Peso_Toneladas_Metricas", producto_No_Conforme.Peso_Toneladas_Metricas));
@@ -54,7 +54,7 @@ namespace Prueba{
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = aux.conectar();
             cmd.Parameters.Add(new SqlParameter("@Id_Producto_No_Conforme", producto_No_Conforme.Id_Producto_No_Conforme));
-            cmd.Parameters.Add(new SqlParameter("@FK_Id_Articulo_SAP", producto_No_Conforme.Id_Articulo_SAP));
+            cmd.Parameters.Add(new SqlParameter("@FK_Id_Articulo_SAP", producto_No_Conforme.FK_Id_Articulo_SAP));
             cmd.Parameters.Add(new SqlParameter("@Lote_Producto", producto_No_Conforme.Lote_Producto));
             cmd.Parameters.Add(new SqlParameter("@Numero_Unidad", producto_No_Conforme.Numero_Unidad));
             cmd.Parameters.Add(new SqlParameter("@Peso_Toneladas_Metricas", producto_No_Conforme.Peso_Toneladas_Metricas));
@@ -112,7 +112,7 @@ namespace Prueba{
             if (dr.Read()){
 
                 productoNoConforme.Id_Producto_No_Conforme = Convert.ToInt32(dr["Id_Producto_No_Conforme"].ToString());
-                productoNoConforme.Id_Articulo_SAP = Convert.ToInt32(dr["FK_Id_Articulo_SAP"].ToString());
+                productoNoConforme.FK_Id_Articulo_SAP = Convert.ToInt32(dr["FK_Id_Articulo_SAP"].ToString());
                 productoNoConforme.Lote_Producto = dr["Lote_Producto"].ToString();
                 productoNoConforme.Numero_Unidad = Convert.ToInt32(dr["Numero_Unidad"].ToString());
                 productoNoConforme.Peso_Toneladas_Metricas = Convert.ToInt32(dr["Peso_Toneladas_Metricas"].ToString());
@@ -156,7 +156,7 @@ namespace Prueba{
                 Producto_No_Conforme.Models.ProductoNoConforme productoNoConforme = new Producto_No_Conforme.Models.ProductoNoConforme();
 
                 productoNoConforme.Id_Producto_No_Conforme = Convert.ToInt32(dr["Id_Producto_No_Conforme"].ToString());
-                productoNoConforme.Id_Articulo_SAP = Convert.ToInt32(dr["FK_Id_Articulo_SAP"].ToString());
+                productoNoConforme.FK_Id_Articulo_SAP = Convert.ToInt32(dr["FK_Id_Articulo_SAP"].ToString());
                 productoNoConforme.Lote_Producto = dr["Lote_Producto"].ToString();
                 productoNoConforme.Numero_Unidad = Convert.ToInt32(dr["Numero_Unidad"].ToString());
                 productoNoConforme.Peso_Toneladas_Metricas = Convert.ToInt32(dr["Peso_Toneladas_Metricas"].ToString());

@@ -14,7 +14,7 @@ namespace Producto_No_Conforme.Models{
 
         [Display(Name = "Id Articulo SAP")]
         //[Required(ErrorMessage = "Debe digitar el Brix")]
-        public int Id_Articulo_SAP { get; set; }
+        public int FK_Id_Articulo_SAP { get; set; }
 
         [Display(Name = "Lote Producto")]
         //[Required(ErrorMessage = "Debe digitar la Densidad")]
