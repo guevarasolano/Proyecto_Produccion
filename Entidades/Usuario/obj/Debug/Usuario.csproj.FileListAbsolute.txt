@@ -1,3 +1,4 @@
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\Usuario.dll.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\Usuario.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\Usuario.pdb
@@ -12,7 +13,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\ros
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\Microsoft.CSharp.Core.targets
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
@@ -70,7 +70,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\es\
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\es\System.Web.Webpages.Razor.resources.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\es\System.Web.Helpers.resources.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\es\System.Web.Mvc.resources.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\obj\Debug\Usuario.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\obj\Debug\Usuario.csproj.CoreCompileInputs.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\obj\Debug\Usuario.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\obj\Debug\Usuario.dll

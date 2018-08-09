@@ -147,7 +147,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Aplicacion\bin\
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Aplicacion\bin\es\System.Web.Webpages.Razor.resources.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Aplicacion\bin\es\System.Web.Helpers.resources.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Aplicacion\bin\es\System.Web.Mvc.resources.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Aplicacion\obj\Debug\Aplicacion.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Aplicacion\obj\Debug\Aplicacion.csproj.CoreCompileInputs.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Aplicacion\obj\Debug\Aplicacion.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Aplicacion\obj\Debug\Aplicacion.dll

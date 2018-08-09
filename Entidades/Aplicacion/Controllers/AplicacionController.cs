@@ -57,13 +57,11 @@ namespace Aplicacion.Controllers{
                 ADAplicacion oAplicacion = new ADAplicacion();
                 if (oAplicacion.eliminarAplicacion(id)){
                     ViewBag.Mensaje = "Registro de Aplicacion Eliminado";
-                }
-                else{
+                }else{
                     ViewBag.Mensaje = "Ocurrió un error al Eliminar el Registro de Aplicacion";
                 }
                 return RedirectToAction("Listado");
-            }
-            catch{
+            }catch{
                 return View();
             }
         }

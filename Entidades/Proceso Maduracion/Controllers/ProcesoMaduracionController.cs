@@ -61,7 +61,8 @@ namespace Proceso_Maduracion.Controllers{
                     ViewBag.Mensaje = "Ocurrió un error al Eliminar el Registro";
                 }
                 return RedirectToAction("Listado");
-            }catch{
+            }catch (Exception e){
+
                 return View();
             }
         }

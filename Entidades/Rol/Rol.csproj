@@ -99,6 +99,9 @@
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Script\jquery-1.12.4.min.js" />
+    <Content Include="Script\jquery.validate.min.js" />
+    <Content Include="Script\jquery.validate.unobtrusive.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -128,7 +131,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Script\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

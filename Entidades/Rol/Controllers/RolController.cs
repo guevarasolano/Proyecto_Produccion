@@ -58,10 +58,13 @@ namespace Rol.Controllers{
                 }else{
                     ViewBag.Mensaje = "Ocurrió un error al Eliminar el Registro de Rol";
                 }
+
                 return RedirectToAction("Listado");
-            }catch{
+            }catch (Exception e){
+
                 return View();
             }
+
         }
 
     }

@@ -472,6 +472,7 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\bin\E
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\bin\LogicaNegocio.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\bin\Prueba.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\obj\Debug\WFCModulo.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\obj\Debug\WFCModulo.csproj.CoreCompileInputs.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\obj\Debug\WFCModulo.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCModulo\obj\Debug\WFCModulo.dll
