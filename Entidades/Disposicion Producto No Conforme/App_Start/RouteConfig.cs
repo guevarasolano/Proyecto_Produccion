@@ -16,7 +16,7 @@ namespace Disposicion_Producto_No_Conforme
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "DisposicionProductoNoConforme", action = "Listado", id = UrlParameter.Optional }
             );
         }
     }

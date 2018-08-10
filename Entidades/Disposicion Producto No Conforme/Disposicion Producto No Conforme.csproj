@@ -106,6 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DisposicionProductoNoConformeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -117,6 +118,10 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
+    <Content Include="Views\DisposicionProductoNoConforme\agregarDisposicionProductoNoConforme.cshtml" />
+    <Content Include="Views\DisposicionProductoNoConforme\eliminarDisposicionProductoNoConforme.cshtml" />
+    <Content Include="Views\DisposicionProductoNoConforme\Listado.cshtml" />
+    <Content Include="Views\DisposicionProductoNoConforme\modificarDisposicionProductoNoConforme.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -126,7 +131,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

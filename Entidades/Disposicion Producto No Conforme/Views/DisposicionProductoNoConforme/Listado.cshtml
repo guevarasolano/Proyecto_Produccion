@@ -1,0 +1,165 @@
+﻿@model IEnumerable<Disposicion_Producto_No_Conforme.Models.DisposicionProductoNoConforme>
+<html>
+<head>
+    <title>Fructa CR S.A | Producción</title>
+    @*<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" />*@
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/img/flsf.png" type="image/x-icon" rel="shortcut icon" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    @*<script src="~script/jquery-1.10.2.min.js"></script>
+        <script src="~script/jquery-validate.min.js"></script>
+        <script src="~script/jquery-validate.unobtrusive.min.js"></script>*@
+</head>
+
+<body style="margin-top: 30px">
+    <form class="form-horizontal" id="form1">
+        <div class="container">
+            <div class="row">
+                <div class="well well -sm">
+                    <fieldset>
+                        <table class="table table-hover" style="font-size: small">
+                            <thead class="text-primary">
+                                <tr>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Id_Disposicion_Producto_No_Conforme)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.FK_Id_Producto_No_Conforme)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Fecha_Disposicion)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Disposicion_Final)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Tanque_Destino)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Se_Dispone)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Disposicion_Empaque)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Lote_Reproceso_Producto)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Observaciones)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Estado)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Usuario_Ingreso)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Fecha_Ingreso)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Usuario_Modificacion)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Fecha_Modificacion)
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            @foreach (var item in Model)
+                            {
+
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Id_Disposicion_Producto_No_Conforme)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.FK_Id_Producto_No_Conforme)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Fecha_Disposicion)
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Disposicion_Final)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Tanque_Destino)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Se_Dispone)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Disposicion_Empaque)
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Lote_Reproceso_Producto)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Observaciones)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Estado)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Usuario_Ingreso)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Fecha_Ingreso)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Usuario_Modificacion)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Fecha_Modificacion)
+                                    </td>
+
+                                    <td>
+                                        @Html.ActionLink("Modificar", "modificarDisposicionProductoNoConforme", new { id = item.Id_Disposicion_Producto_No_Conforme }) |
+                                        @Html.ActionLink("Eliminar", "eliminarDisposicionProductoNoConforme", new { id = item.Id_Disposicion_Producto_No_Conforme },
+                                             new { onclick = "return confirm('¿Está seguro de borrar el registro?'" })
+
+                                    </td>
+                                </tr>
+                            }
+
+                        </table>
+                        <span>
+                            @Html.ActionLink("Nuevo Registro", "agregarDisposicionProductoNoConforme", "", null,
+                                                    new { @class = "btn btn-primary btn.large" })
+                        </span>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <footer style="text-align: center; background-color: #006bff; color: #ffffff">Fructa CR S.A</footer>
+
+</body>
+
+</html>
