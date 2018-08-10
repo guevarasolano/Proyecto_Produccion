@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 
     public class ADAplicacion{
 
+        public ADAplicacion() { }
+
         public Boolean insertarAplicacion(Aplicacion.Models.Aplicacion aplicacion){
 
             Conexion aux = new Conexion();
@@ -57,7 +59,7 @@ using System.Threading.Tasks;
             aux.conectar();
         }
 
-        public Boolean eliminarAplicacion(int Id_Aplicacion){
+        public bool eliminarAplicacion(int Id_Aplicacion){
             
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();

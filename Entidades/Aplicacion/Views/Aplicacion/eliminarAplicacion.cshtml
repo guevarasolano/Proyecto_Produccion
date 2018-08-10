@@ -2,7 +2,7 @@
 
 <h3>Are you sure you want to delete this?</h3>
 <div>
-    <h4>Aplicacion</h4>
+    <h4>Usuario</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -46,14 +46,6 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Estado_Accion)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Estado_Accion)
-        </dd>
-
-        <dt>
             @Html.DisplayNameFor(model => model.Usuario_Ingreso)
         </dt>
 
@@ -87,12 +79,13 @@
 
     </dl>
 
-    @using (Html.BeginForm()) {
-    @Html.AntiForgeryToken()
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
 
-    <div class="form-actions no-color">
-        <input type="submit" value="Delete" class="btn btn-default" /> |
-        @Html.ActionLink("Back to List", "Index")
-    </div>
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
     }
 </div>

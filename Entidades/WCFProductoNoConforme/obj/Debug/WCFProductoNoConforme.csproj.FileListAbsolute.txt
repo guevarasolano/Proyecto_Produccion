@@ -327,3 +327,4 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoCo
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\obj\Debug\WCFProductoNoConforme.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\obj\Debug\WCFProductoNoConforme.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\obj\Debug\WCFProductoNoConforme.pdb
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\obj\Debug\WCFProductoNoConforme.csprojResolveAssemblyReference.cache

@@ -473,6 +473,7 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionP
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\LogicaNegocio.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\Prueba.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\obj\Debug\WCFDisposicionProductoNoConforme.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\obj\Debug\WCFDisposicionProductoNoConforme.csproj.CoreCompileInputs.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\obj\Debug\WCFDisposicionProductoNoConforme.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\obj\Debug\WCFDisposicionProductoNoConforme.dll
