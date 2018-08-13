@@ -63,6 +63,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Producto No Conforme", "Pro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Disposicion Producto No Conforme", "Disposicion Producto No Conforme\Disposicion Producto No Conforme.csproj", "{5419FB02-787E-4D51-ADD6-2E46D8566CF9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAP Produccion Info", "SAP Produccion Info\SAP Produccion Info.csproj", "{152ECD59-6963-4765-AC87-8B4FF650D0D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -185,6 +187,10 @@ Global
 		{5419FB02-787E-4D51-ADD6-2E46D8566CF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5419FB02-787E-4D51-ADD6-2E46D8566CF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5419FB02-787E-4D51-ADD6-2E46D8566CF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{152ECD59-6963-4765-AC87-8B4FF650D0D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{152ECD59-6963-4765-AC87-8B4FF650D0D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{152ECD59-6963-4765-AC87-8B4FF650D0D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{152ECD59-6963-4765-AC87-8B4FF650D0D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

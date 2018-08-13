@@ -323,6 +323,7 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoLlena
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoLlenado\bin\Entidades.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoLlenado\bin\LogicaNegocio.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoLlenado\bin\Prueba.pdb
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoLlenado\obj\Debug\WCFProcesoLlenado.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoLlenado\obj\Debug\WCFProcesoLlenado.csproj.CoreCompileInputs.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoLlenado\obj\Debug\WCFProcesoLlenado.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProcesoLlenado\obj\Debug\WCFProcesoLlenado.dll

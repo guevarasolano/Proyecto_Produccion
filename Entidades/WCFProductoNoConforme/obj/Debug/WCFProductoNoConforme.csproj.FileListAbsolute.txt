@@ -323,8 +323,8 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoCo
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\Entidades.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\LogicaNegocio.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\Prueba.pdb
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\obj\Debug\WCFProductoNoConforme.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\obj\Debug\WCFProductoNoConforme.csproj.CoreCompileInputs.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\obj\Debug\WCFProductoNoConforme.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\obj\Debug\WCFProductoNoConforme.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\obj\Debug\WCFProductoNoConforme.pdb
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\obj\Debug\WCFProductoNoConforme.csprojResolveAssemblyReference.cache

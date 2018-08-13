@@ -1,0 +1,90 @@
+﻿@model Proceso_Ingreso_Piña.Models.ProcesoIngresoPiña
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Proceso Ingreso Piña</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id_Proceso_Ingreso_Piña)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id_Proceso_Ingreso_Piña)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Numero_Recibo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Numero_Recibo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Numero_Carga)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Numero_Carga)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cantidad_Piña_Utilizada_Kg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cantidad_Piña_Utilizada_Kg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario_Ingreso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuario_Ingreso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Ingreso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_Ingreso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario_Modificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuario_Modificacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Modificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_Modificacion)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

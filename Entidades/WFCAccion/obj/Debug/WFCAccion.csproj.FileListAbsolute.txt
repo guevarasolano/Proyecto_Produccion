@@ -476,4 +476,3 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAccion\obj\D
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAccion\obj\Debug\WFCAccion.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAccion\obj\Debug\WFCAccion.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAccion\obj\Debug\WFCAccion.pdb
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAccion\obj\Debug\WFCAccion.csprojResolveAssemblyReference.cache

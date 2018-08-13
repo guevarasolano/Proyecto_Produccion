@@ -70,6 +70,7 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Rol\bin\es\Syst
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Rol\bin\es\System.Web.Webpages.Razor.resources.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Rol\bin\es\System.Web.Helpers.resources.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Rol\bin\es\System.Web.Mvc.resources.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Rol\obj\Debug\Rol.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Rol\obj\Debug\Rol.csproj.CoreCompileInputs.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Rol\obj\Debug\Rol.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Rol\obj\Debug\Rol.dll
