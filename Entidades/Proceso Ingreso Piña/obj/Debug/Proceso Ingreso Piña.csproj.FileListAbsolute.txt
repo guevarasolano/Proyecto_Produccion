@@ -1,3 +1,5 @@
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\Proceso Ingreso Piña.dll.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\Proceso Ingreso Piña.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\Proceso Ingreso Piña.pdb
@@ -37,7 +39,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Security.Cryptography.Primitives.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Security.Principal.Windows.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Text.Encoding.CodePages.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Threading.Thread.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.ValueTuple.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\System.Xml.ReaderWriter.dll
@@ -48,7 +49,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\vbc.exe.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\vbc.rsp
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\VBCSCompiler.exe
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\System.Web.Helpers.dll
