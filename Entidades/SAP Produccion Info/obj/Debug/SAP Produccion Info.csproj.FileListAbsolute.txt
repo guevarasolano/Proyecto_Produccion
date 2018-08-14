@@ -74,3 +74,4 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\SAP Produccion 
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\SAP Produccion Info\obj\Debug\SAP Produccion Info.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\SAP Produccion Info\obj\Debug\SAP Produccion Info.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\SAP Produccion Info\obj\Debug\SAP Produccion Info.pdb
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\SAP Produccion Info\obj\Debug\SAP Produccion Info.csprojResolveAssemblyReference.cache

@@ -1,4 +1,4 @@
-﻿@model Proceso_Ingreso_Piña.Models.ProcesoIngresoPiña
+﻿@model SAP_Produccion_Info.Models.SAPProduccionInfo
 
 <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
 <link href="~/img/flsf.png" type="image/x-icon" rel="shortcut icon" />
@@ -12,29 +12,37 @@
     <hr />
 
     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-    @Html.HiddenFor(model => model.Id_Proceso_Ingreso_Piña)
+    @Html.HiddenFor(model => model.Id_SAP_Produccion_Info)
 
     <div class="form-group">
-        @Html.LabelFor(model => model.Numero_Recibo, htmlAttributes: new { @class = "control-label col-md-2" })
+        @Html.LabelFor(model => model.Id_Orden_Fabricacion, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-5">
-            @Html.EditorFor(model => model.Numero_Recibo, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.Numero_Recibo, "", new { @class = "text-danger" })
+            @Html.EditorFor(model => model.Id_Orden_Fabricacion, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Id_Orden_Fabricacion, "", new { @class = "text-danger" })
         </div>
     </div>
 
     <div class="form-group">
-        @Html.LabelFor(model => model.Numero_Carga, htmlAttributes: new { @class = "control-label col-md-2" })
+        @Html.LabelFor(model => model.Id_Recibo_Produccion, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-5">
-            @Html.EditorFor(model => model.Numero_Carga, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.Numero_Carga, "", new { @class = "text-danger" })
+            @Html.EditorFor(model => model.Id_Recibo_Produccion, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Id_Recibo_Produccion, "", new { @class = "text-danger" })
         </div>
     </div>
 
     <div class="form-group">
-        @Html.LabelFor(model => model.Cantidad_Piña_Utilizada_Kg, htmlAttributes: new { @class = "control-label col-md-2" })
+        @Html.LabelFor(model => model.Id_Emision_Produccion, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-5">
-            @Html.EditorFor(model => model.Cantidad_Piña_Utilizada_Kg, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.Cantidad_Piña_Utilizada_Kg, "", new { @class = "text-danger" })
+            @Html.EditorFor(model => model.Id_Emision_Produccion, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Id_Emision_Produccion, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Tipo_Fruta, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-5">
+            @Html.EditorFor(model => model.Tipo_Fruta, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Tipo_Fruta, "", new { @class = "text-danger" })
         </div>
     </div>
 

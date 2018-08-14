@@ -1,4 +1,4 @@
-﻿@model Proceso_Ingreso_Piña.Models.ProcesoIngresoPiña
+﻿@model SAP_Produccion_Info.Models.SAPProduccionInfo
 
 @{
     ViewBag.Title = "Inserción de Proceso Ingreso Piña";
@@ -20,34 +20,42 @@
     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
     <div class="form-group">
-        @Html.LabelFor(model => model.Id_Proceso_Ingreso_Piña, htmlAttributes: new { @class = "control-label col-md-2" })
+        @Html.LabelFor(model => model.Id_SAP_Produccion_Info, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.EditorFor(model => model.Id_Proceso_Ingreso_Piña, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.EditorFor(model => model.Id_SAP_Produccion_Info, new { htmlAttributes = new { @class = "form-control" } })
             @*Html.ValidationMessageFor(model => model.Id_Brix, "", new { @class = "text-danger" })*@
         </div>
     </div>
 
     <div class="form-group">
-        @Html.LabelFor(model => model.Numero_Recibo, htmlAttributes: new { @class = "control-label col-md-2" })
+        @Html.LabelFor(model => model.Id_Orden_Fabricacion, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.EditorFor(model => model.Numero_Recibo, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.EditorFor(model => model.Id_Orden_Fabricacion, new { htmlAttributes = new { @class = "form-control" } })
             @*Html.ValidationMessageFor(model => model.Bris, "", new { @class = "text-danger" })*@
         </div>
     </div>
 
     <div class="form-group">
-        @Html.LabelFor(model => model.Numero_Carga, htmlAttributes: new { @class = "control-label col-md-2" })
+        @Html.LabelFor(model => model.Id_Recibo_Produccion, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.EditorFor(model => model.Numero_Carga, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.EditorFor(model => model.Id_Recibo_Produccion, new { htmlAttributes = new { @class = "form-control" } })
             @*Html.ValidationMessageFor(model => model.Densidad, "", new { @class = "text-danger" })*@
         </div>
     </div>
 
     <div class="form-group">
-        @Html.LabelFor(model => model.Cantidad_Piña_Utilizada_Kg, htmlAttributes: new { @class = "control-label col-md-2" })
+        @Html.LabelFor(model => model.Id_Emision_Produccion, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.EditorFor(model => model.Cantidad_Piña_Utilizada_Kg, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.EditorFor(model => model.Id_Emision_Produccion, new { htmlAttributes = new { @class = "form-control" } })
             @*Html.ValidationMessageFor(model => model.Densidad, "", new { @class = "text-danger" })*@
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Tipo_Fruta, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Tipo_Fruta, new { htmlAttributes = new { @class = "form-control" } })
+            @*Html.ValidationMessageFor(model => model.Estado, "", new { @class = "text-danger" })*@
         </div>
     </div>
 
