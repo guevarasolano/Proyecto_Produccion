@@ -1,4 +1,3 @@
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\Proceso Ingreso Piña.dll.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\Proceso Ingreso Piña.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\Proceso Ingreso Piña.pdb
@@ -15,6 +14,7 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\Microsoft.VisualBasic.Core.targets
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Ingreso Piña\bin\roslyn\Microsoft.Win32.Primitives.dll
