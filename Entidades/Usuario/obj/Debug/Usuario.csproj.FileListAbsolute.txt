@@ -1,3 +1,7 @@
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\Usuario.dll.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\Usuario.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\Usuario.pdb
@@ -8,7 +12,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\ros
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\csi.exe.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\csi.rsp
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
@@ -29,7 +32,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\ros
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.IO.FileSystem.Primitives.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.IO.Pipes.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.Reflection.Metadata.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.Security.AccessControl.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.Security.Claims.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.Security.Cryptography.Algorithms.dll
@@ -37,7 +39,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\ros
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.Security.Cryptography.Primitives.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.Security.Principal.Windows.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.Text.Encoding.CodePages.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.Threading.Thread.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.ValueTuple.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\System.Xml.ReaderWriter.dll
@@ -48,7 +49,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\ros
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\vbc.exe.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\vbc.rsp
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\VBCSCompiler.exe
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Usuario\bin\System.Web.Helpers.dll

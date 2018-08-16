@@ -69,6 +69,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accion", "Accion\Accion.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modulo", "Modulo\Modulo.csproj", "{F1064345-99F3-43ED-A723-FACEBF449DE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Distribucion Inventario Tanque", "Distribucion Inventario Tanque\Distribucion Inventario Tanque.csproj", "{32000980-A77E-42E4-932A-D3A26938D444}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -203,6 +205,10 @@ Global
 		{F1064345-99F3-43ED-A723-FACEBF449DE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1064345-99F3-43ED-A723-FACEBF449DE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1064345-99F3-43ED-A723-FACEBF449DE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32000980-A77E-42E4-932A-D3A26938D444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32000980-A77E-42E4-932A-D3A26938D444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32000980-A77E-42E4-932A-D3A26938D444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32000980-A77E-42E4-932A-D3A26938D444}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
