@@ -318,7 +318,6 @@ C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionPr
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\obj\Debug\WCFDisposicionProductoNoConforme.csproj.CopyComplete
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\obj\Debug\WCFDisposicionProductoNoConforme.dll
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\obj\Debug\WCFDisposicionProductoNoConforme.pdb
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\System.Security.Cryptography.X509Certificates.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\WCFDisposicionProductoNoConforme.dll.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\WCFDisposicionProductoNoConforme.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\WCFDisposicionProductoNoConforme.pdb
@@ -446,6 +445,7 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionP
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\System.Security.Cryptography.Csp.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\System.Security.Cryptography.Encoding.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\System.Security.Cryptography.Primitives.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\System.Security.Cryptography.X509Certificates.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\System.Security.Principal.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\System.Security.SecureString.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\bin\System.Text.Encoding.dll

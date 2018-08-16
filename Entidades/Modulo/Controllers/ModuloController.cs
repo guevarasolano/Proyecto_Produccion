@@ -14,13 +14,13 @@ using System.Web.Mvc;
         return View(oModulo.listarModulo());
     }
 
-    public ActionResult agregarModulo(Modulo.Models.Modulo aplicacion){
+    public ActionResult agregarModulo(Modulo.Models.Modulo modulo){
 
         try{
             if (ModelState.IsValid){
 
                ADModulo oModulo = new ADModulo();
-                if (oModulo.insertarModulo(aplicacion)){
+                if (oModulo.insertarModulo(modulo)){
                     ViewBag.Menasaje = "Se insertó el Modulo correctamente";
                 }else{
                     ViewBag.Menasaje = "No se insertó el Modulo";
@@ -37,14 +37,14 @@ using System.Web.Mvc;
     public ActionResult modificarModulo(int id){
 
         ADModulo oModulo = new ADModulo();
-        return View(oModulo.listarModulo().Find(apli => apli.Id_Modulo == id));
+        return View(oModulo.listarModulo().Find(mod => mod.Id_Modulo == id));
     }
 
     [HttpPost]
-    public ActionResult modificarModulo(int id, Modulo.Models.Modulo aplicacion){
+    public ActionResult modificarModulo(int id, Modulo.Models.Modulo modulo){
 
         ADModulo oModulo = new ADModulo();
-        oModulo.actualizarModulo(aplicacion);
+        oModulo.actualizarModulo(modulo);
         return RedirectToAction("Listado");
     }
 

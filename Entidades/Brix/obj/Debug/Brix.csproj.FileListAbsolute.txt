@@ -147,7 +147,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\bin\es\Sys
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\bin\es\System.Web.Webpages.Razor.resources.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\bin\es\System.Web.Helpers.resources.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\bin\es\System.Web.Mvc.resources.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\obj\Debug\Brix.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\obj\Debug\Brix.csproj.CoreCompileInputs.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\obj\Debug\Brix.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\obj\Debug\Brix.dll

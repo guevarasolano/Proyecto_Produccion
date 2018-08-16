@@ -218,9 +218,6 @@ C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoCon
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\obj\Debug\WCFProductoNoConforme.csproj.CopyComplete
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\obj\Debug\WCFProductoNoConforme.dll
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\obj\Debug\WCFProductoNoConforme.pdb
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\System.Xml.XmlDocument.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\System.Xml.XmlSerializer.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\obj\Debug\WCFProductoNoConforme.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\WCFProductoNoConforme.dll.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\WCFProductoNoConforme.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\WCFProductoNoConforme.pdb
@@ -316,6 +313,8 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoCo
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\System.ValueTuple.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\System.Xml.ReaderWriter.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\System.Xml.XDocument.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\System.Xml.XmlDocument.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\System.Xml.XmlSerializer.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\System.Xml.XPath.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\System.Xml.XPath.XDocument.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\Entidades.dll
@@ -324,6 +323,7 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoCo
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\Entidades.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\LogicaNegocio.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\bin\Prueba.pdb
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\obj\Debug\WCFProductoNoConforme.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\obj\Debug\WCFProductoNoConforme.csproj.CoreCompileInputs.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\obj\Debug\WCFProductoNoConforme.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFProductoNoConforme\obj\Debug\WCFProductoNoConforme.dll
