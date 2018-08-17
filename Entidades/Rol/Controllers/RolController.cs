@@ -9,62 +9,68 @@ namespace Rol.Controllers{
 
     public class RolController : Controller{
 
+        //LISTAR:
         public ActionResult Listado(){
 
             ADRol oRol = new ADRol();
             ModelState.Clear();
             return View(oRol.listarRol());
+
         }
 
+        //AGREGAR:
         public ActionResult agregarRol(Rol.Models.Rol rol){
 
             try{
                 if (ModelState.IsValid){
                     ADRol oRol = new ADRol();
                     if (oRol.insertarRol(rol)){
-                        ViewBag.Menasaje = "Se insertó el Rol correctamente";
+                        ViewBag.Mensaje = "Se insertó el Registro correctamente";
                     }else{
-                        ViewBag.Menasaje = "No se insertó el Rol";
+                        ViewBag.Mensaje = "No se insertó el Registro";
                     }
 
                 }
-            }catch (Exception ex){
-                ex = null;
+            }catch {
+
             }
             return View();
         }
 
-        //get: rol/modificarRol/5
+        //MODIFICAR:
         public ActionResult modificarRol(int id){
 
             ADRol oRol = new ADRol();
             return View(oRol.listarRol().Find(rol => rol.Id_Rol == id));
+
         }
 
+        //MODIFICAR:
         [HttpPost]
         public ActionResult modificarRol(int id, Rol.Models.Rol rol){
 
             ADRol oRol = new ADRol();
             oRol.actualizarRol(rol);
             return RedirectToAction("Listado");
+
         }
 
+        //ELIMINAR:
         public ActionResult eliminarRol(int id){
 
             try{
                 ADRol oRol = new ADRol();
                 if (oRol.eliminarRol(id)){
-                    ViewBag.Mensaje = "Registro de Rol Eliminado";
+                    ViewBag.Mensaje = "Registro Eliminado";
                 }else{
-                    ViewBag.Mensaje = "Ocurrió un error al Eliminar el Registro de Rol";
+                    ViewBag.Mensaje = "No se insertó el Registro";
                 }
 
                 return RedirectToAction("Listado");
-            }catch (Exception e){
+            }catch {
 
                 return View();
             }
-
         }
 
     }

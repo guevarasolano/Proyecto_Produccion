@@ -10,6 +10,7 @@ namespace Proceso_Ingreso_Piña.Controllers{
 
     public class ProcesoIngresoPiñaController : Controller{
 
+        //LISTAR:
         public ActionResult Listado(){
 
             ADProcesoIngresoPiña oIngreso = new ADProcesoIngresoPiña();
@@ -17,6 +18,7 @@ namespace Proceso_Ingreso_Piña.Controllers{
             return View(oIngreso.listarProcesoIngresoPiña());
         }
 
+        //AGREGAR:
         public ActionResult agregarProcesoIngresoPiña(ProcesoIngresoPiña ingreso){
 
             try{
@@ -29,19 +31,20 @@ namespace Proceso_Ingreso_Piña.Controllers{
                     }
 
                 }
-            }catch (Exception ex){
-                ex = null;
+            }catch {
+
             }
             return View();
         }
 
-        //get: procesoIngresoPiña/modificarProcesoIngresoPiña/5
+        //MODIFICAR:
         public ActionResult modificarProcesoIngresoPiña(int id){
 
             ADProcesoIngresoPiña oIngreso = new ADProcesoIngresoPiña();
             return View(oIngreso.listarProcesoIngresoPiña().Find(piñ => piñ.Id_Proceso_Ingreso_Piña == id));
         }
 
+        //MODIFICAR:
         [HttpPost]
         public ActionResult modificarProcesoIngresoPiña(int id, ProcesoIngresoPiña ingreso){
 
@@ -50,14 +53,15 @@ namespace Proceso_Ingreso_Piña.Controllers{
             return RedirectToAction("Listado");
         }
 
+        //ELIMINAR:
         public ActionResult eliminarProcesoIngresoPiña(int id){
 
             try{
                 ADProcesoIngresoPiña oIngreso = new ADProcesoIngresoPiña();
                 if (oIngreso.eliminarProcesoIngresoPiña(id)){
-                    ViewBag.Mensaje = "Registro de Ingreso Piña Eliminado";
+                    ViewBag.Mensaje = "Registro Eliminado";
                 }else{
-                    ViewBag.Mensaje = "Ocurrió un error al Eliminar el Registro de Ingreso Piña";
+                    ViewBag.Mensaje = "Ocurrió un error al Eliminar el Registro";
                 }
                 return RedirectToAction("Listado");
             }catch{

@@ -8,13 +8,16 @@ namespace SAP_Produccion_Info.Controllers{
 
     public class SAPProduccionInfoController : Controller{
 
+        //LISTAR:
         public ActionResult Listado(){
 
             Models.ADSAPProduccionInfo oSAP = new Models.ADSAPProduccionInfo();
             ModelState.Clear();
             return View(oSAP.listarSAPProduccionInfo());
+
         }
 
+        //AGREGAR:
         public ActionResult agregarSAPProduccionInfo(SAP_Produccion_Info.Models.SAPProduccionInfo sap){
 
             try{
@@ -22,33 +25,37 @@ namespace SAP_Produccion_Info.Controllers{
 
                     Models.ADSAPProduccionInfo oSAP = new Models.ADSAPProduccionInfo();
                     if (oSAP.insertarSAPProduccionInfo(sap)){
-                        ViewBag.Menasaje = "Se insertó el Registro Correctamente";
+                        ViewBag.Mensaje = "Se insertó el Registro Correctamente";
                     }else{
-                        ViewBag.Menasaje = "No se insertó el Registro";
+                        ViewBag.Mensaje = "No se insertó el Registro";
                     }
 
                 }
-            }catch (Exception ex){
-                ex = null;
+            }catch {
+
             }
             return View();
         }
 
-        //get: SAPProduccionInfo/modificarSAPProduccionInfo/5
+        //MODIFICAR:
         public ActionResult modificarSAPProduccionInfo(int id){
 
             Models.ADSAPProduccionInfo oSAP = new Models.ADSAPProduccionInfo();
             return View(oSAP.listarSAPProduccionInfo().Find(sap => sap.Id_SAP_Produccion_Info == id));
+
         }
 
+        //MODIFICAR:
         [HttpPost]
         public ActionResult modificarSAPProduccionInfo(int id, SAP_Produccion_Info.Models.SAPProduccionInfo sap){
 
             Models.ADSAPProduccionInfo oSAP = new Models.ADSAPProduccionInfo();
             oSAP.actualizarSAPProduccionInfo(sap);
             return RedirectToAction("Listado");
+
         }
 
+        //ELIMINAR:
         public ActionResult eliminarSAPProduccionInfo(int id){
 
             try{
@@ -56,7 +63,7 @@ namespace SAP_Produccion_Info.Controllers{
                 if (oSAP.eliminarSAPProduccionInfo(id)){
                     ViewBag.Mensaje = "Registro Eliminado";
                 }else{
-                    ViewBag.Mensaje = "Ocurrió un error al Eliminar el Registro";
+                    ViewBag.Mensaje = "No se insertó el Registro";
                 }
                 return RedirectToAction("Listado");
             }catch{

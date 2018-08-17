@@ -4,17 +4,17 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Aplicacion.Controllers{
-
     public class AplicacionController : Controller{
-
+        
+        //LISTAR:
         public ActionResult Listado(){
 
             ADAplicacion oAplicacion = new ADAplicacion();
             ModelState.Clear();
             return View(oAplicacion.listarAplicacion());
         }
-
+        
+        //AGREGAR:
         public ActionResult agregarAplicacion(Aplicacion.Models.Aplicacion aplicacion){
 
             try{
@@ -22,27 +22,28 @@ namespace Aplicacion.Controllers{
 
                     ADAplicacion oAplicacion = new ADAplicacion();
                     if (oAplicacion.insertarAplicacion(aplicacion)){
-                        ViewBag.Menasaje = "Se insertó la aplicación correctamente";
+                        ViewBag.Mensaje = "Se insertó el Registro correctamente";
                     }
                     else{
-                        ViewBag.Menasaje = "No se insertó la aplicacion";
+                        ViewBag.Mensaje = "No se insertó el Registro";
                     }
 
                 }
             }
-            catch (Exception ex){
-                ex = null;
+            catch {
+
             }
             return View();
         }
 
-        //get: aplicacion/modificarAplicacion/5
+        //MODIFICAR:
         public ActionResult modificarAplicacion(int id){
 
             ADAplicacion oAplicacion = new ADAplicacion();
             return View(oAplicacion.listarAplicacion().Find(apli => apli.Id_Aplicacion == id));
         }
 
+        //MODIFICAR:
         [HttpPost]
         public ActionResult modificarAplicacion(int id, Aplicacion.Models.Aplicacion aplicacion){
 
@@ -51,27 +52,26 @@ namespace Aplicacion.Controllers{
             return RedirectToAction("Listado");
         }
 
+        //ELIMINAR:
         public ActionResult eliminarAplicacion(int id){
 
             try{
                 ADAplicacion oAplicacion = new ADAplicacion();
                 if (oAplicacion.eliminarAplicacion(id)){
-                    ViewBag.Mensaje = "Registro de Aplicacion Eliminado";
+                    ViewBag.Mensaje = "Registro Eliminado";
 
                     return View();
+
+                }else{
+                    ViewBag.Mensaje = "Ocurrió un error al Eliminar el Registro";
                 }
-                else{
-                    ViewBag.Mensaje = "Ocurrió un error al Eliminar el Registro de Aplicacion";
-                }
-                //return RedirectToAction("Listado");
+
                return RedirectToAction("Listado");
+
             }catch{
 
-                Console.Write("Hola mundo");
-                return RedirectToAction("Listado");
-
+                return View();
             }
         }
 
     }
-}

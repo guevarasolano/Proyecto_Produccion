@@ -10,13 +10,16 @@ namespace Proceso_BP_BJC.Controllers{
 
     public class ProcesoBPBJCController : Controller{
 
+        //LISTAR:
         public ActionResult Listado(){
 
             ADProcesoBPBJC oBPBJC = new ADProcesoBPBJC();
             ModelState.Clear();
             return View(oBPBJC.listarProcesoBPBJC());
+
         }
 
+        //AGREGAR:
         public ActionResult agregarProcesoBPBJC(ProcesoBPBJC proceso){
 
             try{
@@ -24,33 +27,36 @@ namespace Proceso_BP_BJC.Controllers{
 
                     ADProcesoBPBJC oBPBJC = new ADProcesoBPBJC();
                     if (oBPBJC.insertarProcesoBPBJC(proceso)){
-                        ViewBag.Menasaje = "Se insertó el Registro correctamente";
+                        ViewBag.Mensaje = "Se insertó el Registro correctamente";
                     }else{
-                        ViewBag.Menasaje = "No se insertó el Registro";
+                        ViewBag.Mensaje = "No se insertó el Registro";
                     }
 
                 }
-            }catch (Exception ex){
-                ex = null;
+            }catch{
+
             }
             return View();
         }
 
-        //get: procesoProcesoBPBJC/modificarProcesoBPBJC/5
+        //MODIFICAR:
         public ActionResult modificarProcesoBPBJC(int id){
 
             ADProcesoBPBJC oBPBJC = new ADProcesoBPBJC();
             return View(oBPBJC.listarProcesoBPBJC().Find(pro => pro.Id_Proceso_BP_BJC == id));
         }
 
+        //MODIFICAR:
         [HttpPost]
         public ActionResult modificarProcesoBPBJC(int id, ProcesoBPBJC proceso){
 
             ADProcesoBPBJC oBPBJC = new ADProcesoBPBJC();
             oBPBJC.actualizarProcesoBPBJC(proceso);
             return RedirectToAction("Listado");
+
         }
 
+        //ELIMINAR:
         public ActionResult eliminarProcesoBPBJC(int id){
 
             try{

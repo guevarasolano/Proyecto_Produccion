@@ -6,13 +6,16 @@ using System.Web.Mvc;
 
     public class ProcesoLlenadoController : Controller{
 
+    //LISTAR:
     public ActionResult Listado(){
 
         ADProcesoLlenado oLlenado = new ADProcesoLlenado();
         ModelState.Clear();
         return View(oLlenado.listarProcesoLlenado());
+
     }
 
+    //AGREGAR:
     public ActionResult agregarProcesoLlenado(ProcesoLlenado llenado){
 
         try{
@@ -20,33 +23,36 @@ using System.Web.Mvc;
 
                 ADProcesoLlenado oLlenado = new ADProcesoLlenado();
                 if (oLlenado.insertarProcesoLlenado(llenado)){
-                    ViewBag.Menasaje = "Se insertó el Registro correctamente";
+                    ViewBag.Mensaje = "Se insertó el Registro correctamente";
                 }else{
-                    ViewBag.Menasaje = "No se insertó el Registro";
+                    ViewBag.Mensaje = "No se insertó el Registro";
                 }
 
             }
-        }catch (Exception ex){
-            ex = null;
+        }catch {
+
         }
         return View();
     }
 
-    //get: modificarProcesoLlenado/modificarProcesoLlenado/5
+    //MODIFICAR:
     public ActionResult modificarProcesoLlenado(int id){
 
         ADProcesoLlenado oLlenado = new ADProcesoLlenado();
         return View(oLlenado.listarProcesoLlenado().Find(dis => dis.Id_Proceso_Llenado == id));
     }
 
+    //MODIFICAR:
     [HttpPost]
     public ActionResult modificarProcesoLlenado(int id, ProcesoLlenado llenado){
 
         ADProcesoLlenado oLlenado = new ADProcesoLlenado();
         oLlenado.actualizarProcesoLlenado(llenado);
         return RedirectToAction("Listado");
+
     }
 
+    //ELIMINAR:
     public ActionResult eliminarProcesoLlenado(int id){
 
         try{

@@ -9,6 +9,7 @@ namespace Disposicion_Producto_No_Conforme.Controllers{
 
     public class DisposicionProductoNoConformeController : Controller{
 
+        //LISTAR:
         public ActionResult Listado(){
 
             ADDisposicionProductoNoConforme oDisposicion = new ADDisposicionProductoNoConforme();
@@ -16,6 +17,7 @@ namespace Disposicion_Producto_No_Conforme.Controllers{
             return View(oDisposicion.listarDisposicionProductoNoConforme());
         }
 
+        //AGREGAR:
         public ActionResult agregarDisposicionProductoNoConforme(Disposicion_Producto_No_Conforme.Models.DisposicionProductoNoConforme disposicion){
 
             try{
@@ -23,9 +25,9 @@ namespace Disposicion_Producto_No_Conforme.Controllers{
 
                     ADDisposicionProductoNoConforme oDisposicion = new ADDisposicionProductoNoConforme();
                     if (oDisposicion.insertarDisposicionProductoNoConforme(disposicion)){
-                        ViewBag.Menasaje = "Se insertó el usuario correctamente";
+                        ViewBag.Mensaje = "Se insertó el Registro correctamente";
                     }else{
-                        ViewBag.Menasaje = "No se insertó el usuario";
+                        ViewBag.Mensaje = "No se insertó el Registro";
                     }
 
                 }
@@ -35,13 +37,14 @@ namespace Disposicion_Producto_No_Conforme.Controllers{
             return View();
         }
 
-        //get: disposicionProductoNoConforme/modificarDisposicionProductoNoConforme/5
+        //MODIFICAR:
         public ActionResult modificarDisposicionProductoNoConforme(int id){
 
             ADDisposicionProductoNoConforme oUsuario = new ADDisposicionProductoNoConforme();
             return View(oUsuario.listarDisposicionProductoNoConforme().Find(dis => dis.Id_Disposicion_Producto_No_Conforme == id));
         }
 
+        //MODIFICAR:
         [HttpPost]
         public ActionResult modificarDisposicionProductoNoConforme(int id, Disposicion_Producto_No_Conforme.Models.DisposicionProductoNoConforme disposicion){
 
@@ -50,14 +53,15 @@ namespace Disposicion_Producto_No_Conforme.Controllers{
             return RedirectToAction("Listado");
         }
 
+        //ELIMINAR:
         public ActionResult eliminarDisposicionProductoNoConforme(int id){
 
             try{
                 ADDisposicionProductoNoConforme oDisposicion = new ADDisposicionProductoNoConforme();
                 if (oDisposicion.eliminarDisposicionProductoNoConforme(id)){
-                    ViewBag.Mensaje = "Registro de Usuario Eliminado";
+                    ViewBag.Mensaje = "Registro Eliminado";
                 }else{
-                    ViewBag.Mensaje = "Ocurrió un error al Eliminar el Registro de Usuario";
+                    ViewBag.Mensaje = "No se insertó el Registro";
                 }
                 return RedirectToAction("Listado");
             }catch{

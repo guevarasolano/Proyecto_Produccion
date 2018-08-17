@@ -13,6 +13,7 @@ namespace Brix.Controllers{
             ADBrix oBrix = new ADBrix();
             ModelState.Clear();
             return View(oBrix.listarBrix());
+
         }
 
         public ActionResult agregarBrix(Brix.Models.EBrix brix){
@@ -21,16 +22,16 @@ namespace Brix.Controllers{
                 if (ModelState.IsValid){
                     ADBrix oBrix = new ADBrix();
                     if (oBrix.insertarBrix(brix)){
-                        ViewBag.Menasaje = "Se insertó el cliente correctamente";
+                        ViewBag.Mensaje = "Se insertó el Registro correctamente";
                     }
                     else{
-                        ViewBag.Menasaje = "No se insertó el cliente";
+                        ViewBag.Mensaje = "No se insertó el Registro";
                     }
 
                 }
             }
-            catch (Exception ex){
-                ex = null;
+            catch {
+
             }
             return View();
         }
@@ -55,14 +56,15 @@ namespace Brix.Controllers{
             try{
                 ADBrix oBrix = new ADBrix();
                 if (oBrix.eliminarBrix(id)){
-                    ViewBag.Mensaje = "Registro de Brix Eliminado";
+                    ViewBag.Mensaje = "Registro Eliminado";
                 }
                 else{
-                    ViewBag.Mensaje = "Ocurrió un error al Eliminar el Registro de Brix";
+                    ViewBag.Mensaje = "Ocurrió un error al Eliminar el Registro";
                 }
                 return RedirectToAction("Listado");
-            }
-            catch{
+
+            }catch{
+
                 return View();
             }
         }

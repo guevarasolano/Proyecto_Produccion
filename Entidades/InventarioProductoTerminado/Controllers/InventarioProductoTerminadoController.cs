@@ -9,13 +9,16 @@ namespace InventarioProductoTerminado.Controllers{
 
     public class InventarioProductoTerminadoController : Controller{
 
+        //LISTAR:
         public ActionResult Listado(){
 
             ADInventarioProductoTerminado oInventario = new ADInventarioProductoTerminado();
             ModelState.Clear();
             return View(oInventario.listarInventarioProductoTerminado());
+
         }
 
+        //AGREGAR:
         public ActionResult agregarInventarioProductoTerminado(InventarioProductoTerminado.Models.InventarioProductoTerminado inventario){
 
             try{
@@ -23,47 +26,50 @@ namespace InventarioProductoTerminado.Controllers{
 
                     ADInventarioProductoTerminado oInventario = new ADInventarioProductoTerminado();
                     if (oInventario.insertarInventarioProductoTerminado(inventario)){
-                        ViewBag.Menasaje = "Se insertó el Registro correctamente";
+                        ViewBag.Mensaje = "Se insertó el Registro correctamente";
                     }else{
-                        ViewBag.Menasaje = "No se insertó el Registro";
+                        ViewBag.Mensaje = "No se insertó el Registro";
                     }
 
                 }
             }
-            catch (Exception ex){
-                ex = null;
+            catch {
+
             }
             return View();
         }
 
-        //get: inventarioProductoTerminado/modificarInventarioProductoTerminado/5
+        //MODIFICAR:
         public ActionResult modificarInventarioProductoTerminado(int id){
 
             ADInventarioProductoTerminado oInventario = new ADInventarioProductoTerminado();
             return View(oInventario.listarInventarioProductoTerminado().Find(inv => inv.Id_Inventario_Producto_Terminado == id));
+
         }
 
+        //MODIFICAR:
         [HttpPost]
         public ActionResult modificarInventarioProductoTerminado(int id, InventarioProductoTerminado.Models.InventarioProductoTerminado inventario){
 
             ADInventarioProductoTerminado oInventario = new ADInventarioProductoTerminado();
             oInventario.actualizarInventarioProductoTerminado(inventario);
             return RedirectToAction("Listado");
+
         }
 
+        //ELIMINAR:
         public ActionResult eliminarInventarioProductoTerminado(int id){
 
             try{
                 ADInventarioProductoTerminado oInventario = new ADInventarioProductoTerminado();
-                if (oInventario.eliminarInventarioProductoTerminado(id))
-                {
+                if (oInventario.eliminarInventarioProductoTerminado(id)){
                     ViewBag.Mensaje = "Registro Eliminado";
                 }else{
-                    ViewBag.Mensaje = "Ocurrió un error al Eliminar el Registro";
+                    ViewBag.Mensaje = "No se insertó el Registro";
                 }
                 return RedirectToAction("Listado");
-            }
-            catch{
+            }catch{
+
                 return View();
             }
         }

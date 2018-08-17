@@ -9,13 +9,16 @@ namespace Producto_No_Conforme.Controllers{
 
     public class ProductoNoConformeController : Controller{
 
+        //LISTAR:
         public ActionResult Listado(){
 
             ADProductoNoConforme oPro = new ADProductoNoConforme();
             ModelState.Clear();
             return View(oPro.listarProductoNoConforme());
+
         }
 
+        //AGREGAR:
         public ActionResult agregarProductoNoConforme(Producto_No_Conforme.Models.ProductoNoConforme proceso){
 
             try{
@@ -29,27 +32,31 @@ namespace Producto_No_Conforme.Controllers{
                     }
 
                 }
-            }catch (Exception ex){
-                ex = null;
+            }catch {
+
             }
             return View();
         }
 
-        //get: productoNoConforme/modificarProductoNoConforme/5
+        //MODIFICAR:
         public ActionResult modificarProductoNoConforme(int id){
 
             ADProductoNoConforme oPro = new ADProductoNoConforme();
             return View(oPro.listarProductoNoConforme().Find(pro => pro.Id_Producto_No_Conforme == id));
+
         }
 
+        //MODIFICAR:
         [HttpPost]
         public ActionResult modificarProductoNoConforme(int id, Producto_No_Conforme.Models.ProductoNoConforme proceso){
 
             ADProductoNoConforme oPro = new ADProductoNoConforme();
             oPro.actualizarProductoNoConforme(proceso);
             return RedirectToAction("Listado");
+
         }
 
+        //ELIMINAR:
         public ActionResult eliminarProductoNoConforme(int id){
 
             try{
@@ -57,7 +64,7 @@ namespace Producto_No_Conforme.Controllers{
                 if (oPro.eliminarProductoNoConforme(id)){
                     ViewBag.Mensaje = "Registro Eliminado";
                 }else{
-                    ViewBag.Mensaje = "Ocurrió un error al Eliminar el Registro";
+                    ViewBag.Mensaje = "No se insertó el Registro";
                 }
                 return RedirectToAction("Listado");
             }catch{

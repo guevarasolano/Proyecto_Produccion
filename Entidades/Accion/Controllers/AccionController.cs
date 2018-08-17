@@ -5,7 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 
     public class AccionController : Controller{
-
+    
+    //LISTADO:
     public ActionResult Listado(){
 
         ADAccion oAccion = new ADAccion();
@@ -13,6 +14,7 @@ using System.Web.Mvc;
         return View(oAccion.listarAccion());
     }
 
+    //AGREGAR:
     public ActionResult agregarAccion(Accion.Models.Accion accion){
 
         try{
@@ -20,25 +22,26 @@ using System.Web.Mvc;
 
                 ADAccion oAplicacion = new ADAccion();
                 if (oAplicacion.insertarAccion(accion)){
-                    ViewBag.Menasaje = "Se insertó la Accion correctamente";
+                    ViewBag.Mensaje = "Se insertó el Registro correctamente";
                 }else{
-                    ViewBag.Menasaje = "No se insertó la Accion";
+                    ViewBag.Mensaje = "No se insertó el Registro";
                 }
 
             }
-        }catch (Exception ex){
-            ex = null;
+        }catch {
+
         }
         return View();
     }
 
-    //get: accion/modificarAccion/5
+    //MODIFICAR:
     public ActionResult modificarAccion(int id){
 
         ADAccion oAccion = new ADAccion();
         return View(oAccion.listarAccion().Find(acc => acc.Id_Accion == id));
     }
 
+    //MODIFICAR:
     [HttpPost]
     public ActionResult modificarAccion(int id, Accion.Models.Accion accion){
 
@@ -47,23 +50,23 @@ using System.Web.Mvc;
         return RedirectToAction("Listado");
     }
 
+    //ELIMINAR:
     public ActionResult eliminarAccion(int id){
 
         try{
             ADAccion oAccion = new ADAccion();
             if (oAccion.eliminarAccion(id)){
-                ViewBag.Mensaje = "Registro de Accion Eliminado";
+                ViewBag.Mensaje = "Registro Eliminado";
 
-                return View();
             }else{
-                ViewBag.Mensaje = "Ocurrió un error al Eliminar el Registro de Accion";
+                ViewBag.Mensaje = "Ocurrió un error al Eliminar el Registro";
             }
-            //return RedirectToAction("Listado");
-            return RedirectToAction("Listado");
-        }catch{
 
-            Console.Write("Hola mundo");
             return RedirectToAction("Listado");
+
+        }catch {
+
+            return View();
 
         }
     }

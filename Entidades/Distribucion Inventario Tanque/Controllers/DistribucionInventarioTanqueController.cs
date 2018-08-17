@@ -7,13 +7,16 @@ using System.Web.Mvc;
 
     public class DistribucionInventarioTanqueController : Controller{
 
+    //LISTAR:
     public ActionResult Listado(){
 
         ADDistribucionInventarioTanque oDistribucion = new ADDistribucionInventarioTanque();
         ModelState.Clear();
         return View(oDistribucion.listarDistribucionInventarioTanque());
+
     }
 
+    //AGREGAR:
     public ActionResult agregarDistribucionInventarioTanque(DistribucionInventarioTanque distribucion){
 
         try{
@@ -21,9 +24,9 @@ using System.Web.Mvc;
 
                 ADDistribucionInventarioTanque oDistribucion = new ADDistribucionInventarioTanque();
                 if (oDistribucion.insertarDistribucionInventarioTanque(distribucion)){
-                    ViewBag.Menasaje = "Se insertó el Registro correctamente";
+                    ViewBag.Mensaje = "Se insertó el Registro correctamente";
                 }else{
-                    ViewBag.Menasaje = "No se insertó el Registro";
+                    ViewBag.Mensaje = "No se insertó el Registro";
                 }
 
             }
@@ -33,13 +36,15 @@ using System.Web.Mvc;
         return View();
     }
 
-    //get: distribucionInventarioTanque/modificarDistribucionInventarioTanque/5
+    //MODIFICAR:
     public ActionResult modificarDistribucionInventarioTanque(int id){
 
         ADDistribucionInventarioTanque oDistribucion = new ADDistribucionInventarioTanque();
         return View(oDistribucion.listarDistribucionInventarioTanque().Find(dis => dis.Id_Distribucion_Inventario_Tanque == id));
+
     }
 
+    //MODIFICAR:
     [HttpPost]
     public ActionResult modificarInDistribucionInventarioTanque(int id, DistribucionInventarioTanque distribucion){
 
@@ -48,6 +53,7 @@ using System.Web.Mvc;
         return RedirectToAction("Listado");
     }
 
+    //ELIMINAR:
     public ActionResult eliminarDistribucionInventarioTanque(int id){
 
         try{
@@ -55,10 +61,11 @@ using System.Web.Mvc;
             if (oDistribucion.eliminarDistribucionInventarioTanque(id)){
                 ViewBag.Mensaje = "Registro Eliminado";
             }else{
-                ViewBag.Mensaje = "Ocurrió un error al Eliminar el Registro";
+                ViewBag.Mensaje = "No se insertó el Registro";
             }
             return RedirectToAction("Listado");
         }catch{
+
             return View();
         }
     }

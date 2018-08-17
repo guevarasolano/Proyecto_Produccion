@@ -10,13 +10,16 @@ namespace Proceso_Maduracion.Controllers{
 
     public class ProcesoMaduracionController : Controller{
 
+        //LISTAR:
         public ActionResult Listado(){
 
             ADProcesoMaduracion oMaduracion = new ADProcesoMaduracion();
             ModelState.Clear();
             return View(oMaduracion.listarProcesoMaduracion());
+
         }
 
+        //AGREGAR:
         public ActionResult agregarProcesoMaduracion(ProcesoMaduracion maduracion){
 
             try{
@@ -24,33 +27,37 @@ namespace Proceso_Maduracion.Controllers{
 
                     ADProcesoMaduracion oMaduracion = new ADProcesoMaduracion();
                     if (oMaduracion.insertarProcesoMaduracion(maduracion)){
-                        ViewBag.Menasaje = "Se insertó el Registro correctamente";
+                        ViewBag.Mensaje = "Se insertó el Registro correctamente";
                     }else{
-                        ViewBag.Menasaje = "No se insertó el Registro";
+                        ViewBag.Mensaje = "No se insertó el Registro";
                     }
 
                 }
-            }catch (Exception ex){
-                ex = null;
+            }catch {
+
             }
             return View();
         }
 
-        //get: procesoMaduracion/modificarProcesoMaduracion/5
+        //MODIFICAR:
         public ActionResult modificarProcesoMaduracion(int id){
 
             ADProcesoMaduracion oMaduracion = new ADProcesoMaduracion();
             return View(oMaduracion.listarProcesoMaduracion().Find(mad => mad.Id_Proceso_Maduracion == id));
+
         }
 
+        //MODIFICAR:
         [HttpPost]
         public ActionResult modificarProcesoMaduracion(int id, ProcesoMaduracion maduracion){
 
             ADProcesoMaduracion oMaduracion = new ADProcesoMaduracion();
             oMaduracion.actualizarProcesoMaduracion(maduracion);
             return RedirectToAction("Listado");
+
         }
 
+        //ELIMINAR:
         public ActionResult eliminarProcesoMaduracion(int id){
 
             try{
@@ -61,10 +68,11 @@ namespace Proceso_Maduracion.Controllers{
                     ViewBag.Mensaje = "Ocurrió un error al Eliminar el Registro";
                 }
                 return RedirectToAction("Listado");
-            }catch (Exception e){
+            }catch {
 
                 return View();
             }
         }
+
     }
 }

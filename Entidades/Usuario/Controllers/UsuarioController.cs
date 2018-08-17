@@ -8,6 +8,7 @@ namespace Usuario.Controllers{
 
     public class UsuarioController : Controller{
 
+        //LISTAR:
         public ActionResult Listado(){
 
             ADUsuario oUsuario = new ADUsuario();
@@ -15,6 +16,7 @@ namespace Usuario.Controllers{
             return View(oUsuario.listarUsuario());
         }
 
+        //AGREGAR:
         public ActionResult agregarUsuario(Usuario.Models.Usuario usuario){
 
             try{
@@ -22,44 +24,48 @@ namespace Usuario.Controllers{
 
                     ADUsuario oUsuario = new ADUsuario();
                     if (oUsuario.insertarUsuario(usuario)){
-                        ViewBag.Menasaje = "Se insertó el usuario correctamente";
+                        ViewBag.Mensaje = "Se insertó el Registro Correctamente";
                     }
                     else{
-                        ViewBag.Menasaje = "No se insertó el usuario";
+                        ViewBag.Mensaje = "No se insertó el Registro";
                     }
 
                 }
             }
-            catch (Exception ex){
-                ex = null;
+            catch {
+
             }
             return View();
         }
 
-        //get: aplicacion/modificarAplicacion/5
+        //MODIFICAR:
         public ActionResult modificarUsuario(int id){
 
             ADUsuario oUsuario = new ADUsuario();
             return View(oUsuario.listarUsuario().Find(usu => usu.Id_Usuario == id));
+
         }
 
+        //MODIFICAR:
         [HttpPost]
         public ActionResult modificarUsuario(int id, Usuario.Models.Usuario usuario){
 
             ADUsuario oUsuario = new ADUsuario();
             oUsuario.actualizarUsuario(usuario);
             return RedirectToAction("Listado");
+
         }
 
+        //ELIMINAR:
         public ActionResult eliminarUsuario(int id){
 
             try{
                 ADUsuario oUsuario = new ADUsuario();
                 if (oUsuario.eliminarUsuario(id)){
-                    ViewBag.Mensaje = "Registro de Usuario Eliminado";
+                    ViewBag.Mensaje = "Registro Eliminado";
                 }
                 else{
-                    ViewBag.Mensaje = "Ocurrió un error al Eliminar el Registro de Usuario";
+                    ViewBag.Mensaje = "No se insertó el Registro";
                 }
                 return RedirectToAction("Listado");
             }
