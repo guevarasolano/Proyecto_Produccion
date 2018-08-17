@@ -16,7 +16,7 @@ namespace Proceso_Llenado
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "ProcesoLlenado", action = "Listado", id = UrlParameter.Optional }
             );
         }
     }

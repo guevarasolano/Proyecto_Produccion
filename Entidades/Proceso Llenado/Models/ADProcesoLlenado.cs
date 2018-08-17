@@ -8,7 +8,7 @@ using System.Web;
 
     public class ADProcesoLlenado{
 
-    public void insertarProcesoLlenado(ProcesoLlenado proceso_Llenado){
+    public Boolean insertarProcesoLlenado(ProcesoLlenado proceso_Llenado){
 
         Conexion aux = new Conexion();
         SqlCommand cmd = new SqlCommand();
@@ -35,8 +35,13 @@ using System.Web;
         cmd.Parameters.Add(new SqlParameter("@Fecha_Modificacion", proceso_Llenado.Fecha_Modificacion));
         cmd.CommandText = "InsertarProcesoLlenado";
         cmd.CommandType = CommandType.StoredProcedure;
-        cmd.ExecuteNonQuery();
+        int x = cmd.ExecuteNonQuery();
         aux.conectar();
+        if (x >= 1){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     public void actualizarProcesoLlenado(ProcesoLlenado proceso_Llenado){
@@ -71,7 +76,7 @@ using System.Web;
         aux.conectar();
     }
 
-    public void eliminarProcesoLlenado(int Id_Proceso_Llenado){
+    public Boolean eliminarProcesoLlenado(int Id_Proceso_Llenado){
 
         Conexion aux = new Conexion();
         SqlCommand cmd = new SqlCommand();
@@ -79,13 +84,18 @@ using System.Web;
         cmd.Parameters.Add(new SqlParameter("@Id_Proceso_Llenado", Id_Proceso_Llenado));
         cmd.CommandText = "EliminarProcesoLlenado";
         cmd.CommandType = CommandType.StoredProcedure;
-        cmd.ExecuteNonQuery();
+        int x = cmd.ExecuteNonQuery();
         aux.conectar();
-
+        if (x >= 1){
+            return true;
+        }else{
+            return false;
+        }
     }
 
-    public List<ProcesoLlenado> buscarProcesoLlenado(int Id_Proceso_Llenado){
+    public ProcesoLlenado buscarProcesoLlenado(int Id_Proceso_Llenado){
 
+        ProcesoLlenado procesoLlenado = new ProcesoLlenado();
         Conexion aux = new Conexion();
         SqlCommand cmd = new SqlCommand();
         cmd.Connection = aux.conectar();
@@ -93,10 +103,8 @@ using System.Web;
         cmd.CommandText = "ConsultarProcesoLlenado";
         cmd.CommandType = CommandType.StoredProcedure;
         SqlDataReader dr = cmd.ExecuteReader();
-        List<ProcesoLlenado> lista = new List<ProcesoLlenado>();
-        ProcesoLlenado procesoLlenado = new ProcesoLlenado();
 
-        while (dr.Read()){
+        if (dr.Read()){
 
             procesoLlenado.Id_Proceso_Llenado = Convert.ToInt32(dr["Id_Proceso_Llenado"].ToString());
             procesoLlenado.FK_Id_Articulo_SAP = Convert.ToInt32(dr["FK_Id_Articulo_SAP"].ToString());
@@ -120,13 +128,14 @@ using System.Web;
             procesoLlenado.Usuario_Modificacion = dr["Usuario_Modificacion"].ToString();
             procesoLlenado.Fecha_Modificacion = Convert.ToDateTime(dr["Fecha_Modificacion"].ToString());
 
-            lista.Add(procesoLlenado);
+        }else{
+            procesoLlenado = null;
         }
         aux.conectar();
-        return lista;
+        return procesoLlenado;
     }
 
-    public List<ProcesoLlenado> listar(){
+    public List<ProcesoLlenado> listarProcesoLlenado(){
 
         Conexion aux = new Conexion();
         SqlCommand cmd = new SqlCommand();
