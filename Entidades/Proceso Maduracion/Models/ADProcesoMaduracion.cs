@@ -1,5 +1,4 @@
-﻿using AccesoDatos;
-using Proceso_Maduracion.Models;
+﻿using Proceso_Maduracion.Models;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Prueba{
+namespace Proceso_Maduracion.Models{
 
     public class ADProcesoMaduracion{
 
+        //MÉTODO PARA INSERTAR PROCESO MADURACIÓN:
         public Boolean insertarProcesoMaduracion(ProcesoMaduracion proceso_Maduracion){
 
             Conexion aux = new Conexion();
@@ -40,6 +40,7 @@ namespace Prueba{
             }
         }
 
+        //MÉTODO PARA ACTUALIZAR PROCESO MADURACIÓN:
         public void actualizarProcesoMaduracion(ProcesoMaduracion proceso_Maduracion){
 
             Conexion aux = new Conexion();
@@ -64,6 +65,7 @@ namespace Prueba{
             aux.conectar();
         }
 
+        //MÉTODO PARA ELIMINAR PROCESO MADURACIÓN:
         public Boolean eliminarProcesoMaduracion(int Id_Proceso_Maduracion){
 
             Conexion aux = new Conexion();
@@ -81,7 +83,7 @@ namespace Prueba{
             }
         }
 
-
+        //MÉTODO PARA BUSCAR PROCESO MADURACIÓN:
         public ProcesoMaduracion buscarProcesoMaduracion(int Id_Proceso_Maduracion){
 
             ProcesoMaduracion proceso_Maduracion = new ProcesoMaduracion();
@@ -116,6 +118,7 @@ namespace Prueba{
             return proceso_Maduracion;
         }
 
+        //MÉTODO PARA LISTAR PROCESO MADURACIÓN:
         public List<ProcesoMaduracion> listarProcesoMaduracion(){
 
             Conexion aux = new Conexion();

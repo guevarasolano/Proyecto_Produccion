@@ -1,5 +1,4 @@
-﻿using AccesoDatos;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -7,11 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Prueba{
+namespace Disposicion_Producto_No_Conforme.Models { 
 
     public class ADDisposicionProductoNoConforme{
 
-        public Boolean insertarDisposicionProductoNoConforme(Disposicion_Producto_No_Conforme.Models.DisposicionProductoNoConforme disposicion_Producto_No_Conforme){
+        //MÉTODO PARA INSERTAR DISPOSICION PRODUCTO NO CONFORME:
+        public Boolean insertarDisposicionProductoNoConforme(DisposicionProductoNoConforme disposicion_Producto_No_Conforme){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -40,7 +40,8 @@ namespace Prueba{
             }
         }
 
-        public void actualizarDisposicionProductoNoConforme(Disposicion_Producto_No_Conforme.Models.DisposicionProductoNoConforme disposicion_Producto_No_Conforme){
+        //MÉTODO PARA ACTUALIZAR DISPOSICION PRODUCTO NO CONFORME:
+        public void actualizarDisposicionProductoNoConforme(DisposicionProductoNoConforme disposicion_Producto_No_Conforme){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -65,6 +66,7 @@ namespace Prueba{
             aux.conectar();
         }
 
+        //MÉTODO PARA ELIMINAR DISPOSICION PRODUCTO NO CONFORME:
         public Boolean eliminarDisposicionProductoNoConforme(int Id_Disposicion_Producto_No_Conforme){
 
             Conexion aux = new Conexion();
@@ -82,9 +84,10 @@ namespace Prueba{
             }
         }
 
-        public Disposicion_Producto_No_Conforme.Models.DisposicionProductoNoConforme buscarDisposicionProductoNoConforme(int Id_Disposicion_Producto_No_Conforme){
+        //MÉTODO PARA BUSCAR DISPOSICION PRODUCTO NO CONFORME:
+        public DisposicionProductoNoConforme buscarDisposicionProductoNoConforme(int Id_Disposicion_Producto_No_Conforme){
 
-            Disposicion_Producto_No_Conforme.Models.DisposicionProductoNoConforme disposicionProductoNoConforme = new Disposicion_Producto_No_Conforme.Models.DisposicionProductoNoConforme();
+            DisposicionProductoNoConforme disposicionProductoNoConforme = new DisposicionProductoNoConforme();
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = aux.conectar();
@@ -117,7 +120,8 @@ namespace Prueba{
             return disposicionProductoNoConforme;
         }
 
-        public List<Disposicion_Producto_No_Conforme.Models.DisposicionProductoNoConforme> listarDisposicionProductoNoConforme(){
+        //MÉTODO PARA LISTAR DISPOSICION PRODUCTO NO CONFORME:
+        public List<DisposicionProductoNoConforme> listarDisposicionProductoNoConforme(){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -125,11 +129,11 @@ namespace Prueba{
             cmd.CommandText = "ListarDisposicionProductoNoConforme";
             cmd.CommandType = CommandType.StoredProcedure;
             SqlDataReader dr = cmd.ExecuteReader();
-            List<Disposicion_Producto_No_Conforme.Models.DisposicionProductoNoConforme> lista = new List<Disposicion_Producto_No_Conforme.Models.DisposicionProductoNoConforme>();
+            List<DisposicionProductoNoConforme> lista = new List<DisposicionProductoNoConforme>();
 
             while (dr.Read()){
 
-                Disposicion_Producto_No_Conforme.Models.DisposicionProductoNoConforme disposicionProductoNoConforme = new Disposicion_Producto_No_Conforme.Models.DisposicionProductoNoConforme();
+                DisposicionProductoNoConforme disposicionProductoNoConforme = new DisposicionProductoNoConforme();
 
                 disposicionProductoNoConforme.Id_Disposicion_Producto_No_Conforme = Convert.ToInt32(dr["Id_Disposicion_Producto_No_Conforme"].ToString());
                 disposicionProductoNoConforme.FK_Id_Producto_No_Conforme = Convert.ToInt32(dr["FK_Id_Producto_No_Conforme"].ToString());
@@ -154,4 +158,5 @@ namespace Prueba{
         }
 
     }
+
 }

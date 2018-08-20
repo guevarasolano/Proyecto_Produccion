@@ -1,12 +1,9 @@
 ﻿using Proceso_BP_BJC.Models;
-using Prueba;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
-namespace Proceso_BP_BJC.Controllers{
 
     public class ProcesoBPBJCController : Controller{
 
@@ -73,4 +70,3 @@ namespace Proceso_BP_BJC.Controllers{
         }
 
     }
-}

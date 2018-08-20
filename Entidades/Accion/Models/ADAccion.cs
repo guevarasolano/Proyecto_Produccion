@@ -1,14 +1,16 @@
-﻿using AccesoDatos;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 
+namespace Accion.Models { 
+
     public class ADAccion{
 
-    public Boolean insertarAccion(Accion.Models.Accion accion){
+    //MÉTODO PARA INSERTAR ACCIÓN:
+    public Boolean insertarAccion(Accion accion){
 
         Conexion aux = new Conexion();
         SqlCommand cmd = new SqlCommand();
@@ -33,7 +35,8 @@ using System.Web;
         }
     }
 
-    public void actualizarAccion(Accion.Models.Accion accion){
+    //MÉTODO PARA ACTUALIZAR ACCIÓN:
+    public void actualizarAccion(Accion accion){
 
         Conexion aux = new Conexion();
         SqlCommand cmd = new SqlCommand();
@@ -54,6 +57,7 @@ using System.Web;
         aux.conectar();
     }
 
+    //MÉTODO PARA ELIMINAR ACCIÓN:
     public bool eliminarAccion(int Id_Accion){
 
         Conexion aux = new Conexion();
@@ -71,9 +75,10 @@ using System.Web;
         }
     }
 
-    public Accion.Models.Accion buscarAccion(int Id_Accion){
+    //MÉTODO PARA BUSCAR ACCIÓN:
+    public Accion buscarAccion(int Id_Accion){
 
-        Accion.Models.Accion accion = new Accion.Models.Accion();
+        Accion accion = new Accion();
         Conexion aux = new Conexion();
         SqlCommand cmd = new SqlCommand();
         cmd.Connection = aux.conectar();
@@ -102,7 +107,8 @@ using System.Web;
         return accion;
     }
 
-    public List<Accion.Models.Accion> listarAccion(){
+    //MÉTODO PARA LISTAR ACCIÓN:
+    public List<Accion> listarAccion(){
 
         Conexion aux = new Conexion();
         SqlCommand cmd = new SqlCommand();
@@ -110,11 +116,11 @@ using System.Web;
         cmd.CommandText = "ListarAccion";
         cmd.CommandType = CommandType.StoredProcedure;
         SqlDataReader dr = cmd.ExecuteReader();
-        List<Accion.Models.Accion> lista = new List<Accion.Models.Accion>();
+        List<Accion> lista = new List<Accion>();
 
         while (dr.Read()){
 
-            Accion.Models.Accion accion = new Accion.Models.Accion();
+            Accion accion = new Accion();
 
             accion.Id_Accion = Convert.ToInt32(dr["Id_Accion"].ToString());
             accion.FK_Id_Modulo = Convert.ToInt32(dr["FK_Id_Modulo"].ToString());
@@ -132,5 +138,7 @@ using System.Web;
         aux.conectar();
         return lista;
     }
+
+}
 
 }

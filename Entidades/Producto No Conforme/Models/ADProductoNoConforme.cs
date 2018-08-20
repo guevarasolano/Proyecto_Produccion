@@ -1,5 +1,4 @@
-﻿using AccesoDatos;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -7,11 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Prueba{
+namespace Producto_No_Conforme.Models{
 
     public class ADProductoNoConforme{
 
-        public Boolean insertarProductoNoConforme(Producto_No_Conforme.Models.ProductoNoConforme producto_No_Conforme){
+        public Boolean insertarProductoNoConforme(ProductoNoConforme producto_No_Conforme){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -48,7 +47,7 @@ namespace Prueba{
             }
         }
 
-        public void actualizarProductoNoConforme(Producto_No_Conforme.Models.ProductoNoConforme producto_No_Conforme){
+        public void actualizarProductoNoConforme(ProductoNoConforme producto_No_Conforme){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -98,9 +97,9 @@ namespace Prueba{
             }
         }
 
-        public Producto_No_Conforme.Models.ProductoNoConforme buscarProductoNoConforme(int Id_Producto_No_Conforme){
+        public ProductoNoConforme buscarProductoNoConforme(int Id_Producto_No_Conforme){
 
-            Producto_No_Conforme.Models.ProductoNoConforme productoNoConforme = new Producto_No_Conforme.Models.ProductoNoConforme();
+            ProductoNoConforme productoNoConforme = new ProductoNoConforme();
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = aux.conectar();
@@ -141,7 +140,7 @@ namespace Prueba{
             return productoNoConforme;
         }
 
-        public List<Producto_No_Conforme.Models.ProductoNoConforme> listarProductoNoConforme(){
+        public List<ProductoNoConforme> listarProductoNoConforme(){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -149,11 +148,11 @@ namespace Prueba{
             cmd.CommandText = "ListarProductoNoConforme";
             cmd.CommandType = CommandType.StoredProcedure;
             SqlDataReader dr = cmd.ExecuteReader();
-            List<Producto_No_Conforme.Models.ProductoNoConforme> lista = new List<Producto_No_Conforme.Models.ProductoNoConforme>();
+            List<ProductoNoConforme> lista = new List<ProductoNoConforme>();
 
             while (dr.Read()){
 
-                Producto_No_Conforme.Models.ProductoNoConforme productoNoConforme = new Producto_No_Conforme.Models.ProductoNoConforme();
+                ProductoNoConforme productoNoConforme = new ProductoNoConforme();
 
                 productoNoConforme.Id_Producto_No_Conforme = Convert.ToInt32(dr["Id_Producto_No_Conforme"].ToString());
                 productoNoConforme.FK_Id_Articulo_SAP = Convert.ToInt32(dr["FK_Id_Articulo_SAP"].ToString());

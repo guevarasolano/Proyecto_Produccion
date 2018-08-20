@@ -1,11 +1,9 @@
-﻿using Prueba;
+﻿using Rol.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
-namespace Rol.Controllers{
 
     public class RolController : Controller{
 
@@ -74,4 +72,3 @@ namespace Rol.Controllers{
         }
 
     }
-}

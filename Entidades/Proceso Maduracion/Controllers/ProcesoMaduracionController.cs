@@ -1,12 +1,9 @@
 ﻿using Proceso_Maduracion.Models;
-using Prueba;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
-namespace Proceso_Maduracion.Controllers{
 
     public class ProcesoMaduracionController : Controller{
 
@@ -75,4 +72,3 @@ namespace Proceso_Maduracion.Controllers{
         }
 
     }
-}

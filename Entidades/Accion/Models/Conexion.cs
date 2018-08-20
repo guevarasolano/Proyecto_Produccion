@@ -7,8 +7,6 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Configuration;
 
-namespace AccesoDatos{
-
     public class Conexion{
 
         public SqlConnection conectar() { 
@@ -42,4 +40,4 @@ namespace AccesoDatos{
         }
 
     }
-}
+

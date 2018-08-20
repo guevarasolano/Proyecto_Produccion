@@ -1,13 +1,13 @@
-﻿using System;
+﻿using Brix.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Brix.Controllers{
-
     public class BrixController : Controller{
         
+        //LISTAR:
         public ActionResult Listado(){
 
             ADBrix oBrix = new ADBrix();
@@ -16,6 +16,7 @@ namespace Brix.Controllers{
 
         }
 
+        //AGREGAR:
         public ActionResult agregarBrix(Brix.Models.EBrix brix){
 
             try{
@@ -36,13 +37,14 @@ namespace Brix.Controllers{
             return View();
         }
         
-        //get: brix/modificarBrix/5
+        //MODIFICAR:
         public ActionResult modificarBrix(int id){
 
             ADBrix oBrix = new ADBrix();
             return View(oBrix.listarBrix().Find(bri => bri.Id_Brix == id));
         }
 
+        //MODIFICAR:
         [HttpPost]
         public ActionResult modificarBrix(int id, Brix.Models.EBrix brix){
 
@@ -51,6 +53,7 @@ namespace Brix.Controllers{
             return RedirectToAction("Listado");
         }
 
+        //ELIMINAR:
         public ActionResult eliminarBrix(int id){
 
             try{
@@ -67,7 +70,7 @@ namespace Brix.Controllers{
 
                 return View();
             }
-        }
+         }
         
        }
-    }
+    

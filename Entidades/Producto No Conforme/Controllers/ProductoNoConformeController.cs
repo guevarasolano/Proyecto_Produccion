@@ -1,11 +1,9 @@
-﻿using Prueba;
+﻿using Producto_No_Conforme.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
-namespace Producto_No_Conforme.Controllers{
 
     public class ProductoNoConformeController : Controller{
 
@@ -73,4 +71,3 @@ namespace Producto_No_Conforme.Controllers{
         }
 
     }
-}

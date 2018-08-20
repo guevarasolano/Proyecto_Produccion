@@ -1,5 +1,4 @@
-﻿using AccesoDatos;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -10,6 +9,7 @@ namespace SAP_Produccion_Info.Models{
 
     public class ADSAPProduccionInfo{
 
+        //MÉTODO PARA INSERTAR SAP PRODUCCIÓN INFO:
         public Boolean insertarSAPProduccionInfo(SAPProduccionInfo sap){
 
             Conexion aux = new Conexion();
@@ -35,6 +35,7 @@ namespace SAP_Produccion_Info.Models{
             }
         }
 
+        //MÉTODO PARA ACTUALIZAR SAP PRODUCCIÓN INFO:
         public void actualizarSAPProduccionInfo(SAPProduccionInfo sap){
 
             Conexion aux = new Conexion();
@@ -56,6 +57,7 @@ namespace SAP_Produccion_Info.Models{
             aux.conectar();
         }
 
+        //MÉTODO PARA ELIMINAR SAP PRODUCCIÓN INFO:
         public bool eliminarSAPProduccionInfo(int Id_SAP_Produccion_Info){
 
             Conexion aux = new Conexion();
@@ -73,6 +75,7 @@ namespace SAP_Produccion_Info.Models{
             }
         }
 
+        //MÉTODO PARA BUSCAR SAP PRODUCCIÓN INFO:
         public SAPProduccionInfo buscarSAPProduccionInfo(int Id_SAP_Produccion_Info){
 
             SAPProduccionInfo sap = new SAPProduccionInfo();
@@ -104,6 +107,7 @@ namespace SAP_Produccion_Info.Models{
             return sap;
         }
 
+        //MÉTODO PARA LISTAR SAP PRODUCCIÓN INFO:
         public List<SAPProduccionInfo> listarSAPProduccionInfo(){
 
             Conexion aux = new Conexion();

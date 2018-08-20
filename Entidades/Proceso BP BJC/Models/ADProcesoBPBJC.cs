@@ -1,5 +1,4 @@
-﻿using AccesoDatos;
-using Proceso_BP_BJC.Models;
+﻿using Proceso_BP_BJC.Models;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Prueba{
+namespace Proceso_BP_BJC.Models { 
 
     public class ADProcesoBPBJC{
 
+        //MÉTODO PARA INSERTAR PROCESOBPBJC:
         public Boolean insertarProcesoBPBJC(ProcesoBPBJC proceso_BP_BJC){
 
             Conexion aux = new Conexion();
@@ -41,6 +41,7 @@ namespace Prueba{
             }
         }
 
+        //MÉTODO PARA ACTUALIZAR PROCESOBPBJC:
         public void actualizarProcesoBPBJC(ProcesoBPBJC proceso_BP_BJC){
 
             Conexion aux = new Conexion();
@@ -66,6 +67,7 @@ namespace Prueba{
             aux.conectar();
         }
 
+        //MÉTODO PARA ELIMINAR PROCESOBPBJC:
         public Boolean eliminarProcesoBPBJC(int Id_Proceso_BP_BJC){
 
             Conexion aux = new Conexion();
@@ -83,6 +85,7 @@ namespace Prueba{
             }
         }
 
+        //MÉTODO PARA BUSCAR PROCESOBPBJC:
         public ProcesoBPBJC buscarProcesoBPBJC(int Id_Proceso_BP_BJC){
 
             ProcesoBPBJC proceso_BP_BJC = new ProcesoBPBJC();
@@ -118,6 +121,7 @@ namespace Prueba{
             return proceso_BP_BJC;
         }
 
+        //MÉTODO PARA LISTAR PROCESOBPBJC:
         public List<ProcesoBPBJC> listarProcesoBPBJC(){
 
             Conexion aux = new Conexion();
@@ -156,3 +160,5 @@ namespace Prueba{
 
     }
 }
+
+

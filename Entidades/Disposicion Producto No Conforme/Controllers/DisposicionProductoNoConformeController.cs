@@ -1,11 +1,9 @@
-﻿using Prueba;
+﻿using Disposicion_Producto_No_Conforme.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
-namespace Disposicion_Producto_No_Conforme.Controllers{
 
     public class DisposicionProductoNoConformeController : Controller{
 
@@ -70,4 +68,3 @@ namespace Disposicion_Producto_No_Conforme.Controllers{
         }
 
     }
-}

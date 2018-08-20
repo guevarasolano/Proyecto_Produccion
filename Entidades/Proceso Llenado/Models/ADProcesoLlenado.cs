@@ -1,13 +1,15 @@
-﻿using AccesoDatos;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 
+namespace Proceso_Llenado.Models { 
+
     public class ADProcesoLlenado{
 
+    //MÉTODO PARA INSERTAR PROCESO LLENADO:
     public Boolean insertarProcesoLlenado(ProcesoLlenado proceso_Llenado){
 
         Conexion aux = new Conexion();
@@ -44,6 +46,7 @@ using System.Web;
         }
     }
 
+    //MÉTODO PARA ACTUALIZAR PROCESO LLENADO:
     public void actualizarProcesoLlenado(ProcesoLlenado proceso_Llenado){
 
         Conexion aux = new Conexion();
@@ -76,6 +79,7 @@ using System.Web;
         aux.conectar();
     }
 
+    //MÉTODO PARA ELIMINAR PROCESO LLENADO:
     public Boolean eliminarProcesoLlenado(int Id_Proceso_Llenado){
 
         Conexion aux = new Conexion();
@@ -93,6 +97,7 @@ using System.Web;
         }
     }
 
+    //MÉTODO PARA BUSCAR PROCESO LLENADO:
     public ProcesoLlenado buscarProcesoLlenado(int Id_Proceso_Llenado){
 
         ProcesoLlenado procesoLlenado = new ProcesoLlenado();
@@ -135,6 +140,7 @@ using System.Web;
         return procesoLlenado;
     }
 
+    //MÉTODO PARA LISTAR PROCESO LLENADO:
     public List<ProcesoLlenado> listarProcesoLlenado(){
 
         Conexion aux = new Conexion();
@@ -177,5 +183,7 @@ using System.Web;
         return lista;
 
     }
+
+}
 
 }

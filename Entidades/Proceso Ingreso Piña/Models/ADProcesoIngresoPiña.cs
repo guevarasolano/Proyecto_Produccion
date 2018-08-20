@@ -1,5 +1,4 @@
-﻿using AccesoDatos;
-using Proceso_Ingreso_Piña.Models;
+﻿using Proceso_Ingreso_Piña.Models;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Prueba{
+namespace Proceso_Ingreso_Piña.Models{
 
     public class ADProcesoIngresoPiña{
 
+        //MÉTODO PARA INSERTAR PROCESO INGRESO PIÑA:
         public Boolean insertarProcesoIngresoPiña(ProcesoIngresoPiña proceso_Ingreso_Piña){
 
             Conexion aux = new Conexion();
@@ -36,6 +36,7 @@ namespace Prueba{
             }
         }
 
+        //MÉTODO PARA ACTUALIZAR PROCESO INGRESO PIÑA:
         public void actualizarProcesoIngresoPiña(ProcesoIngresoPiña proceso_Ingreso_Piña){
 
             Conexion aux = new Conexion();
@@ -56,6 +57,7 @@ namespace Prueba{
             aux.conectar();
         }
 
+        //MÉTODO PARA ELIMINAR PROCESO INGRESO PIÑA:
         public Boolean eliminarProcesoIngresoPiña(int Id_Proceso_Ingreso_Piña){
 
             Conexion aux = new Conexion();
@@ -73,6 +75,7 @@ namespace Prueba{
             }
         }
 
+        //MÉTODO PARA BUSCAR PROCESO INGRESO PIÑA:
         public ProcesoIngresoPiña buscarProcesoIngresoPiña(int Id_Proceso_Ingreso_Piña){
 
             ProcesoIngresoPiña proceso_Ingreso_Piña = new ProcesoIngresoPiña();
@@ -103,6 +106,7 @@ namespace Prueba{
             return proceso_Ingreso_Piña;
         }
 
+        //MÉTODO PARA LISTAR PROCESO INGRESO PIÑA:
         public List<ProcesoIngresoPiña> listarProcesoIngresoPiña(){
 
             Conexion aux = new Conexion();

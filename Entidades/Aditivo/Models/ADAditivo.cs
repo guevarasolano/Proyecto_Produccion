@@ -1,5 +1,4 @@
-﻿using AccesoDatos;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -7,11 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Prueba{
+namespace Aditivo.Models { 
 
     public class ADAditivo{
 
-        public Boolean insertarAditivo(Aditivo.Models.Aditivo aditivo){
+        //MÉTODO PARA INSERTAR ADITIVO:
+        public Boolean insertarAditivo(Aditivo aditivo){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -50,7 +50,8 @@ namespace Prueba{
             }
         }
 
-        public void actualizarAditivo(Aditivo.Models.Aditivo aditivo){
+        //MÉTODO PARA ACTUALIZAR ADITIVO:
+        public void actualizarAditivo(Aditivo aditivo){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -85,6 +86,7 @@ namespace Prueba{
             aux.conectar();
         }
 
+        //MÉTODO PARA ELIMINAR ADITIVO:
         public Boolean eliminarAditivo(int Id_Aditivo){
 
             Conexion aux = new Conexion();
@@ -102,9 +104,10 @@ namespace Prueba{
             }
         }
 
-        public Aditivo.Models.Aditivo buscarAditivo(int Id_Aditivo){
+        //MÉTODO PARA BUSCAR ADITIVO:
+        public Aditivo buscarAditivo(int Id_Aditivo){
 
-            Aditivo.Models.Aditivo aditivo = new Aditivo.Models.Aditivo();
+            Aditivo aditivo = new Aditivo();
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = aux.conectar();
@@ -147,7 +150,8 @@ namespace Prueba{
             return aditivo;
         }
 
-        public List<Aditivo.Models.Aditivo> listarAditivo(){
+        //MÉTODO PARA LISTAR ADITIVO:
+        public List<Aditivo> listarAditivo(){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -155,11 +159,11 @@ namespace Prueba{
             cmd.CommandText = "ListarAditivo";
             cmd.CommandType = CommandType.StoredProcedure;
             SqlDataReader dr = cmd.ExecuteReader();
-            List<Aditivo.Models.Aditivo> lista = new List<Aditivo.Models.Aditivo>();
+            List<Aditivo> lista = new List<Aditivo>();
 
             while (dr.Read()){
 
-                Aditivo.Models.Aditivo aditivo = new Aditivo.Models.Aditivo();
+                Aditivo aditivo = new Aditivo();
 
                 aditivo.Id_Aditivo = Convert.ToInt32(dr["Id_Aditivo"].ToString());
                 aditivo.FK_Id_Proceso_BP_BJC = Convert.ToInt32(dr["FK_Id_Proceso_BP_BJC"].ToString());
@@ -194,4 +198,5 @@ namespace Prueba{
         }
 
     }
+
 }

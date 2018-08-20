@@ -1,5 +1,4 @@
-﻿using AccesoDatos;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -10,6 +9,7 @@ namespace Modulo.Models{
 
     public class ADModulo{
 
+        //MÉTODO PARA INSERTAR MÓDULO:
         public Boolean insertarModulo(Modulo modulo){
 
             Conexion aux = new Conexion();
@@ -36,6 +36,7 @@ namespace Modulo.Models{
             }
         }
 
+        //MÉTODO PARA ACTUALIZAR MÓDULO:
         public void actualizarModulo(Modulo modulo){
 
             Conexion aux = new Conexion();
@@ -58,6 +59,7 @@ namespace Modulo.Models{
             aux.conectar();
         }
 
+        //MÉTODO PARA ELIMINAR MÓDULO:
         public bool eliminarModulo(int Id_Modulo){
 
             Conexion aux = new Conexion();
@@ -75,6 +77,7 @@ namespace Modulo.Models{
             }
         }
 
+        //MÉTODO PARA BUSCAR MÓDULO:
         public Modulo buscarModulo(int Id_Modulo){
 
             Modulo modulo = new Modulo();
@@ -107,6 +110,7 @@ namespace Modulo.Models{
             return modulo;
         }
 
+        //MÉTODO PARA LISTAR MÓDULO:
         public List<Modulo> listarModulo(){
 
             Conexion aux = new Conexion();

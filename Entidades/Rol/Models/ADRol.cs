@@ -1,5 +1,4 @@
-﻿using AccesoDatos;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -7,11 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Prueba{
+namespace Rol.Models{
 
     public class ADRol{
 
-        public Boolean insertarRol(Rol.Models.Rol rol){
+        //MÉTODO PARA INSERTAR ROL:
+        public Boolean insertarRol(Rol rol){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -35,7 +35,8 @@ namespace Prueba{
             }
         }
 
-        public void actualizarRol(Rol.Models.Rol rol){
+        //MÉTODO PARA ACTUALIZAR ROL:
+        public void actualizarRol(Rol rol){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -55,6 +56,7 @@ namespace Prueba{
             aux.conectar();
         }
 
+        //MÉTODO PARA ELIMINAR ROL:
         public Boolean eliminarRol(int Id_Rol){
 
             Conexion aux = new Conexion();
@@ -72,9 +74,10 @@ namespace Prueba{
             }
         }
 
-        public Rol.Models.Rol buscarRol(int Id_Rol){
+        //MÉTODO PARA BUSCAR ROL:
+        public Rol buscarRol(int Id_Rol){
 
-            Rol.Models.Rol rol = new Rol.Models.Rol();
+            Rol rol = new Rol();
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = aux.conectar();
@@ -103,7 +106,8 @@ namespace Prueba{
             return rol;
         }
 
-        public List<Rol.Models.Rol> listarRol(){
+        //MÉTODO PARA LISTAR ROL:
+        public List<Rol> listarRol(){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -111,11 +115,11 @@ namespace Prueba{
             cmd.CommandText = "ListarRol";
             cmd.CommandType = CommandType.StoredProcedure;
             SqlDataReader dr = cmd.ExecuteReader();
-            List<Rol.Models.Rol> lista = new List<Rol.Models.Rol>();
+            List<Rol> lista = new List<Rol>();
 
             while (dr.Read()){
 
-                Rol.Models.Rol rol = new Rol.Models.Rol();
+                Rol rol = new Rol();
 
                 rol.Id_Rol = Convert.ToInt32(dr["Id_Rol"].ToString());
                 rol.Codigo = dr["Codigo"].ToString();

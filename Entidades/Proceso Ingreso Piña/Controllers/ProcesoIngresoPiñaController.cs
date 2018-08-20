@@ -1,12 +1,9 @@
 ﻿using Proceso_Ingreso_Piña.Models;
-using Prueba;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
-namespace Proceso_Ingreso_Piña.Controllers{
 
     public class ProcesoIngresoPiñaController : Controller{
 
@@ -70,4 +67,3 @@ namespace Proceso_Ingreso_Piña.Controllers{
         }
 
     }
-}

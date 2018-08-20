@@ -1,5 +1,4 @@
-﻿using AccesoDatos;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -7,9 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+namespace Usuario.Models { 
+
     public class ADUsuario{
 
-        public Boolean insertarUsuario(Usuario.Models.Usuario usuario){
+        public Boolean insertarUsuario(Usuario usuario){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -39,7 +40,7 @@ using System.Threading.Tasks;
             }
         }
 
-        public void actualizarUsuario(Usuario.Models.Usuario usuario){
+        public void actualizarUsuario(Usuario usuario){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -83,9 +84,9 @@ using System.Threading.Tasks;
             }
         }
 
-        public Usuario.Models.Usuario buscarUsuario(int Id_Usuario){
+        public Usuario buscarUsuario(int Id_Usuario){
 
-            Usuario.Models.Usuario usuario = new Usuario.Models.Usuario();
+            Usuario usuario = new Usuario();
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = aux.conectar();
@@ -118,7 +119,7 @@ using System.Threading.Tasks;
             return usuario;
         }
 
-        public List<Usuario.Models.Usuario> listarUsuario(){
+        public List<Usuario> listarUsuario(){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -126,11 +127,11 @@ using System.Threading.Tasks;
             cmd.CommandText = "ListarUsuario";
             cmd.CommandType = CommandType.StoredProcedure;
             SqlDataReader dr = cmd.ExecuteReader();
-            List<Usuario.Models.Usuario> lista = new List<Usuario.Models.Usuario>();
+            List<Usuario> lista = new List<Usuario>();
 
             while (dr.Read()){
 
-                Usuario.Models.Usuario usuario = new Usuario.Models.Usuario();
+                Usuario usuario = new Usuario();
 
                 usuario.Id_Usuario = Convert.ToInt32(dr["Id_Usuario"].ToString());
                 usuario.Dominio = dr["Dominio"].ToString();
@@ -155,3 +156,5 @@ using System.Threading.Tasks;
         }
 
     }
+
+}

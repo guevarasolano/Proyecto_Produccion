@@ -1,17 +1,16 @@
-﻿using System;
+﻿using SAP_Produccion_Info.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
-namespace SAP_Produccion_Info.Controllers{
 
     public class SAPProduccionInfoController : Controller{
 
         //LISTAR:
         public ActionResult Listado(){
 
-            Models.ADSAPProduccionInfo oSAP = new Models.ADSAPProduccionInfo();
+            ADSAPProduccionInfo oSAP = new ADSAPProduccionInfo();
             ModelState.Clear();
             return View(oSAP.listarSAPProduccionInfo());
 
@@ -23,7 +22,7 @@ namespace SAP_Produccion_Info.Controllers{
             try{
                 if (ModelState.IsValid){
 
-                    Models.ADSAPProduccionInfo oSAP = new Models.ADSAPProduccionInfo();
+                    ADSAPProduccionInfo oSAP = new ADSAPProduccionInfo();
                     if (oSAP.insertarSAPProduccionInfo(sap)){
                         ViewBag.Mensaje = "Se insertó el Registro Correctamente";
                     }else{
@@ -40,7 +39,7 @@ namespace SAP_Produccion_Info.Controllers{
         //MODIFICAR:
         public ActionResult modificarSAPProduccionInfo(int id){
 
-            Models.ADSAPProduccionInfo oSAP = new Models.ADSAPProduccionInfo();
+            ADSAPProduccionInfo oSAP = new ADSAPProduccionInfo();
             return View(oSAP.listarSAPProduccionInfo().Find(sap => sap.Id_SAP_Produccion_Info == id));
 
         }
@@ -49,7 +48,7 @@ namespace SAP_Produccion_Info.Controllers{
         [HttpPost]
         public ActionResult modificarSAPProduccionInfo(int id, SAP_Produccion_Info.Models.SAPProduccionInfo sap){
 
-            Models.ADSAPProduccionInfo oSAP = new Models.ADSAPProduccionInfo();
+            ADSAPProduccionInfo oSAP = new ADSAPProduccionInfo();
             oSAP.actualizarSAPProduccionInfo(sap);
             return RedirectToAction("Listado");
 
@@ -59,7 +58,7 @@ namespace SAP_Produccion_Info.Controllers{
         public ActionResult eliminarSAPProduccionInfo(int id){
 
             try{
-                Models.ADSAPProduccionInfo oSAP = new Models.ADSAPProduccionInfo();
+                ADSAPProduccionInfo oSAP = new ADSAPProduccionInfo();
                 if (oSAP.eliminarSAPProduccionInfo(id)){
                     ViewBag.Mensaje = "Registro Eliminado";
                 }else{
@@ -72,4 +71,3 @@ namespace SAP_Produccion_Info.Controllers{
         }
 
     }
-}

@@ -5,13 +5,13 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using AccesoDatos;
 
-namespace Prueba{
+namespace InventarioProductoTerminado.Models { 
 
     public class ADInventarioProductoTerminado{
 
-        public Boolean insertarInventarioProductoTerminado(InventarioProductoTerminado.Models.InventarioProductoTerminado inventario_Producto_Terminado){
+        //METODO PARA INSERTAR INVENTARIO PRODUCTO TERMINADO:
+        public Boolean insertarInventarioProductoTerminado(InventarioProductoTerminado inventario_Producto_Terminado){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -38,7 +38,8 @@ namespace Prueba{
             }
         }
 
-        public void actualizarInventarioProductoTerminado(InventarioProductoTerminado.Models.InventarioProductoTerminado inventario_Producto_Terminado){
+        //METODO PARA ACTUALIZAR INVENTARIO PRODUCTO TERMINADO:
+        public void actualizarInventarioProductoTerminado(InventarioProductoTerminado inventario_Producto_Terminado){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -61,6 +62,7 @@ namespace Prueba{
             aux.conectar();
         }
 
+        //METODO PARA ELIMINAR INVENTARIO PRODUCTO TERMINADO:
         public Boolean eliminarInventarioProductoTerminado(int Id_Inventario_Producto_Terminado){
 
             Conexion aux = new Conexion();
@@ -78,9 +80,10 @@ namespace Prueba{
             }
         }
 
-        public InventarioProductoTerminado.Models.InventarioProductoTerminado buscarInventarioProductoTerminado(int Id_Inventario_Producto_Terminado){
+        //METODO PARA BUSCAR INVENTARIO PRODUCTO TERMINADO:
+        public InventarioProductoTerminado buscarInventarioProductoTerminado(int Id_Inventario_Producto_Terminado){
 
-            InventarioProductoTerminado.Models.InventarioProductoTerminado inventarioProductoTerminado = new InventarioProductoTerminado.Models.InventarioProductoTerminado();
+            InventarioProductoTerminado inventarioProductoTerminado = new InventarioProductoTerminado();
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = aux.conectar();
@@ -111,7 +114,8 @@ namespace Prueba{
             return inventarioProductoTerminado;
         }
 
-        public List<InventarioProductoTerminado.Models.InventarioProductoTerminado> listarInventarioProductoTerminado(){
+        //METODO PARA LISTAR INVENTARIO PRODUCTO TERMINADO:
+        public List<InventarioProductoTerminado> listarInventarioProductoTerminado(){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -119,11 +123,11 @@ namespace Prueba{
             cmd.CommandText = "ListarInventarioProductoTerminado";
             cmd.CommandType = CommandType.StoredProcedure;
             SqlDataReader dr = cmd.ExecuteReader();
-            List<InventarioProductoTerminado.Models.InventarioProductoTerminado> lista = new List<InventarioProductoTerminado.Models.InventarioProductoTerminado>();
+            List<InventarioProductoTerminado> lista = new List<InventarioProductoTerminado>();
 
             while (dr.Read()){
 
-                InventarioProductoTerminado.Models.InventarioProductoTerminado inventarioProductoTerminado = new InventarioProductoTerminado.Models.InventarioProductoTerminado();
+                InventarioProductoTerminado inventarioProductoTerminado = new InventarioProductoTerminado();
 
                 inventarioProductoTerminado.Id_Inventario_Producto_Terminado = Convert.ToInt32(dr["Id_Inventario_Producto_Terminado"].ToString());
                 inventarioProductoTerminado.Tipo_Proceso = dr["Tipo_Proceso"].ToString();
@@ -145,4 +149,5 @@ namespace Prueba{
 
         }
     }
+
 }

@@ -1,15 +1,15 @@
-﻿using AccesoDatos;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 
-namespace Distribucion_Inventario_Tanque.Models{
+namespace Distribucion_Inventario_Tanque.Models { 
 
     public class ADDistribucionInventarioTanque{
 
+        //METODO PARA INSERTAR DISTRIBUCION INVENTARIO TANQUE:
         public Boolean insertarDistribucionInventarioTanque(DistribucionInventarioTanque inventario_Producto_Terminado){
 
             Conexion aux = new Conexion();
@@ -37,6 +37,7 @@ namespace Distribucion_Inventario_Tanque.Models{
             }
         }
 
+        //METODO PARA ACTUALIZAR DISTRIBUCION INVENTARIO TANQUE:
         public void actualizarDistribucionInventarioTanque(DistribucionInventarioTanque inventario_Producto_Terminado){
 
             Conexion aux = new Conexion();
@@ -60,6 +61,7 @@ namespace Distribucion_Inventario_Tanque.Models{
             aux.conectar();
         }
 
+        //METODO PARA ELIMINAR DISTRIBUCION INVENTARIO TANQUE:
         public Boolean eliminarDistribucionInventarioTanque(int Id_Distribucion_Inventario_Tanque){
 
             Conexion aux = new Conexion();
@@ -77,6 +79,7 @@ namespace Distribucion_Inventario_Tanque.Models{
             }
         }
 
+        //METODO PARA BUSCAR DISTRIBUCION INVENTARIO TANQUE:
         public DistribucionInventarioTanque buscarDistribucionInventarioTanque(int Id_Distribucion_Inventario_Tanque){
 
             DistribucionInventarioTanque inventarioProductoTerminado = new DistribucionInventarioTanque();
@@ -110,6 +113,7 @@ namespace Distribucion_Inventario_Tanque.Models{
             return inventarioProductoTerminado;
         }
 
+        //METODO PARA LISTAR DISTRIBUCION INVENTARIO TANQUE:
         public List<DistribucionInventarioTanque> listarDistribucionInventarioTanque(){
 
             Conexion aux = new Conexion();
@@ -145,4 +149,5 @@ namespace Distribucion_Inventario_Tanque.Models{
         }
 
     }
+
 }

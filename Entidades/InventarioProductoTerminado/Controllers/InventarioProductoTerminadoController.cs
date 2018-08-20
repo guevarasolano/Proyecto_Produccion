@@ -1,11 +1,9 @@
-﻿using Prueba;
+﻿using InventarioProductoTerminado.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
-namespace InventarioProductoTerminado.Controllers{
 
     public class InventarioProductoTerminadoController : Controller{
 
@@ -75,4 +73,3 @@ namespace InventarioProductoTerminado.Controllers{
         }
 
     }
-}

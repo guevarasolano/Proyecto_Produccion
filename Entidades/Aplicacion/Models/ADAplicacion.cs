@@ -1,6 +1,4 @@
-﻿using AccesoDatos;
-using Aplicacion.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -8,11 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+namespace Aplicacion.Models { 
+
     public class ADAplicacion{
-
-        public ADAplicacion() { }
-
-        public Boolean insertarAplicacion(Aplicacion.Models.Aplicacion aplicacion){
+        
+        //MÉTODO PARA INSERTAR APLICACIÓN:
+        public Boolean insertarAplicacion(Aplicacion aplicacion){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -38,7 +37,8 @@ using System.Threading.Tasks;
             }
         }
 
-        public void actualizarAplicacion(Aplicacion.Models.Aplicacion aplicacion){
+        //MÉTODO PARA ACTUALIZAR APLICACIÓN:
+        public void actualizarAplicacion(Aplicacion aplicacion){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -59,7 +59,8 @@ using System.Threading.Tasks;
             aux.conectar();
         }
 
-        public bool eliminarAplicacion(int Id_Aplicacion){
+        //MÉTODO PARA ELIMINAR APLICACIÓN:
+        public Boolean eliminarAplicacion(int Id_Aplicacion){
             
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -75,10 +76,11 @@ using System.Threading.Tasks;
                 return false;
             }
         }
-        
-        public Aplicacion.Models.Aplicacion buscarAplicacion(int Id_Aplicacion){
 
-            Aplicacion.Models.Aplicacion aplicacion = new Aplicacion.Models.Aplicacion();
+        //MÉTODO PARA BUSCAR APLICACIÓN:
+        public Aplicacion buscarAplicacion(int Id_Aplicacion){
+
+            Aplicacion aplicacion = new Aplicacion();
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = aux.conectar();
@@ -107,7 +109,8 @@ using System.Threading.Tasks;
         return aplicacion;
     }
 
-    public List<Aplicacion.Models.Aplicacion> listarAplicacion(){
+        //MÉTODO PARA LISTAR APLICACIÓN:
+        public List<Aplicacion> listarAplicacion(){
 
                 Conexion aux = new Conexion();
                 SqlCommand cmd = new SqlCommand();
@@ -115,11 +118,11 @@ using System.Threading.Tasks;
                 cmd.CommandText = "ListarAplicacion";
                 cmd.CommandType = CommandType.StoredProcedure;
                 SqlDataReader dr = cmd.ExecuteReader();
-                List<Aplicacion.Models.Aplicacion> lista = new List<Aplicacion.Models.Aplicacion>();
+                List<Aplicacion> lista = new List<Aplicacion>();
 
                 while (dr.Read()){
 
-                Aplicacion.Models.Aplicacion aplicacion = new Aplicacion.Models.Aplicacion();
+                Aplicacion aplicacion = new Aplicacion();
 
                 aplicacion.Id_Aplicacion = Convert.ToInt32(dr["Id_Aplicacion"].ToString());
                 aplicacion.Codigo = dr["Codigo"].ToString();
@@ -137,5 +140,7 @@ using System.Threading.Tasks;
             aux.conectar();
             return lista;
         }
+}
+
 }
 
