@@ -208,6 +208,8 @@ C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\obj\Debug
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\obj\Debug\AccesoDatos.csproj.CopyComplete
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\obj\Debug\Prueba.dll
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\obj\Debug\Prueba.pdb
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\obj\Debug\AccesoDatos.csprojResolveAssemblyReference.cache
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\bin\Debug\Prueba.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\bin\Debug\Prueba.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\bin\Debug\Microsoft.Win32.Primitives.dll
@@ -308,8 +310,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\bin\Debu
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\bin\Debug\System.Xml.XPath.XDocument.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\bin\Debug\Entidades.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\bin\Debug\Entidades.pdb
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\obj\Debug\AccesoDatos.csprojResolveAssemblyReference.cache
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\obj\Debug\AccesoDatos.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\obj\Debug\Prueba.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\obj\Debug\Prueba.pdb

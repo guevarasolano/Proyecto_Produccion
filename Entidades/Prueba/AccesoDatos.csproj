@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,20 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ADAccion.cs" />
-    <Compile Include="ADAditivo.cs" />
-    <Compile Include="ADAplicacion.cs" />
-    <Compile Include="ADBrix.cs" />
-    <Compile Include="ADDisposicionProductoNoConforme.cs" />
-    <Compile Include="ADDistribucionInventarioTanque.cs" />
-    <Compile Include="ADInventarioProductoTerminado.cs" />
-    <Compile Include="ADModulo.cs" />
-    <Compile Include="ADProcesoBPBJC.cs" />
-    <Compile Include="ADProcesoIngresoPiña.cs" />
-    <Compile Include="ADProcesoLlenado.cs" />
-    <Compile Include="ADProcesoMaduracion.cs" />
-    <Compile Include="ADProductoNoConforme.cs" />
-    <Compile Include="ADRol.cs" />
-    <Compile Include="ADUsuario.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

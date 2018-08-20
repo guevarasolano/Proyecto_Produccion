@@ -40,21 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LNAccion.cs" />
-    <Compile Include="LNAditivo.cs" />
-    <Compile Include="LNAplicacion.cs" />
-    <Compile Include="LNBrix.cs" />
-    <Compile Include="LNDisposicionProductoNoConforme.cs" />
-    <Compile Include="LNDistribucionInventarioTanque.cs" />
-    <Compile Include="LNInventarioProductoTerminado.cs" />
-    <Compile Include="LNModulo.cs" />
-    <Compile Include="LNProcesoBPBJC.cs" />
-    <Compile Include="LNProcesoIngresoPiña.cs" />
-    <Compile Include="LNProcesoLlenado.cs" />
-    <Compile Include="LNProcesoMaduracion.cs" />
-    <Compile Include="LNProductoNoConforme.cs" />
-    <Compile Include="LNRol.cs" />
-    <Compile Include="LNUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

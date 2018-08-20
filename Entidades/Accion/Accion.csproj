@@ -103,19 +103,12 @@
     <Content Include="Script\jquery.validate.min.js" />
     <Content Include="Script\jquery.validate.unobtrusive.min.js" />
     <Content Include="Web.config" />
-    <Content Include="Views\Accion\agregarAccion.cshtml" />
-    <Content Include="Views\Accion\eliminarAccion.cshtml" />
-    <Content Include="Views\Accion\Listado.cshtml" />
-    <Content Include="Views\Accion\modificarAccion.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\AccionController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Accion.cs" />
-    <Compile Include="Models\ADAccion.cs" />
     <Compile Include="Models\Conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -131,6 +124,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Views\Accion\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
