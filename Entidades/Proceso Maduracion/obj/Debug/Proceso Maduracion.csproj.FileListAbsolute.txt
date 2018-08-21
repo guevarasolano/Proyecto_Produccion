@@ -1,3 +1,5 @@
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\bin\roslyn\VBCSCompiler.exe
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\bin\Proceso Maduracion.dll.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\bin\Proceso Maduracion.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\bin\Proceso Maduracion.pdb
@@ -8,7 +10,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Madurac
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\bin\roslyn\csi.exe.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\bin\roslyn\csi.rsp
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
@@ -47,7 +48,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Madurac
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\bin\roslyn\vbc.exe
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\bin\roslyn\vbc.exe.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\bin\roslyn\vbc.rsp
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\bin\roslyn\VBCSCompiler.exe
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Maduracion\bin\Microsoft.Web.Infrastructure.dll

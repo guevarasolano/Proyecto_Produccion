@@ -318,4 +318,5 @@ C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WFCInventarioPro
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WFCInventarioProductoTerminado\obj\Debug\WFCInventarioProductoTerminado.csproj.CopyComplete
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WFCInventarioProductoTerminado\obj\Debug\WFCInventarioProductoTerminado.dll
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WFCInventarioProductoTerminado\obj\Debug\WFCInventarioProductoTerminado.pdb
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCInventarioProductoTerminado\obj\Debug\WFCInventarioProductoTerminado.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCInventarioProductoTerminado\obj\Debug\WFCInventarioProductoTerminado.csproj.CoreCompileInputs.cache
