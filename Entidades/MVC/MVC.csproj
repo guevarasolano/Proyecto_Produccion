@@ -128,8 +128,6 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Accion\agregarAccion.cshtml" />
     <Content Include="Views\Accion\eliminarAccion.cshtml" />
     <Content Include="Views\Accion\Listado.cshtml" />

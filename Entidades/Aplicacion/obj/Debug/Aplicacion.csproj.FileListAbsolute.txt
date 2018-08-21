@@ -75,6 +75,7 @@ C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\Aplicacion\obj\D
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\Aplicacion\obj\Debug\Aplicacion.csproj.CopyComplete
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\Aplicacion\obj\Debug\Aplicacion.dll
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\Aplicacion\obj\Debug\Aplicacion.pdb
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Aplicacion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Aplicacion\bin\Aplicacion.dll.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Aplicacion\bin\Aplicacion.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Aplicacion\bin\Aplicacion.pdb
@@ -85,7 +86,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Aplicacion\bin\
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Aplicacion\bin\roslyn\csi.exe.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Aplicacion\bin\roslyn\csi.rsp
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Aplicacion\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Aplicacion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Aplicacion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Aplicacion\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Aplicacion\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll

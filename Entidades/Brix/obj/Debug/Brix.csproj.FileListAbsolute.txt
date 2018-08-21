@@ -75,6 +75,7 @@ C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\obj\Debug\B
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\obj\Debug\Brix.dll
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\obj\Debug\Brix.pdb
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\obj\Debug\Brix.csprojAssemblyReference.cache
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\bin\Brix.dll.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\bin\Brix.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\bin\Brix.pdb
@@ -89,7 +90,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\bin\roslyn
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\bin\roslyn\Microsoft.CSharp.Core.targets
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Brix\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
