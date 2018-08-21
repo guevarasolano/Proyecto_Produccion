@@ -1,0 +1,6 @@
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\CapaEntidades\bin\Debug\CapaEntidades.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\CapaEntidades\bin\Debug\CapaEntidades.pdb
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\CapaEntidades\obj\Debug\CapaEntidades.csprojResolveAssemblyReference.cache
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\CapaEntidades\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\CapaEntidades\obj\Debug\CapaEntidades.dll
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\CapaEntidades\obj\Debug\CapaEntidades.pdb

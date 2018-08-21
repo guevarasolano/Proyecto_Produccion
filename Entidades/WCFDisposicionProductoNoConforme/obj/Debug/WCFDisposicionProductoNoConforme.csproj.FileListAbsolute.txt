@@ -318,5 +318,5 @@ C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionPr
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\obj\Debug\WCFDisposicionProductoNoConforme.csproj.CopyComplete
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\obj\Debug\WCFDisposicionProductoNoConforme.dll
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\obj\Debug\WCFDisposicionProductoNoConforme.pdb
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\obj\Debug\WCFDisposicionProductoNoConforme.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\obj\Debug\WCFDisposicionProductoNoConforme.csproj.CoreCompileInputs.cache
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDisposicionProductoNoConforme\obj\Debug\WCFDisposicionProductoNoConforme.csprojResolveAssemblyReference.cache

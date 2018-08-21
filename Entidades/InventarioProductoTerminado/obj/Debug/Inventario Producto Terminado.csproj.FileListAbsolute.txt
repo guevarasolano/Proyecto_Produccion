@@ -70,7 +70,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\InventarioProdu
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\InventarioProductoTerminado\bin\es\System.Web.Webpages.Razor.resources.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\InventarioProductoTerminado\bin\es\System.Web.Helpers.resources.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\InventarioProductoTerminado\bin\es\System.Web.Mvc.resources.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\InventarioProductoTerminado\obj\Debug\Inventario Producto Terminado.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\InventarioProductoTerminado\obj\Debug\Inventario Producto Terminado.csproj.CoreCompileInputs.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\InventarioProductoTerminado\obj\Debug\Inventario Producto Terminado.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\InventarioProductoTerminado\obj\Debug\InventarioProductoTerminado.dll

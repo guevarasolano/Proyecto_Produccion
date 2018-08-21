@@ -83,14 +83,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Entidades\Entidades.csproj">
-      <Project>{ccc41ba8-0ad4-4ed4-a53d-e842fc3d688c}</Project>
-      <Name>Entidades</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\LogicaNegocio\LogicaNegocio.csproj">
-      <Project>{a347fa87-4c24-4404-add0-50e99d53932a}</Project>
-      <Name>LogicaNegocio</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Prueba\AccesoDatos.csproj">
       <Project>{64d888e1-2300-408d-8934-addb96043198}</Project>
       <Name>AccesoDatos</Name>

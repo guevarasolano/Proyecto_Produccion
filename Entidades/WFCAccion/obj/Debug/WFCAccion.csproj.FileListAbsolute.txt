@@ -318,3 +318,4 @@ C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAccion\obj\De
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAccion\obj\Debug\WFCAccion.dll
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAccion\obj\Debug\WFCAccion.pdb
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAccion\obj\Debug\WFCAccion.csproj.CoreCompileInputs.cache
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WFCAccion\obj\Debug\WFCAccion.csprojResolveAssemblyReference.cache

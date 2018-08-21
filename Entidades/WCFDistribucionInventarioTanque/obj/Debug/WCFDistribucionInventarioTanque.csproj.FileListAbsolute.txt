@@ -318,5 +318,5 @@ C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDistribucionI
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDistribucionInventarioTanque\obj\Debug\WCFDistribucionInventarioTanque.csproj.CopyComplete
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDistribucionInventarioTanque\obj\Debug\WCFDistribucionInventarioTanque.dll
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDistribucionInventarioTanque\obj\Debug\WCFDistribucionInventarioTanque.pdb
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDistribucionInventarioTanque\obj\Debug\WCFDistribucionInventarioTanque.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDistribucionInventarioTanque\obj\Debug\WCFDistribucionInventarioTanque.csproj.CoreCompileInputs.cache
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFDistribucionInventarioTanque\obj\Debug\WCFDistribucionInventarioTanque.csprojResolveAssemblyReference.cache
