@@ -1,0 +1,246 @@
+﻿@model IEnumerable<CapaEntidades.Aditivo>
+<html>
+<head>
+    <title>Fructa CR S.A | Producción</title>
+    @*<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" />*@
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/img/flsf.png" type="image/x-icon" rel="shortcut icon" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    @*<script src="~script/jquery-1.10.2.min.js"></script>
+        <script src="~script/jquery-validate.min.js"></script>
+        <script src="~script/jquery-validate.unobtrusive.min.js"></script>*@
+</head>
+
+<body style="margin-top: 30px">
+    <form class="form-horizontal" id="form1">
+        <div class="container">
+            <div class="row">
+                <div class="well well -sm">
+                    <fieldset>
+                        <table class="table table-hover" style="font-size: small">
+                            <thead class="text-primary">
+                                <tr>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Id_Aditivo)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.FK_Id_Proceso_BP_BJC)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Jugo_Limon)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Ascorbico)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Citrico)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Liquiseb_RL_Concentrado)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Liquiseb_APL)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Sebamyl_GL400)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Sebamyl_BAL100)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Flora_Clair)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Gelatina)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Bevasyl)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Bentonita)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Carbon)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Celite)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.HS_4000)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Shenck_DD)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.HS_1000)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.HS_1600)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Estado)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Usuario_Ingreso)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Fecha_Ingreso)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Usuario_Modificacion)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Fecha_Modificacion)
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            @foreach (var item in Model){
+
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Id_Aditivo)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.FK_Id_Proceso_BP_BJC)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Jugo_Limon)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Ascorbico)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Citrico)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Liquiseb_RL_Concentrado)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Liquiseb_APL)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Sebamyl_GL400)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Sebamyl_BAL100)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Flora_Clair)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Gelatina)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Bevasyl)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Bentonita)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Carbon)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Celite)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.HS_4000)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Shenck_DD)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.HS_1000)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.HS_1600)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Estado)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Usuario_Ingreso)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Fecha_Ingreso)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Usuario_Modificacion)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Fecha_Modificacion)
+                                </td>
+
+                                <td>
+                                    @Html.ActionLink("Modificar", "modificarAditivo", new { id = item.Id_Aditivo }) |
+                                    @Html.ActionLink("Eliminar", "eliminarAditivo", new { id = item.Id_Aditivo },
+new { onclick = "return confirm('¿Está seguro de borrar el registro?'" })
+
+                                </td>
+                            </tr>
+                            }
+
+                        </table>
+                        <span>
+                            @Html.ActionLink("Nuevo Registro", "agregarAditivo", "Aditivo", null,
+                                                    new { @class = "btn btn-primary btn.large" })
+                        </span>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <footer style="text-align: center; background-color: #006bff; color: #ffffff">Fructa CR S.A</footer>
+
+</body>
+
+</html>

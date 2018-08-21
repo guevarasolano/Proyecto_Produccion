@@ -120,6 +120,8 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccionController.cs" />
+    <Compile Include="Controllers\AditivoController.cs" />
+    <Compile Include="Controllers\AplicacionController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -132,6 +134,14 @@
     <Content Include="Views\Accion\eliminarAccion.cshtml" />
     <Content Include="Views\Accion\Listado.cshtml" />
     <Content Include="Views\Accion\modificarAccion.cshtml" />
+    <Content Include="Views\Aditivo\agregarAditivo.cshtml" />
+    <Content Include="Views\Aditivo\eliminarAditivo.cshtml" />
+    <Content Include="Views\Aditivo\Listado.cshtml" />
+    <Content Include="Views\Aditivo\modificarAditivo.cshtml" />
+    <Content Include="Views\Aplicacion\agregarAplicacion.cshtml" />
+    <Content Include="Views\Aplicacion\eliminarAplicacion.cshtml" />
+    <Content Include="Views\Aplicacion\Listado.cshtml" />
+    <Content Include="Views\Aplicacion\modificarAplicacion.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

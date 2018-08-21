@@ -1,18 +1,18 @@
-﻿using AccesoDatos;
-using Entidades;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CapaEntidades;
 
-namespace Prueba{
+namespace AccesoDatos { 
 
     public class ADAditivo{
 
-        public void insertarAditivo(Aditivo aditivo){
+        //MÉTODO PARA INSERTAR ADITIVO:
+        public Boolean insertarAditivo(Aditivo aditivo){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -42,11 +42,17 @@ namespace Prueba{
             cmd.Parameters.Add(new SqlParameter("@Fecha_Modificacion", aditivo.Fecha_Modificacion));
             cmd.CommandText = "InsertarAditivo";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.ExecuteNonQuery();
+            int x = cmd.ExecuteNonQuery();
             aux.conectar();
+            if (x >= 1){
+                return true;
+            }else{
+                return false;
+            }
         }
 
-        public void actualizarAditivo(Entidades.Aditivo aditivo){
+        //MÉTODO PARA ACTUALIZAR ADITIVO:
+        public void actualizarAditivo(Aditivo aditivo){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -81,7 +87,8 @@ namespace Prueba{
             aux.conectar();
         }
 
-        public void eliminarAditivo(int Id_Aditivo){
+        //MÉTODO PARA ELIMINAR ADITIVO:
+        public Boolean eliminarAditivo(int Id_Aditivo){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -89,13 +96,19 @@ namespace Prueba{
             cmd.Parameters.Add(new SqlParameter("@Id_Aditivo", Id_Aditivo));
             cmd.CommandText = "EliminarAditivo";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.ExecuteNonQuery();
+            int x = cmd.ExecuteNonQuery();
             aux.conectar();
-
+            if (x >= 1){
+                return true;
+            }else{
+                return false;
+            }
         }
 
-        public List<Entidades.Aditivo> buscarAditivo(int Id_Aditivo){
+        //MÉTODO PARA BUSCAR ADITIVO:
+        public Aditivo buscarAditivo(int Id_Aditivo){
 
+            Aditivo aditivo = new Aditivo();
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = aux.conectar();
@@ -103,10 +116,8 @@ namespace Prueba{
             cmd.CommandText = "ConsultarAditivo";
             cmd.CommandType = CommandType.StoredProcedure;
             SqlDataReader dr = cmd.ExecuteReader();
-            List<Entidades.Aditivo> lista = new List<Entidades.Aditivo>();
-            Entidades.Aditivo aditivo = new Entidades.Aditivo();
 
-            while (dr.Read()){
+            if (dr.Read()){
 
                 aditivo.Id_Aditivo = Convert.ToInt32(dr["Id_Aditivo"].ToString());
                 aditivo.FK_Id_Proceso_BP_BJC = Convert.ToInt32(dr["FK_Id_Proceso_BP_BJC"].ToString());
@@ -133,13 +144,15 @@ namespace Prueba{
                 aditivo.Usuario_Modificacion = dr["Usuario_Modificacion"].ToString();
                 aditivo.Fecha_Modificacion = Convert.ToDateTime(dr["Fecha_Modificacion"].ToString());
 
-                lista.Add(aditivo);
+            }else{
+                aditivo = null;
             }
             aux.conectar();
-            return lista;
+            return aditivo;
         }
 
-        public List<Entidades.Aditivo> listarAditivo(){
+        //MÉTODO PARA LISTAR ADITIVO:
+        public List<Aditivo> listarAditivo(){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -147,11 +160,11 @@ namespace Prueba{
             cmd.CommandText = "ListarAditivo";
             cmd.CommandType = CommandType.StoredProcedure;
             SqlDataReader dr = cmd.ExecuteReader();
-            List<Entidades.Aditivo> lista = new List<Entidades.Aditivo>();
+            List<Aditivo> lista = new List<Aditivo>();
 
             while (dr.Read()){
 
-                Entidades.Aditivo aditivo = new Entidades.Aditivo();
+                Aditivo aditivo = new Aditivo();
 
                 aditivo.Id_Aditivo = Convert.ToInt32(dr["Id_Aditivo"].ToString());
                 aditivo.FK_Id_Proceso_BP_BJC = Convert.ToInt32(dr["FK_Id_Proceso_BP_BJC"].ToString());
@@ -186,4 +199,5 @@ namespace Prueba{
         }
 
     }
+
 }

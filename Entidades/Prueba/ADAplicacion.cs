@@ -1,18 +1,18 @@
-﻿using AccesoDatos;
-using Entidades;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CapaEntidades;
 
-namespace Prueba{
+namespace AccesoDatos { 
 
     public class ADAplicacion{
-
-        public void insertarAplicacion(Entidades.Aplicacion aplicacion){
+        
+        //MÉTODO PARA INSERTAR APLICACIÓN:
+        public Boolean insertarAplicacion(Aplicacion aplicacion){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -28,11 +28,18 @@ namespace Prueba{
             cmd.Parameters.Add(new SqlParameter("@Fecha_Modificacion", aplicacion.Fecha_Modificacion));
             cmd.CommandText = "InsertarAplicacion";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.ExecuteNonQuery();
+            int x = cmd.ExecuteNonQuery();
             aux.conectar();
+            if (x >= 1){
+                return true;
+            }
+            else{
+                return false;
+            }
         }
 
-        public void actualizarAplicacion(Entidades.Aplicacion aplicacion){
+        //MÉTODO PARA ACTUALIZAR APLICACIÓN:
+        public void actualizarAplicacion(Aplicacion aplicacion){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -53,21 +60,28 @@ namespace Prueba{
             aux.conectar();
         }
 
-        public void eliminarAplicacion(int Id_Aplicacion){
-
+        //MÉTODO PARA ELIMINAR APLICACIÓN:
+        public Boolean eliminarAplicacion(int Id_Aplicacion){
+            
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = aux.conectar();
             cmd.Parameters.Add(new SqlParameter("@Id_Aplicacion", Id_Aplicacion));
             cmd.CommandText = "EliminarAplicacion";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.ExecuteNonQuery();
+            int x = cmd.ExecuteNonQuery();
             aux.conectar();
-
+            if (x >= 1){
+                return true;
+            }else{
+                return false;
+            }
         }
 
-        public List<Entidades.Aplicacion> buscarAplicacion(int Id_Aplicacion){
+        //MÉTODO PARA BUSCAR APLICACIÓN:
+        public Aplicacion buscarAplicacion(int Id_Aplicacion){
 
+            Aplicacion aplicacion = new Aplicacion();
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = aux.conectar();
@@ -75,10 +89,8 @@ namespace Prueba{
             cmd.CommandText = "ConsultarAplicacion";
             cmd.CommandType = CommandType.StoredProcedure;
             SqlDataReader dr = cmd.ExecuteReader();
-            List <Entidades.Aplicacion> lista = new List<Entidades.Aplicacion>();
-            Entidades.Aplicacion aplicacion = new Entidades.Aplicacion();
 
-            while (dr.Read()){
+            if (dr.Read()){
 
                 aplicacion.Id_Aplicacion = Convert.ToInt32(dr["Id_Aplicacion"].ToString());
                 aplicacion.Codigo = dr["Codigo"].ToString();
@@ -91,23 +103,25 @@ namespace Prueba{
                 aplicacion.Usuario_Modificacion = dr["Usuario_Modificacion"].ToString();
                 aplicacion.Fecha_Modificacion = Convert.ToDateTime(dr["Fecha_Modificacion"].ToString());
 
-                lista.Add(aplicacion);
-            }
-            aux.conectar();
-            return lista;
+        } else{
+            aplicacion = null;
         }
+        aux.conectar();
+        return aplicacion;
+    }
 
+        //MÉTODO PARA LISTAR APLICACIÓN:
         public List<Aplicacion> listarAplicacion(){
 
-            Conexion aux = new Conexion();
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = aux.conectar();
-            cmd.CommandText = "ListarAplicacion";
-            cmd.CommandType = CommandType.StoredProcedure;
-            SqlDataReader dr = cmd.ExecuteReader();
-            List<Aplicacion> lista = new List<Aplicacion>();
+                Conexion aux = new Conexion();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = aux.conectar();
+                cmd.CommandText = "ListarAplicacion";
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlDataReader dr = cmd.ExecuteReader();
+                List<Aplicacion> lista = new List<Aplicacion>();
 
-            while (dr.Read()){
+                while (dr.Read()){
 
                 Aplicacion aplicacion = new Aplicacion();
 
@@ -126,7 +140,8 @@ namespace Prueba{
             }
             aux.conectar();
             return lista;
-
         }
-    }
 }
+
+}
+
