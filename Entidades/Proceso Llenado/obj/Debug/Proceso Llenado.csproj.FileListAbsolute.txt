@@ -1,3 +1,4 @@
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Llenado\obj\Debug\Proceso Llenado.csproj.CoreCompileInputs.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Llenado\bin\Proceso Llenado.dll.config
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Llenado\bin\Proceso Llenado.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Llenado\bin\Proceso Llenado.pdb
@@ -70,7 +71,6 @@ C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Llenado
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Llenado\bin\es\System.Web.Webpages.Razor.resources.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Llenado\bin\es\System.Web.Helpers.resources.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Llenado\bin\es\System.Web.Mvc.resources.dll
-C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Llenado\obj\Debug\Proceso Llenado.csproj.CoreCompileInputs.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Llenado\obj\Debug\Proceso Llenado.csproj.CopyComplete
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Llenado\obj\Debug\Proceso Llenado.dll
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Proceso Llenado\obj\Debug\Proceso Llenado.pdb

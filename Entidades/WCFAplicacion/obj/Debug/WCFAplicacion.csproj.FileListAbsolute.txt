@@ -317,4 +317,5 @@ C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFAplicacion\ob
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFAplicacion\obj\Debug\WCFAplicacion.csproj.CopyComplete
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFAplicacion\obj\Debug\WCFAplicacion.dll
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFAplicacion\obj\Debug\WCFAplicacion.pdb
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFAplicacion\obj\Debug\WCFAplicacion.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFAplicacion\obj\Debug\WCFAplicacion.csproj.CoreCompileInputs.cache

@@ -317,4 +317,5 @@ C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFRol\obj\Debug
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFRol\obj\Debug\WCFRol.csproj.CopyComplete
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFRol\obj\Debug\WCFRol.dll
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFRol\obj\Debug\WCFRol.pdb
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFRol\obj\Debug\WCFRol.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFRol\obj\Debug\WCFRol.csproj.CoreCompileInputs.cache
