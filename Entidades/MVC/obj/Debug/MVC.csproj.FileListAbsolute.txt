@@ -1,1 +1,2 @@
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\MVC\obj\Debug\MVC.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\MVC\obj\Debug\MVC.csproj.CoreCompileInputs.cache
