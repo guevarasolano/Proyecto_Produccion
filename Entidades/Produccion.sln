@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccesoDatos", "Prueba\AccesoDatos.csproj", "{64D888E1-2300-408D-8934-ADDB96043198}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFAccesoDatos", "Prueba\WCFAccesoDatos.csproj", "{64D888E1-2300-408D-8934-ADDB96043198}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WCF", "WCF", "{859408EF-FE5E-471E-A28E-02DCA6457AD7}"
 EndProject
@@ -72,6 +72,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC", "MVC\MVC.csproj", "{6BFCF85C-60E7-4882-A2B0-DA1E46DCE0D9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaEntidades", "CapaEntidades\CapaEntidades.csproj", "{42B6C1ED-D28B-414F-9698-68E3820843AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFLogicaNegocio", "..\..\..\..\source\repos\Entidades\LogicaNegocio\WCFLogicaNegocio.csproj", "{A347FA87-4C24-4404-ADD0-50E99D53932A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entidades", "..\..\..\..\source\repos\Entidades\Entidades\Entidades.csproj", "{EFCA202E-8FBA-4F57-AB25-D64548FE4811}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -215,6 +219,14 @@ Global
 		{42B6C1ED-D28B-414F-9698-68E3820843AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42B6C1ED-D28B-414F-9698-68E3820843AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42B6C1ED-D28B-414F-9698-68E3820843AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A347FA87-4C24-4404-ADD0-50E99D53932A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A347FA87-4C24-4404-ADD0-50E99D53932A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A347FA87-4C24-4404-ADD0-50E99D53932A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A347FA87-4C24-4404-ADD0-50E99D53932A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFCA202E-8FBA-4F57-AB25-D64548FE4811}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFCA202E-8FBA-4F57-AB25-D64548FE4811}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFCA202E-8FBA-4F57-AB25-D64548FE4811}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFCA202E-8FBA-4F57-AB25-D64548FE4811}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

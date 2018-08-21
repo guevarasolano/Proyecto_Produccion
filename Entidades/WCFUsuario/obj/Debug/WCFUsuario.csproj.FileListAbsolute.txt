@@ -318,4 +318,5 @@ C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFUsuario\obj\D
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFUsuario\obj\Debug\WCFUsuario.csproj.CopyComplete
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFUsuario\obj\Debug\WCFUsuario.dll
 C:\Users\Adrián\Documents\GitHub\Proyecto_Produccion\Entidades\WCFUsuario\obj\Debug\WCFUsuario.pdb
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFUsuario\obj\Debug\WCFUsuario.csprojResolveAssemblyReference.cache
 C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\WCFUsuario\obj\Debug\WCFUsuario.csproj.CoreCompileInputs.cache

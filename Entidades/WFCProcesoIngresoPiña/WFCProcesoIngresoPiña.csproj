@@ -89,9 +89,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Prueba\AccesoDatos.csproj">
+    <ProjectReference Include="..\Prueba\WCFAccesoDatos.csproj">
       <Project>{64d888e1-2300-408d-8934-addb96043198}</Project>
-      <Name>AccesoDatos</Name>
+      <Name>WCFAccesoDatos</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -1,0 +1,2 @@
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\obj\Debug\WCFAccesoDatos.csprojResolveAssemblyReference.cache
+C:\Users\aguevara\Documents\GitHub\Proyecto_Produccion\Entidades\Prueba\obj\Debug\WCFAccesoDatos.csproj.CoreCompileInputs.cache
