@@ -1,23 +1,22 @@
-﻿using AccesoDatos;
-using Entidades;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CapaEntidades;
 
-namespace Prueba{
+namespace AccesoDatos{
 
     public class ADProductoNoConforme{
 
-        public void insertarProductoNoConforme(Producto_No_Conforme producto_No_Conforme){
+        public Boolean insertarProductoNoConforme(ProductoNoConforme producto_No_Conforme){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = aux.conectar();
-            cmd.Parameters.Add(new SqlParameter("@FK_Id_Articulo_SAP", producto_No_Conforme.Id_Articulo_SAP));
+            cmd.Parameters.Add(new SqlParameter("@FK_Id_Articulo_SAP", producto_No_Conforme.FK_Id_Articulo_SAP));
             cmd.Parameters.Add(new SqlParameter("@Lote_Producto", producto_No_Conforme.Lote_Producto));
             cmd.Parameters.Add(new SqlParameter("@Numero_Unidad", producto_No_Conforme.Numero_Unidad));
             cmd.Parameters.Add(new SqlParameter("@Peso_Toneladas_Metricas", producto_No_Conforme.Peso_Toneladas_Metricas));
@@ -40,17 +39,22 @@ namespace Prueba{
             cmd.Parameters.Add(new SqlParameter("@Fecha_Modificacion", producto_No_Conforme.Fecha_Modificacion));
             cmd.CommandText = "InsertarProductoNoConforme";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.ExecuteNonQuery();
+            int x = cmd.ExecuteNonQuery();
             aux.conectar();
+            if (x >= 1){
+                return true;
+            }else{
+                return false;
+            }
         }
 
-        public void actualizarProductoNoConforme(Producto_No_Conforme producto_No_Conforme){
+        public void actualizarProductoNoConforme(ProductoNoConforme producto_No_Conforme){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = aux.conectar();
             cmd.Parameters.Add(new SqlParameter("@Id_Producto_No_Conforme", producto_No_Conforme.Id_Producto_No_Conforme));
-            cmd.Parameters.Add(new SqlParameter("@FK_Id_Articulo_SAP", producto_No_Conforme.Id_Articulo_SAP));
+            cmd.Parameters.Add(new SqlParameter("@FK_Id_Articulo_SAP", producto_No_Conforme.FK_Id_Articulo_SAP));
             cmd.Parameters.Add(new SqlParameter("@Lote_Producto", producto_No_Conforme.Lote_Producto));
             cmd.Parameters.Add(new SqlParameter("@Numero_Unidad", producto_No_Conforme.Numero_Unidad));
             cmd.Parameters.Add(new SqlParameter("@Peso_Toneladas_Metricas", producto_No_Conforme.Peso_Toneladas_Metricas));
@@ -77,7 +81,7 @@ namespace Prueba{
             aux.conectar();
         }
 
-        public void eliminarProductoNoConforme(int Id_Producto_No_Conforme){
+        public Boolean eliminarProductoNoConforme(int Id_Producto_No_Conforme){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -85,27 +89,30 @@ namespace Prueba{
             cmd.Parameters.Add(new SqlParameter("@Id_Producto_No_Conforme", Id_Producto_No_Conforme));
             cmd.CommandText = "EliminarProductoNoConforme";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.ExecuteNonQuery();
+            int x = cmd.ExecuteNonQuery();
             aux.conectar();
-
+            if (x >= 1){
+                return true;
+            }else{
+                return false;
+            }
         }
 
-        public List<Producto_No_Conforme> buscarProductoNoConforme(int Id_Producto_No_Conforme){
+        public ProductoNoConforme buscarProductoNoConforme(int Id_Producto_No_Conforme){
 
+            ProductoNoConforme productoNoConforme = new ProductoNoConforme();
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = aux.conectar();
             cmd.Parameters.Add(new SqlParameter("@Id_Producto_No_Conforme", Id_Producto_No_Conforme));
             cmd.CommandText = "ConsultarProductoNoConforme";
             cmd.CommandType = CommandType.StoredProcedure;
-            SqlDataReader dr = cmd.ExecuteReader();
-            List<Producto_No_Conforme> lista = new List<Producto_No_Conforme>();
-            Producto_No_Conforme productoNoConforme = new Producto_No_Conforme();
+            SqlDataReader dr = cmd.ExecuteReader();            
 
-            while (dr.Read()){
+            if (dr.Read()){
 
                 productoNoConforme.Id_Producto_No_Conforme = Convert.ToInt32(dr["Id_Producto_No_Conforme"].ToString());
-                productoNoConforme.Id_Articulo_SAP = Convert.ToInt32(dr["FK_Id_Articulo_SAP"].ToString());
+                productoNoConforme.FK_Id_Articulo_SAP = Convert.ToInt32(dr["FK_Id_Articulo_SAP"].ToString());
                 productoNoConforme.Lote_Producto = dr["Lote_Producto"].ToString();
                 productoNoConforme.Numero_Unidad = Convert.ToInt32(dr["Numero_Unidad"].ToString());
                 productoNoConforme.Peso_Toneladas_Metricas = Convert.ToInt32(dr["Peso_Toneladas_Metricas"].ToString());
@@ -127,13 +134,14 @@ namespace Prueba{
                 productoNoConforme.Usuario_Modificacion = dr["Usuario_Modificacion"].ToString();
                 productoNoConforme.Fecha_Modificacion = Convert.ToDateTime(dr["Fecha_Modificacion"].ToString());
 
-                lista.Add(productoNoConforme);
+            }else{
+                productoNoConforme = null;
             }
             aux.conectar();
-            return lista;
+            return productoNoConforme;
         }
 
-        public List<Producto_No_Conforme> listarProductoNoConforme(){
+        public List<ProductoNoConforme> listarProductoNoConforme(){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -141,14 +149,14 @@ namespace Prueba{
             cmd.CommandText = "ListarProductoNoConforme";
             cmd.CommandType = CommandType.StoredProcedure;
             SqlDataReader dr = cmd.ExecuteReader();
-            List<Producto_No_Conforme> lista = new List<Producto_No_Conforme>();
+            List<ProductoNoConforme> lista = new List<ProductoNoConforme>();
 
             while (dr.Read()){
 
-                Producto_No_Conforme productoNoConforme = new Producto_No_Conforme();
+                ProductoNoConforme productoNoConforme = new ProductoNoConforme();
 
                 productoNoConforme.Id_Producto_No_Conforme = Convert.ToInt32(dr["Id_Producto_No_Conforme"].ToString());
-                productoNoConforme.Id_Articulo_SAP = Convert.ToInt32(dr["FK_Id_Articulo_SAP"].ToString());
+                productoNoConforme.FK_Id_Articulo_SAP = Convert.ToInt32(dr["FK_Id_Articulo_SAP"].ToString());
                 productoNoConforme.Lote_Producto = dr["Lote_Producto"].ToString();
                 productoNoConforme.Numero_Unidad = Convert.ToInt32(dr["Numero_Unidad"].ToString());
                 productoNoConforme.Peso_Toneladas_Metricas = Convert.ToInt32(dr["Peso_Toneladas_Metricas"].ToString());
@@ -174,7 +182,7 @@ namespace Prueba{
             }
             aux.conectar();
             return lista;
-
         }
+
     }
 }

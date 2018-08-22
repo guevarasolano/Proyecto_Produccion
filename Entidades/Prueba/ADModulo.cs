@@ -1,18 +1,17 @@
-﻿using AccesoDatos;
-using Entidades;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
+using CapaEntidades;
 
-namespace Prueba{
+namespace AccesoDatos{
 
     public class ADModulo{
 
-        public void insertarModulo(Entidades.Modulo modulo) {
+        //MÉTODO PARA INSERTAR MÓDULO:
+        public Boolean insertarModulo(Modulo modulo){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -29,11 +28,17 @@ namespace Prueba{
             cmd.Parameters.Add(new SqlParameter("@Fecha_Modificacion", modulo.Fecha_Modificacion));
             cmd.CommandText = "InsertarModulo";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.ExecuteNonQuery();
+            int x = cmd.ExecuteNonQuery();
             aux.conectar();
+            if (x >= 1){
+                return true;
+            }else{
+                return false;
+            }
         }
 
-        public void actualizarModulo(Entidades.Modulo modulo){
+        //MÉTODO PARA ACTUALIZAR MÓDULO:
+        public void actualizarModulo(Modulo modulo){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -55,7 +60,8 @@ namespace Prueba{
             aux.conectar();
         }
 
-        public void eliminarModulo(int Id_Modulo){
+        //MÉTODO PARA ELIMINAR MÓDULO:
+        public bool eliminarModulo(int Id_Modulo){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -63,13 +69,19 @@ namespace Prueba{
             cmd.Parameters.Add(new SqlParameter("@Id_Modulo", Id_Modulo));
             cmd.CommandText = "EliminarModulo";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.ExecuteNonQuery();
+            int x = cmd.ExecuteNonQuery();
             aux.conectar();
-
+            if (x >= 1){
+                return true;
+            }else{
+                return false;
+            }
         }
 
-        public List<Entidades.Modulo> buscarModulo(int Id_Modulo){
+        //MÉTODO PARA BUSCAR MÓDULO:
+        public Modulo buscarModulo(int Id_Modulo){
 
+            Modulo modulo = new Modulo();
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = aux.conectar();
@@ -77,10 +89,8 @@ namespace Prueba{
             cmd.CommandText = "ConsultarModulo";
             cmd.CommandType = CommandType.StoredProcedure;
             SqlDataReader dr = cmd.ExecuteReader();
-            List<Entidades.Modulo> lista = new List<Entidades.Modulo>();
-            Entidades.Modulo modulo = new Entidades.Modulo();
 
-            while (dr.Read()){
+            if (dr.Read()){
 
                 modulo.Id_Modulo = Convert.ToInt32(dr["Id_Modulo"].ToString());
                 modulo.FK_Id_Aplicacion = Convert.ToInt32(dr["FK_Id_Aplicacion"].ToString());
@@ -94,12 +104,14 @@ namespace Prueba{
                 modulo.Usuario_Modificacion = dr["Usuario_Modificacion"].ToString();
                 modulo.Fecha_Modificacion = Convert.ToDateTime(dr["Fecha_Modificacion"].ToString());
 
-                lista.Add(modulo);
+            }else{
+                modulo = null;
             }
             aux.conectar();
-            return lista;
+            return modulo;
         }
 
+        //MÉTODO PARA LISTAR MÓDULO:
         public List<Modulo> listarModulo(){
 
             Conexion aux = new Conexion();
@@ -130,7 +142,6 @@ namespace Prueba{
             }
             aux.conectar();
             return lista;
-
         }
 
     }

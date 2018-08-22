@@ -1,0 +1,167 @@
+﻿@model IEnumerable<CapaEntidades.ProcesoBPBJC>
+<html>
+<head>
+    <title>Fructa CR S.A</title>
+    @*<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" />*@
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/img/flsf.png" type="image/x-icon" rel="shortcut icon" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    @*<script src="~script/jquery-1.10.2.min.js"></script>
+        <script src="~script/jquery-validate.min.js"></script>
+        <script src="~script/jquery-validate.unobtrusive.min.js"></script>*@
+</head>
+
+<body style="margin-top: 30px">
+        <form class="form-horizontal" id="form1">
+            <div class="container">
+                <div class="row">
+                    <div class="well well -sm">
+                        <fieldset>
+                            <table class="table table-hover" style="font-size: small">
+                                <thead class="text-primary">
+                                    <tr>
+                                        <th scope="row">
+                                            @Html.DisplayNameFor(model => model.Id_Proceso_BP_BJC)
+                                        </th>
+
+                                        <th scope="row">
+                                            @Html.DisplayNameFor(model => model.Tipo_Producto)
+                                        </th>
+
+                                        <th scope="row">
+                                            @Html.DisplayNameFor(model => model.Cantidad_Producto_Total)
+                                        </th>
+
+                                        <th scope="row">
+                                            @Html.DisplayNameFor(model => model.Porcentaje_Llenado)
+                                        </th>
+
+                                        <th scope="row">
+                                            @Html.DisplayNameFor(model => model.Cantidad_Cajas_Usadas)
+                                        </th>
+
+                                        <th scope="row">
+                                            @Html.DisplayNameFor(model => model.Cantidad_Carga_Banano_Verde_Usado_Kg)
+                                        </th>
+
+                                        <th scope="row">
+                                            @Html.DisplayNameFor(model => model.Cantidad_Carga_Banano_Maduro_Usado_Kg)
+                                        </th>
+
+                                        <th scope="row">
+                                            @Html.DisplayNameFor(model => model.Litros_Producidos)
+                                        </th>
+
+                                        <th scope="row">
+                                            @Html.DisplayNameFor(model => model.Transferido_Tanque)
+                                        </th>
+
+                                        <th scope="row">
+                                            @Html.DisplayNameFor(model => model.Estado)
+                                        </th>
+
+                                        <th scope="row">
+                                            @Html.DisplayNameFor(model => model.Usuario_Ingreso)
+                                        </th>
+
+                                        <th scope="row">
+                                            @Html.DisplayNameFor(model => model.Fecha_Ingreso)
+                                        </th>
+
+                                        <th scope="row">
+                                            @Html.DisplayNameFor(model => model.Usuario_Modificacion)
+                                        </th>
+
+                                        <th scope="row">
+                                            @Html.DisplayNameFor(model => model.Fecha_Modificacion)
+                                        </th>
+                                    </tr>
+                                </thead>
+
+                                @foreach (var item in Model)
+                            {
+
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Id_Proceso_BP_BJC)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Tipo_Producto)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Cantidad_Producto_Total)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Porcentaje_Llenado)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Cantidad_Cajas_Usadas)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Cantidad_Carga_Banano_Verde_Usado_Kg)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Cantidad_Carga_Banano_Maduro_Usado_Kg)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Litros_Producidos)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Transferido_Tanque)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Estado)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Usuario_Ingreso)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Fecha_Ingreso)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Usuario_Modificacion)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Fecha_Modificacion)
+                                    </td>
+
+                                    <td>
+                                        @Html.ActionLink("Modificar", "modificarProcesoBPBJC", new { id = item.Id_Proceso_BP_BJC }) |
+                                        @Html.ActionLink("Eliminar", "eliminarProcesoBPBJC", new { id = item.Id_Proceso_BP_BJC },
+                                        new { onclick = "return confirm('¿Está seguro de borrar el registro?'" })
+
+                                    </td>
+                                </tr>
+                        }
+
+                            </table>
+                            <span>
+                                @Html.ActionLink("Nuevo Registro", "agregarProcesoBPBJC", "ProcesoBPBJC", null,
+                                                    new { @class = "btn btn-primary btn.large" })
+                            </span>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    <footer style="text-align: center; background-color: #006bff; color: #ffffff">Fructa CR S.A</footer>
+
+</body>
+
+</html>

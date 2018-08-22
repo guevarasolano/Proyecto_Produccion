@@ -1,5 +1,4 @@
-﻿using AccesoDatos;
-using Entidades;
+﻿using CapaEntidades;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,11 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Prueba{
+namespace AccesoDatos{
 
     public class ADProcesoIngresoPiña{
 
-        public void insertarProcesoIngresoPiña(Proceso_Ingreso_Piña proceso_Ingreso_Piña){
+        //MÉTODO PARA INSERTAR PROCESO INGRESO PIÑA:
+        public Boolean insertarProcesoIngresoPiña(ProcesoIngresoPiña proceso_Ingreso_Piña){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -27,11 +27,17 @@ namespace Prueba{
             cmd.Parameters.Add(new SqlParameter("@Fecha_Modificacion", proceso_Ingreso_Piña.Fecha_Modificacion));
             cmd.CommandText = "InsertarProcesoIngresoPiña";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.ExecuteNonQuery();
+            int x = cmd.ExecuteNonQuery();
             aux.conectar();
+            if (x >= 1){
+                return true;
+            }else{
+                return false;
+            }
         }
 
-        public void actualizarProcesoIngresoPiña(Proceso_Ingreso_Piña proceso_Ingreso_Piña){
+        //MÉTODO PARA ACTUALIZAR PROCESO INGRESO PIÑA:
+        public void actualizarProcesoIngresoPiña(ProcesoIngresoPiña proceso_Ingreso_Piña){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -51,7 +57,8 @@ namespace Prueba{
             aux.conectar();
         }
 
-        public void eliminarProcesoIngresoPiña(int Id_Proceso_Ingreso_Piña){
+        //MÉTODO PARA ELIMINAR PROCESO INGRESO PIÑA:
+        public Boolean eliminarProcesoIngresoPiña(int Id_Proceso_Ingreso_Piña){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -59,24 +66,28 @@ namespace Prueba{
             cmd.Parameters.Add(new SqlParameter("@Id_Proceso_Ingreso_Piña", Id_Proceso_Ingreso_Piña));
             cmd.CommandText = "EliminarProcesoIngresoPiña";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.ExecuteNonQuery();
+            int x = cmd.ExecuteNonQuery();
             aux.conectar();
-
+            if (x >= 1){
+                return true;
+            }else{
+                return false;
+            }
         }
 
-        public List<Proceso_Ingreso_Piña> buscarProcesoIngresoPiña(int Id_Proceso_Ingreso_Piña){
+        //MÉTODO PARA BUSCAR PROCESO INGRESO PIÑA:
+        public ProcesoIngresoPiña buscarProcesoIngresoPiña(int Id_Proceso_Ingreso_Piña){
 
+            ProcesoIngresoPiña proceso_Ingreso_Piña = new ProcesoIngresoPiña();
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = aux.conectar();
             cmd.Parameters.Add(new SqlParameter("@Id_Proceso_Ingreso_Piña", Id_Proceso_Ingreso_Piña));
             cmd.CommandText = "ConsultarProcesoIngresoPiña";
             cmd.CommandType = CommandType.StoredProcedure;
-            SqlDataReader dr = cmd.ExecuteReader();
-            List<Proceso_Ingreso_Piña> lista = new List<Proceso_Ingreso_Piña>();
-            Proceso_Ingreso_Piña proceso_Ingreso_Piña = new Proceso_Ingreso_Piña();
+            SqlDataReader dr = cmd.ExecuteReader();          
 
-            while (dr.Read()){
+            if (dr.Read()){
 
                 proceso_Ingreso_Piña.Id_Proceso_Ingreso_Piña = Convert.ToInt32(dr["Id_Proceso_Ingreso_Piña"].ToString());
                 proceso_Ingreso_Piña.Numero_Recibo = Convert.ToInt32(dr["Numero_Recibo"].ToString());
@@ -88,13 +99,15 @@ namespace Prueba{
                 proceso_Ingreso_Piña.Usuario_Modificacion = dr["Usuario_Modificacion"].ToString();
                 proceso_Ingreso_Piña.Fecha_Modificacion = Convert.ToDateTime(dr["Fecha_Modificacion"].ToString());
 
-                lista.Add(proceso_Ingreso_Piña);
+            } else{
+                proceso_Ingreso_Piña = null;
             }
             aux.conectar();
-            return lista;
+            return proceso_Ingreso_Piña;
         }
 
-        public List<Proceso_Ingreso_Piña> listarProcesoIngresoPiña(){
+        //MÉTODO PARA LISTAR PROCESO INGRESO PIÑA:
+        public List<ProcesoIngresoPiña> listarProcesoIngresoPiña(){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -102,11 +115,11 @@ namespace Prueba{
             cmd.CommandText = "ListarProcesoIngresoPiña";
             cmd.CommandType = CommandType.StoredProcedure;
             SqlDataReader dr = cmd.ExecuteReader();
-            List<Proceso_Ingreso_Piña> lista = new List<Proceso_Ingreso_Piña>();
+            List<ProcesoIngresoPiña> lista = new List<ProcesoIngresoPiña>();
 
             while (dr.Read()){
 
-                Proceso_Ingreso_Piña proceso_Ingreso_Piña = new Proceso_Ingreso_Piña();
+                ProcesoIngresoPiña proceso_Ingreso_Piña = new ProcesoIngresoPiña();
 
                 proceso_Ingreso_Piña.Id_Proceso_Ingreso_Piña = Convert.ToInt32(dr["Id_Proceso_Ingreso_Piña"].ToString());
                 proceso_Ingreso_Piña.Numero_Recibo = Convert.ToInt32(dr["Numero_Recibo"].ToString());

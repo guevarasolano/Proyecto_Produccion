@@ -1,0 +1,130 @@
+﻿@model CapaEntidades.ProcesoBPBJC
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Proceso BP BJC</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id_Proceso_BP_BJC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id_Proceso_BP_BJC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipo_Producto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipo_Producto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cantidad_Producto_Total)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cantidad_Producto_Total)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Porcentaje_Llenado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Porcentaje_Llenado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cantidad_Cajas_Usadas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cantidad_Cajas_Usadas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cantidad_Carga_Banano_Verde_Usado_Kg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cantidad_Carga_Banano_Verde_Usado_Kg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cantidad_Carga_Banano_Maduro_Usado_Kg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cantidad_Carga_Banano_Maduro_Usado_Kg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Litros_Producidos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Litros_Producidos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Transferido_Tanque)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Transferido_Tanque)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario_Ingreso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuario_Ingreso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Ingreso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_Ingreso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario_Modificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuario_Modificacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Modificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_Modificacion)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

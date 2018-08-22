@@ -1,5 +1,4 @@
-﻿using AccesoDatos;
-using Entidades;
+﻿using CapaEntidades;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,11 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Prueba{
+namespace AccesoDatos{
 
     public class ADProcesoMaduracion{
 
-        public void insertarProcesoMaduracion(Proceso_Maduracion proceso_Maduracion){
+        //MÉTODO PARA INSERTAR PROCESO MADURACIÓN:
+        public Boolean insertarProcesoMaduracion(ProcesoMaduracion proceso_Maduracion){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -31,11 +31,17 @@ namespace Prueba{
             cmd.Parameters.Add(new SqlParameter("@Fecha_Modificacion", proceso_Maduracion.Fecha_Modificacion));
             cmd.CommandText = "InsertarProcesoMaduracion";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.ExecuteNonQuery();
+            int x = cmd.ExecuteNonQuery();
             aux.conectar();
+            if (x >= 1){
+                return true;
+            }else{
+                return false;
+            }
         }
 
-        public void actualizarProcesoMaduracion(Proceso_Maduracion proceso_Maduracion){
+        //MÉTODO PARA ACTUALIZAR PROCESO MADURACIÓN:
+        public void actualizarProcesoMaduracion(ProcesoMaduracion proceso_Maduracion){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -59,7 +65,8 @@ namespace Prueba{
             aux.conectar();
         }
 
-        public void eliminarProcesoMaduracion(int Id_Proceso_Maduracion){
+        //MÉTODO PARA ELIMINAR PROCESO MADURACIÓN:
+        public Boolean eliminarProcesoMaduracion(int Id_Proceso_Maduracion){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -67,24 +74,28 @@ namespace Prueba{
             cmd.Parameters.Add(new SqlParameter("@Id_Proceso_Maduracion", Id_Proceso_Maduracion));
             cmd.CommandText = "EliminarProcesoMaduracion";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.ExecuteNonQuery();
+            int x = cmd.ExecuteNonQuery();
             aux.conectar();
-
+            if (x >= 1){
+                return true;
+            }else{
+                return false;
+            }
         }
 
-        public List<Proceso_Maduracion> buscarProcesoMaduracion(int Id_Proceso_Maduracion){
+        //MÉTODO PARA BUSCAR PROCESO MADURACIÓN:
+        public ProcesoMaduracion buscarProcesoMaduracion(int Id_Proceso_Maduracion){
 
+            ProcesoMaduracion proceso_Maduracion = new ProcesoMaduracion();
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = aux.conectar();
             cmd.Parameters.Add(new SqlParameter("@Id_Proceso_Maduracion", Id_Proceso_Maduracion));
             cmd.CommandText = "ConsultarProcesoMaduracion";
             cmd.CommandType = CommandType.StoredProcedure;
-            SqlDataReader dr = cmd.ExecuteReader();
-            List<Proceso_Maduracion> lista = new List<Proceso_Maduracion>();
-            Proceso_Maduracion proceso_Maduracion = new Proceso_Maduracion();
+            SqlDataReader dr = cmd.ExecuteReader();  
 
-            while (dr.Read()){
+            if (dr.Read()){
 
                 proceso_Maduracion.Id_Proceso_Maduracion = Convert.ToInt32(dr["Id_Proceso_Maduracion"].ToString());
                 proceso_Maduracion.Numero_Recibo = Convert.ToInt32(dr["Numero_Recibo"].ToString());
@@ -100,13 +111,15 @@ namespace Prueba{
                 proceso_Maduracion.Usuario_Modificacion = dr["Usuario_Modificacion"].ToString();
                 proceso_Maduracion.Fecha_Modificacion = Convert.ToDateTime(dr["Fecha_Modificacion"].ToString());
 
-                lista.Add(proceso_Maduracion);
+            }else{
+                proceso_Maduracion = null;
             }
             aux.conectar();
-            return lista;
+            return proceso_Maduracion;
         }
 
-        public List<Proceso_Maduracion> listarProcesoMaduracion(){
+        //MÉTODO PARA LISTAR PROCESO MADURACIÓN:
+        public List<ProcesoMaduracion> listarProcesoMaduracion(){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -114,11 +127,11 @@ namespace Prueba{
             cmd.CommandText = "ListarProcesoMaduracion";
             cmd.CommandType = CommandType.StoredProcedure;
             SqlDataReader dr = cmd.ExecuteReader();
-            List<Proceso_Maduracion> lista = new List<Proceso_Maduracion>();
+            List<ProcesoMaduracion> lista = new List<ProcesoMaduracion>();
 
             while (dr.Read()){
 
-                Proceso_Maduracion proceso_Maduracion = new Proceso_Maduracion();
+                ProcesoMaduracion proceso_Maduracion = new ProcesoMaduracion();
 
                 proceso_Maduracion.Id_Proceso_Maduracion = Convert.ToInt32(dr["Id_Proceso_Maduracion"].ToString());
                 proceso_Maduracion.Numero_Recibo = Convert.ToInt32(dr["Numero_Recibo"].ToString());
@@ -138,8 +151,6 @@ namespace Prueba{
             }
             aux.conectar();
             return lista;
-
         }
-
     }
 }

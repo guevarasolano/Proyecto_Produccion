@@ -1,0 +1,194 @@
+﻿@model CapaEntidades.ProductoNoConforme
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Producto No Conforme</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id_Producto_No_Conforme)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id_Producto_No_Conforme)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FK_Id_Articulo_SAP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FK_Id_Articulo_SAP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lote_Producto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lote_Producto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Numero_Unidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Numero_Unidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Peso_Toneladas_Metricas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Peso_Toneladas_Metricas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Responsable)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Responsable)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Llenadora)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Llenadora)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Empaque)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Empaque)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipo_Producto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipo_Producto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Bloqueo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_Bloqueo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Area_Bloqueo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Area_Bloqueo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Naturaleza_Bloqueo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Naturaleza_Bloqueo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hallazgo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hallazgo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Causa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Causa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Codigo_Bloqueo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Codigo_Bloqueo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado_Unidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado_Unidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Disposicion_Recomendada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Disposicion_Recomendada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario_Ingreso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuario_Ingreso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Ingreso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_Ingreso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario_Modificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuario_Modificacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Modificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_Modificacion)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

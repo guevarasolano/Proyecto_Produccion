@@ -1,0 +1,186 @@
+﻿@model CapaEntidades.ProcesoLlenado
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Producto No Conforme</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id_Proceso_Llenado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id_Proceso_Llenado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FK_Id_Articulo_SAP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FK_Id_Articulo_SAP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FK_Id_Calidad_SAP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FK_Id_Calidad_SAP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Numero_Tanque)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Numero_Tanque)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Numero_Aseptica)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Numero_Aseptica)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Numero_Llenadora)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Numero_Llenadora)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lote_Proceso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lote_Proceso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Llenado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_Llenado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Unidad_Inicial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Unidad_Inicial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Unidad_Final)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Unidad_Final)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cantidad_Muestras)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cantidad_Muestras)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cantidad_Bolsas_Mezcla)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cantidad_Bolsas_Mezcla)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cantidad_Unidades_Segunda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cantidad_Unidades_Segunda)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FK_Id_Articulo_Bolsa_SAP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FK_Id_Articulo_Bolsa_SAP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lote_Bolsa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lote_Bolsa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comentarios)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comentarios)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario_Ingreso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuario_Ingreso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Ingreso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_Ingreso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario_Modificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuario_Modificacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Modificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_Modificacion)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

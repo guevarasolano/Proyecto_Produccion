@@ -1,18 +1,17 @@
-﻿using AccesoDatos;
-using Entidades;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CapaEntidades;
 
-namespace Prueba{
+namespace AccesoDatos { 
 
     public class ADUsuario{
 
-        public void insertarUsuario(Entidades.Usuario usuario){
+        public Boolean insertarUsuario(Usuario usuario){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -32,11 +31,17 @@ namespace Prueba{
             cmd.Parameters.Add(new SqlParameter("@Fecha_Modificacion", usuario.Fecha_Modificacion));
             cmd.CommandText = "InsertarUsuario";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.ExecuteNonQuery();
+            int x = cmd.ExecuteNonQuery();
             aux.conectar();
+            if (x >= 1){
+                return true;
+            }
+            else{
+                return false;
+            }
         }
 
-        public void actualizarUsuario(Entidades.Usuario usuario){
+        public void actualizarUsuario(Usuario usuario){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -61,7 +66,7 @@ namespace Prueba{
             aux.conectar();
         }
 
-        public void eliminarUsuario(int Id_Usuario){
+        public Boolean eliminarUsuario(int Id_Usuario){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -70,12 +75,19 @@ namespace Prueba{
             cmd.CommandText = "EliminarUsuario";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.ExecuteNonQuery();
+            int x = cmd.ExecuteNonQuery();
             aux.conectar();
-
+            if (x >= 1){
+                return true;
+            }
+            else{
+                return false;
+            }
         }
 
-        public List<Entidades.Usuario> buscarUsuario(int Id_Usuario){
+        public Usuario buscarUsuario(int Id_Usuario){
 
+            Usuario usuario = new Usuario();
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = aux.conectar();
@@ -83,10 +95,8 @@ namespace Prueba{
             cmd.CommandText = "ConsultarUsuario";
             cmd.CommandType = CommandType.StoredProcedure;
             SqlDataReader dr = cmd.ExecuteReader();
-            List<Entidades.Usuario> lista = new List<Entidades.Usuario>();
-            Entidades.Usuario usuario = new Entidades.Usuario();
 
-            while (dr.Read()){
+            if (dr.Read()){
 
                 usuario.Id_Usuario = Convert.ToInt32(dr["Id_Usuario"].ToString());
                 usuario.Dominio = dr["Dominio"].ToString();
@@ -103,10 +113,11 @@ namespace Prueba{
                 usuario.Usuario_Modificacion = dr["Usuario_Modificacion"].ToString();
                 usuario.Fecha_Modificacion = Convert.ToDateTime(dr["Fecha_Modificacion"].ToString());
 
-                lista.Add(usuario);
+            }else{
+                usuario = null;
             }
             aux.conectar();
-            return lista;
+            return usuario;
         }
 
         public List<Usuario> listarUsuario(){
@@ -146,4 +157,5 @@ namespace Prueba{
         }
 
     }
+
 }

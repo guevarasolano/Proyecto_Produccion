@@ -1,5 +1,4 @@
-﻿using AccesoDatos;
-using Entidades;
+﻿using CapaEntidades;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,11 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Prueba{
+namespace AccesoDatos { 
 
     public class ADProcesoBPBJC{
 
-        public void insertarProcesoBPBJC(Proceso_BP_BJC proceso_BP_BJC){
+        //MÉTODO PARA INSERTAR PROCESOBPBJC:
+        public Boolean insertarProcesoBPBJC(ProcesoBPBJC proceso_BP_BJC){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -32,11 +32,17 @@ namespace Prueba{
             cmd.Parameters.Add(new SqlParameter("@Fecha_Modificacion", proceso_BP_BJC.Fecha_Modificacion));
             cmd.CommandText = "InsertarProcesoBPBJC";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.ExecuteNonQuery();
+            int x = cmd.ExecuteNonQuery();
             aux.conectar();
+            if (x >= 1){
+                return true;
+            }else{
+                return false;
+            }
         }
 
-        public void actualizarProcesoBPBJC(Proceso_BP_BJC proceso_BP_BJC){
+        //MÉTODO PARA ACTUALIZAR PROCESOBPBJC:
+        public void actualizarProcesoBPBJC(ProcesoBPBJC proceso_BP_BJC){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -61,7 +67,8 @@ namespace Prueba{
             aux.conectar();
         }
 
-        public void eliminarProcesoBPBJC(int Id_Proceso_BP_BJC){
+        //MÉTODO PARA ELIMINAR PROCESOBPBJC:
+        public Boolean eliminarProcesoBPBJC(int Id_Proceso_BP_BJC){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -69,24 +76,28 @@ namespace Prueba{
             cmd.Parameters.Add(new SqlParameter("@Id_Proceso_BP_BJC", Id_Proceso_BP_BJC));
             cmd.CommandText = "EliminarProcesoBPBJC";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.ExecuteNonQuery();
+            int x = cmd.ExecuteNonQuery();
             aux.conectar();
-
+            if (x >= 1){
+                return true;
+            }else{
+                return false;
+            }
         }
 
-        public List<Proceso_BP_BJC> buscarProcesoBPBJC(int Id_Proceso_BP_BJC){
+        //MÉTODO PARA BUSCAR PROCESOBPBJC:
+        public ProcesoBPBJC buscarProcesoBPBJC(int Id_Proceso_BP_BJC){
 
+            ProcesoBPBJC proceso_BP_BJC = new ProcesoBPBJC();
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = aux.conectar();
             cmd.Parameters.Add(new SqlParameter("@Id_Proceso_BP_BJC", Id_Proceso_BP_BJC));
             cmd.CommandText = "ConsultarProcesoBPBJC";
             cmd.CommandType = CommandType.StoredProcedure;
-            SqlDataReader dr = cmd.ExecuteReader();
-            List<Proceso_BP_BJC> lista = new List<Proceso_BP_BJC>();
-            Proceso_BP_BJC proceso_BP_BJC = new Proceso_BP_BJC();
+            SqlDataReader dr = cmd.ExecuteReader();            
 
-            while (dr.Read()){
+            if (dr.Read()){
 
                 proceso_BP_BJC.Id_Proceso_BP_BJC = Convert.ToInt32(dr["Id_Proceso_BP_BJC"].ToString());
                 proceso_BP_BJC.Tipo_Producto = dr["Tipo_Producto"].ToString();
@@ -103,13 +114,15 @@ namespace Prueba{
                 proceso_BP_BJC.Usuario_Modificacion = dr["Usuario_Modificacion"].ToString();
                 proceso_BP_BJC.Fecha_Modificacion = Convert.ToDateTime(dr["Fecha_Modificacion"].ToString());
 
-                lista.Add(proceso_BP_BJC);
+            }else{
+                proceso_BP_BJC = null;
             }
             aux.conectar();
-            return lista;
+            return proceso_BP_BJC;
         }
 
-        public List<Proceso_BP_BJC> listarProcesoBPBJC(){
+        //MÉTODO PARA LISTAR PROCESOBPBJC:
+        public List<ProcesoBPBJC> listarProcesoBPBJC(){
 
             Conexion aux = new Conexion();
             SqlCommand cmd = new SqlCommand();
@@ -117,11 +130,11 @@ namespace Prueba{
             cmd.CommandText = "ListarProcesoBPBJC";
             cmd.CommandType = CommandType.StoredProcedure;
             SqlDataReader dr = cmd.ExecuteReader();
-            List<Proceso_BP_BJC> lista = new List<Proceso_BP_BJC>();
+            List<ProcesoBPBJC> lista = new List<ProcesoBPBJC>();
 
             while (dr.Read()){
 
-                Proceso_BP_BJC proceso_BP_BJC = new Proceso_BP_BJC();
+                ProcesoBPBJC proceso_BP_BJC = new ProcesoBPBJC();
 
                 proceso_BP_BJC.Id_Proceso_BP_BJC = Convert.ToInt32(dr["Id_Proceso_BP_BJC"].ToString());
                 proceso_BP_BJC.Tipo_Producto = dr["Tipo_Producto"].ToString();
@@ -142,8 +155,10 @@ namespace Prueba{
             }
             aux.conectar();
             return lista;
-
         }
+
 
     }
 }
+
+
