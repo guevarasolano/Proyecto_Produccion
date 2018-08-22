@@ -45,8 +45,8 @@ namespace AccesoDatos {
         cmd.Parameters.Add(new SqlParameter("@Id_Accion", accion.Id_Accion));
         cmd.Parameters.Add(new SqlParameter("@FK_Id_Modulo", accion.FK_Id_Modulo));
         cmd.Parameters.Add(new SqlParameter("@Codigo", accion.Codigo));
-        cmd.Parameters.Add(new SqlParameter("@Controlador", accion.Descripcion));
-        cmd.Parameters.Add(new SqlParameter("@Descripcion", accion.Estado));
+        cmd.Parameters.Add(new SqlParameter("@Descripcion", accion.Descripcion));
+        cmd.Parameters.Add(new SqlParameter("@Estado", accion.Estado));
         cmd.Parameters.Add(new SqlParameter("@Estado_Accion", accion.Estado_Accion));
         cmd.Parameters.Add(new SqlParameter("@Usuario_Ingreso", accion.Usuario_Ingreso));
         cmd.Parameters.Add(new SqlParameter("@Fecha_Ingreso", accion.Fecha_Ingreso));
