@@ -1,0 +1,330 @@
+/* 
+
+Autor: Adrián Guevara Solano. 
+Descripción: Hoja de estilos básica para aplicación adaptativa.
+Fecha: 04/09/2017.
+Institución: Caja Costarricense del Seguro Social - CAIS Siquirres.
+
+*/
+
+
+/*-------- GENERAL --------*/
+*{
+	margin:0;
+	padding:0;
+	font-family:Arial, Geneva, sans-serif;
+	transition:.2s;
+	-webkit-transition:.2s;
+	-moz-transition:.2s;
+	-o-transition:.2s;
+}
+
+body{
+	text-align:center;
+}
+
+
+/*-------- ENCABEZADO --------*/
+
+header{
+	background-color: #336699;
+  	color: #fff;
+  	padding: 20px;
+  	border-bottom: 2px solid rgba(0,0,0,.2);
+}
+
+nav{
+	display: block;
+	text-align: center;
+	background-color: #FFFFAA;
+	padding: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+nav ul{
+	list-style: none;
+}
+
+nav ul li{
+	display: inline-block;
+	position: relative;
+}
+
+nav ul li a{
+	display: block;
+	padding: 20px;
+	text-decoration: none;
+	color: #336699;
+}
+
+nav ul li:hover{
+	background-color: rgba(0,0,0,.3);
+}
+
+header .sub{
+	position: absolute;
+	background-color: #555;
+	width: 100%;
+	display: none;
+}
+
+header .sub li{
+	display: block;
+}
+
+header .sub li a{
+	
+}
+
+header nav ul li:hover .sub{
+	background-color: rgba(0,0,0,.3);
+	display: block;
+}
+
+#logo{
+	background-image: url(../img/l.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	border-radius: 100px;
+	border: 7px solid #fff;
+	margin-right: 10px;
+	vertical-align: bottom;
+}
+
+
+/*-------- CUERPO --------*/
+
+section{
+	border: 1px solid #D2D2D2;
+	padding: 20px;
+	background-color: #eaeaea;
+	border-radius: 5px;
+	max-width: 1100px;
+	margin: 20px auto;
+}
+
+section h2{
+	color: #336699;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 18px;
+	border-bottom: 1px solid;
+	margin-bottom: 20px;
+	padding-bottom: 5px;
+	text-align: left;
+}
+
+section h3{
+	color: #336699;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	text-align: justify;
+}
+
+log{
+	border: 1px solid #D2D2D2;
+	padding: 20px;
+	background-color: #eaeaea;
+	border-radius: 5px;
+	max-width: 500px;
+	margin: 20px auto;
+}
+
+article{
+	display: inline-block;
+	width: 85%;
+	max-width: 1100px;
+	margin: 10px;
+	background-color: rgba(255,255,255,.7);
+	padding: 10px;
+	border-radius: 3px;
+	vertical-align: top;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+article h2{
+	color: #336699;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 18px;
+	border-bottom: 1px solid;
+	margin-bottom: 20px;
+	padding-bottom: 5px;
+	text-align: left;
+}
+
+/* FORMULARIOS */
+
+form input{
+	display: inline-block;
+	margin: 5px 0;
+	width: 80%;
+	box-sizing: border-box;
+	background-color: rgba(204, 204, 204, 0.28);
+	border: 0;
+	padding: 9px;
+	border-bottom: 1px solid #ccc;
+	color: #336699;
+	outline:none;
+}
+
+form input:focus, form input:hover{
+	border-bottom-color:#336699;
+	color:#336699;
+} 
+
+form input[type=submit]{
+	background-color: #888;
+	color: #fff;
+	font-size: 18px;
+	font-weight: normal;
+	text-transform: uppercase;
+	border: 0;
+	border-radius: 3px;
+	cursor: pointer;
+	width: auto;
+	padding: 10px 20px;
+	border-bottom: 3px solid rgba(0,0,0,.2);
+}
+
+form input[type=submit]:focus, form input[type=submit]:hover{
+	background-color:#336699;
+}
+
+
+/* MENSAJES */
+
+.msg {
+	display: block;
+	margin-bottom: 10px;
+	background-color: #ccc;
+	padding: 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	color:#fff;
+}
+
+.success {
+	background-color:#690;
+}
+
+.error {
+	background-color:#C00;
+}
+
+#buscar input{
+	display:inline-block;
+	width:75%;
+	box-sizing:border-box;	
+}
+
+#buscar input[type=submit]{
+	font-size:12px;
+	padding:5px 10px;
+	width:20%;		
+}
+
+/* TABLAS */
+
+.tabla{
+	overflow:auto;
+}
+
+table{
+	width: 100%;
+	min-width: 400px;
+	background-color: #eaeaea;
+	font-size: 14px;
+	border-spacing: 0;
+}
+
+table th{
+	background-color: #336699;
+	color: #fff;
+	font-weight: normal;
+	padding: 3px 0;
+}
+
+table tr{
+	
+}
+
+table td{
+	padding: 5px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+table tr:hover td{
+	background-color: #FFFFFF;
+	color: #336699;
+}
+
+table a{
+	text-decoration: none;
+	display: inline-block;
+	color: #fff;
+	background-color: #555;
+	padding: 2px 6px;
+	border-radius: 100%;
+	outline: none;
+}
+
+table a:hover{
+	background-color:#336699;
+}
+
+
+/*-------- PIE DE PAGINA --------*/
+
+footer{
+	border-top: 1px solid #336699;
+	color: #336699;
+	padding: 20px;
+	margin: 20px 0;
+	font-size:14px;
+	
+}
+
+
+
+/*-------- RESPONSIVE WEB DESIGN (RWD) --------*/
+
+@media screen and (max-width:970px){
+	
+	article{
+		width:auto;
+		max-width:none;
+		display:block;
+		margin-bottom:20px;
+	}
+	
+}
+
+@media screen and (max-width:670px){
+	
+	header{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 15px;
+		box-shadow: 0px 5px 25px -10px #000;
+		border-bottom: 1px solid rgba(255,255,255,.7);
+	}
+	
+	body{
+		padding-top:50px;
+	}
+	
+}

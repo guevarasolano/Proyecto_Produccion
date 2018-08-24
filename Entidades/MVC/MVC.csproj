@@ -92,6 +92,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="css\style.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="img\flsf.png" />
@@ -115,6 +116,7 @@
     <Content Include="Script\jquery-1.12.4.min.js" />
     <Content Include="Script\jquery.validate.min.js" />
     <Content Include="Script\jquery.validate.unobtrusive.min.js" />
+    <None Include="Views\Menu\Menu.cshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
