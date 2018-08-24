@@ -116,7 +116,6 @@
     <Content Include="Script\jquery-1.12.4.min.js" />
     <Content Include="Script\jquery.validate.min.js" />
     <Content Include="Script\jquery.validate.unobtrusive.min.js" />
-    <None Include="Views\Menu\Menu.cshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -128,6 +127,7 @@
     <Compile Include="Controllers\DisposicionProductoNoConformeController.cs" />
     <Compile Include="Controllers\DistribucionInventarioTanqueController.cs" />
     <Compile Include="Controllers\InventarioProductoTerminadoController.cs" />
+    <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Controllers\ModuloController.cs" />
     <Compile Include="Controllers\ProcesoBPBJCController.cs" />
     <Compile Include="Controllers\ProcesoIngresoPiñaController.cs" />
@@ -209,6 +209,7 @@
     <Content Include="Views\Usuario\eliminarUsuario.cshtml" />
     <Content Include="Views\Usuario\Listado.cshtml" />
     <Content Include="Views\Usuario\modificarUsuario.cshtml" />
+    <Content Include="Views\Menu\Menu.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
