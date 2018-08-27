@@ -27,18 +27,20 @@ body{
 /*-------- ENCABEZADO --------*/
 
 header {
-    background-color: #f38001;
+    background-color: #eeb850;
     /*background-color: #d23f0e; ROJO*/
+    /*background-color: #f38001; NARANJA*/
     color: #fff;
     padding: 20px;
-    border-bottom: 2px solid rgba(0,0,0,.2);
+    /*border-bottom: 2px solid rgba(0,0,0,.2);*/
 }
 
 nav {
     display: block;
     text-align: center;
-    background-color: #eeb850;
+    background-color: #f38001;
     /*background-color: #f38001; NARANJA*/
+    /*background-color: #d23f0e; ROJO*/
     padding: 0px;
     margin-left: 0px;
     margin-right: 0px;
@@ -90,10 +92,10 @@ header nav ul li:hover .sub{
 	background-size: contain;
 	background-position: center;
 	display: inline-block;
-	width: 30px;
-	height: 30px;
+	width: 50px;
+	height: 50px;
 	background-color: #fff;
-	border-radius: 100px;
+	border-radius: 10px;
 	border: 7px solid #fff;
 	margin-right: 10px;
 	vertical-align: bottom;
@@ -111,19 +113,20 @@ section{
 	margin: 20px auto;
 }
 
-section h2{
-	color: #336699;
-	font-weight: normal;
-	text-transform: uppercase;
-	font-size: 18px;
-	border-bottom: 1px solid;
-	margin-bottom: 20px;
-	padding-bottom: 5px;
-	text-align: left;
-}
+    section h2 {
+        color: #d23f0e;
+        /*color: #336699;*/
+        font-weight: normal;
+        text-transform: uppercase;
+        font-size: 18px;
+        border-bottom: 1px solid;
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+        text-align: left;
+    }
 
 section h3{
-	color: #336699;
+	color: #FFF;
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 18px;
@@ -155,7 +158,8 @@ article{
 }
 
     article h2 {
-        color: #0d7f4e;
+        color: #d23f0e;
+        /*color: #0d7f4e;*/
         font-weight: normal;
         text-transform: uppercase;
         font-size: 18px;
@@ -186,7 +190,9 @@ form input:focus, form input:hover{
 }
 
     form input[type=submit] {
-        background-color: #0d7f4e;
+        background-color: #d23f0e;
+        /*background-color: #699a2f; VERDE*/
+        /*background-color: #0d7f4e;*/
         color: #fff;
         font-size: 18px;
         font-weight: normal;
@@ -199,9 +205,9 @@ form input:focus, form input:hover{
         border-bottom: 3px solid rgba(0,0,0,.2);
     }
 
-    form input[type=submit]:focus, form input[type=submit]:hover {
-    background-color: #d23f0e;
-    }
+        form input[type=submit]:focus, form input[type=submit]:hover {
+            background-color: #eeb850;
+        }
 
 
 /* MENSAJES */
@@ -289,8 +295,8 @@ table a:hover{
 /*-------- PIE DE PAGINA --------*/
 
 footer {
-    border-top: 1px solid #0d7f4e;
-    color: #0d7f4e;
+    border-top: 1px solid #d23f0e;
+    color: #d23f0e;
     padding: 20px;
     margin: 20px 0;
     font-size: 14px;
