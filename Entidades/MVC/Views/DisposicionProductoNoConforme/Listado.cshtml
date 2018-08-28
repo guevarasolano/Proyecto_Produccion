@@ -140,8 +140,7 @@
 
                                     <td>
                                         @Html.ActionLink("Modificar", "modificarDisposicionProductoNoConforme", new { id = item.Id_Disposicion_Producto_No_Conforme }) |
-                                        @Html.ActionLink("Eliminar", "eliminarDisposicionProductoNoConforme", new { id = item.Id_Disposicion_Producto_No_Conforme },
-                                             new { onclick = "return confirm('¿Está seguro de borrar el registro?'" })
+                                        @Html.ActionLink("Eliminar", "eliminarDisposicionProductoNoConforme", new { id = item.Id_Disposicion_Producto_No_Conforme }, new { onclick = "return confirm('¿Está seguro de borrar el registro?'" })
 
                                     </td>
                                 </tr>
@@ -149,8 +148,8 @@
 
                         </table>
                         <span>
-                            @Html.ActionLink("Nuevo Registro", "agregarDisposicionProductoNoConforme", "DisposicionProductoNoConforme", null,
-                                                    new { @class = "btn btn-primary btn.large" })
+                            @Html.ActionLink("Nuevo Registro", "agregarDisposicionProductoNoConforme", "DisposicionProductoNoConforme", null, new { @class = "btn btn-primary btn.large" })
+                            @Html.ActionLink("Regresar", "Menu", "Menu", null, new { @class = "btn btn-primary btn-large" })
                         </span>
                     </fieldset>
                 </div>

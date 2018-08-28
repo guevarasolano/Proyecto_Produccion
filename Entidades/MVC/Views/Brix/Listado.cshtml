@@ -94,8 +94,7 @@
 
                                     <td>
                                         @Html.ActionLink("Modificar", "modificarBrix", new { id = item.Id_Brix }) |
-                                        @Html.ActionLink("Eliminar", "eliminarBrix", new { id = item.Id_Brix },
-                                                           new { onclick = "return confirm('¿Está seguro de borrar el registro?'" })
+                                        @Html.ActionLink("Eliminar", "eliminarBrix", new { id = item.Id_Brix }, new { onclick = "return confirm('¿Está seguro de borrar el registro?'" })
 
                                     </td>
                                 </tr>
@@ -103,8 +102,8 @@
 
                         </table>
                         <span>
-                            @Html.ActionLink("Nuevo Registro", "agregarBrix", "Brix", null,
-                                               new { @class = "btn btn-primary btn.large" })
+                            @Html.ActionLink("Nuevo Registro", "agregarBrix", "Brix", null, new { @class = "btn btn-primary btn.large" })
+                            @Html.ActionLink("Regresar", "Menu", "Menu", null, new { @class = "btn btn-primary btn-large" })
                         </span>
                     </fieldset>
                 </div>

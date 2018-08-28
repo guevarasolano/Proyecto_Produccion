@@ -222,7 +222,7 @@
                                 <td>
                                     @Html.ActionLink("Modificar", "modificarAditivo", new { id = item.Id_Aditivo }) |
                                     @Html.ActionLink("Eliminar", "eliminarAditivo", new { id = item.Id_Aditivo },
-new { onclick = "return confirm('¿Está seguro de borrar el registro?'" })
+                                    new { onclick = "return confirm('¿Está seguro de borrar el registro?'" })
 
                                 </td>
                             </tr>
@@ -230,8 +230,8 @@ new { onclick = "return confirm('¿Está seguro de borrar el registro?'" })
 
                         </table>
                         <span>
-                            @Html.ActionLink("Nuevo Registro", "agregarAditivo", "Aditivo", null,
-                                                    new { @class = "btn btn-primary btn.large" })
+                            @Html.ActionLink("Nuevo Registro", "agregarAditivo", "Aditivo", null, new { @class = "btn btn-primary btn.large" })
+                            @Html.ActionLink("Regresar", "Menu", "Menu", null, new { @class = "btn btn-primary btn-large" })
                         </span>
                     </fieldset>
                 </div>
