@@ -4,6 +4,7 @@
     <title>Fructa CR S.A</title>
     @*<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" />*@
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/main.css" rel="stylesheet" />
     <link href="~/img/flsf.png" type="image/x-icon" rel="shortcut icon" />
     <script src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -14,6 +15,11 @@
 </head>
 
 <body style="margin-top: 30px">
+
+    <div id="contenedor_carga">
+        <div id="carga"></div>
+    </div>
+
     <form class="form-horizontal" id="form1">
         <div class="container">
             <div class="row">
@@ -22,96 +28,97 @@
                         <table class="table table-hover" style="font-size: small">
                             <thead class="text-primary">
                                 <tr>
-                                    <th scope="row">
+                                    <th scope="row" style="color: #f38001">
                                         @Html.DisplayNameFor(model => model.Id_Rol)
                                     </th>
 
-                                    <th scope="row">
+                                    <th scope="row" style="color: #f38001">
                                         @Html.DisplayNameFor(model => model.Codigo)
                                     </th>
 
-                                    <th scope="row">
+                                    <th scope="row" style="color: #f38001">
                                         @Html.DisplayNameFor(model => model.Descripcion)
                                     </th>
 
-                                    <th scope="row">
+                                    <th scope="row" style="color: #f38001">
                                         @Html.DisplayNameFor(model => model.Estado)
                                     </th>
 
-                                    <th scope="row">
+                                    <th scope="row" style="color: #f38001">
                                         @Html.DisplayNameFor(model => model.Estado_Accion)
                                     </th>
 
-                                    <th scope="row">
+                                    <th scope="row" style="color: #f38001">
                                         @Html.DisplayNameFor(model => model.Usuario_Ingreso)
                                     </th>
 
-                                    <th scope="row">
+                                    <th scope="row" style="color: #f38001">
                                         @Html.DisplayNameFor(model => model.Fecha_Ingreso)
                                     </th>
 
-                                    <th scope="row">
+                                    <th scope="row" style="color: #f38001">
                                         @Html.DisplayNameFor(model => model.Usuario_Modificacion)
                                     </th>
 
-                                    <th scope="row">
+                                    <th scope="row" style="color: #f38001">
                                         @Html.DisplayNameFor(model => model.Fecha_Modificacion)
                                     </th>
                                 </tr>
                             </thead>
 
-                            @foreach (var item in Model){
+                            @foreach (var item in Model)
+                            {
 
-                            <tr>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Id_Rol)
-                                </td>
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Id_Rol)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Codigo)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Codigo)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Descripcion)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Descripcion)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Estado)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Estado)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Estado_Accion)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Estado_Accion)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Usuario_Ingreso)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Usuario_Ingreso)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Fecha_Ingreso)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Fecha_Ingreso)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Usuario_Modificacion)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Usuario_Modificacion)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Fecha_Modificacion)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Fecha_Modificacion)
+                                    </td>
 
-                                <td>
-                                    @Html.ActionLink("Modificar", "modificarRol", new { id = item.Id_Rol }) |
-                                    @Html.ActionLink("Eliminar", "eliminarRol", new { id = item.Id_Rol },
-                                new { onclick = "return confirm('¿Está seguro de borrar el registro?'" })
+                                    <td style="color: #eeb850">
+                                        @Html.ActionLink("Modificar", "modificarRol", new { id = item.Id_Rol }) |
+                                        @Html.ActionLink("Eliminar", "eliminarRol", new { id = item.Id_Rol },
+                                                             new { onclick = "return confirm('¿Está seguro de borrar el registro?'" })
 
-                                </td>
-                            </tr>
+                                    </td>
+                                </tr>
                             }
 
                         </table>
                         <span>
                             @Html.ActionLink("Nuevo Registro", "agregarRol", "Rol", null,
-                            new { @class = "btn btn-primary btn.large" })
+                                                     new { @class = "btn btn-primary btn.large" })
                             @Html.ActionLink("Regresar", "Menu", "Menu", null, new { @class = "btn btn-primary btn-large" })
                         </span>
                     </fieldset>
@@ -120,7 +127,18 @@
         </div>
     </form>
 
-    <footer style="text-align: center; background-color: #006bff; color: #ffffff">Fructa CR S.A</footer>
+    <script>
+
+        window.onload = function () {
+            var contenedor = document.getElementById('contenedor_carga');
+
+            contenedor.style.visibility = 'hidden';
+            contenedor.style.opacity = '0';
+        }
+
+    </script>
+
+    <footer style="text-align: center; background-color: #f38001; color: #ffffff">Fructa CR S.A</footer>
 
 </body>
 

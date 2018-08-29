@@ -49,6 +49,7 @@
     <Compile Include="DistribucionInventarioTanque.cs" />
     <Compile Include="InventarioProductoTerminado.cs" />
     <Compile Include="Modulo.cs" />
+    <Compile Include="Persona.cs" />
     <Compile Include="ProcesoBPBJC.cs" />
     <Compile Include="ProcesoIngresoPiña.cs" />
     <Compile Include="ProcesoLlenado.cs" />

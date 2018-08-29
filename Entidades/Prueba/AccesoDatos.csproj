@@ -50,6 +50,7 @@
     <Compile Include="ADDistribucionInventarioTanque.cs" />
     <Compile Include="ADInventarioProductoTerminado.cs" />
     <Compile Include="ADModulo.cs" />
+    <Compile Include="ADPersona.cs" />
     <Compile Include="ADProcesoBPBJC.cs" />
     <Compile Include="ADProcesoIngresoPiña.cs" />
     <Compile Include="ADProcesoLlenado.cs" />

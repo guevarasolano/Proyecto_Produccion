@@ -4,6 +4,7 @@
     <title>Fructa CR S.A | Producción</title>
     @*<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" />*@
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/main.css" rel="stylesheet" />
     <link href="~/img/flsf.png" type="image/x-icon" rel="shortcut icon" />
     <script src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -14,6 +15,11 @@
 </head>
 
 <body style="margin-top: 30px">
+
+    <div id="contenedor_carga">
+        <div id="carga"></div>
+    </div>
+
     <form class="form-horizontal" id="form1">
         <div class="container">
             <div class="row">
@@ -120,112 +126,113 @@
                                 </tr>
                             </thead>
 
-                            @foreach (var item in Model){
+                            @foreach (var item in Model)
+                            {
 
-                            <tr>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Id_Aditivo)
-                                </td>
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Id_Aditivo)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.FK_Id_Proceso_BP_BJC)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.FK_Id_Proceso_BP_BJC)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Jugo_Limon)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Jugo_Limon)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Ascorbico)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Ascorbico)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Citrico)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Citrico)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Liquiseb_RL_Concentrado)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Liquiseb_RL_Concentrado)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Liquiseb_APL)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Liquiseb_APL)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Sebamyl_GL400)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Sebamyl_GL400)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Sebamyl_BAL100)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Sebamyl_BAL100)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Flora_Clair)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Flora_Clair)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Gelatina)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Gelatina)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Bevasyl)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Bevasyl)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Bentonita)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Bentonita)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Carbon)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Carbon)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Celite)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Celite)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.HS_4000)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.HS_4000)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Shenck_DD)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Shenck_DD)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.HS_1000)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.HS_1000)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.HS_1600)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.HS_1600)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Estado)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Estado)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Usuario_Ingreso)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Usuario_Ingreso)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Fecha_Ingreso)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Fecha_Ingreso)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Usuario_Modificacion)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Usuario_Modificacion)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Fecha_Modificacion)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Fecha_Modificacion)
+                                    </td>
 
-                                <td>
-                                    @Html.ActionLink("Modificar", "modificarAditivo", new { id = item.Id_Aditivo }) |
-                                    @Html.ActionLink("Eliminar", "eliminarAditivo", new { id = item.Id_Aditivo },
-                                    new { onclick = "return confirm('¿Está seguro de borrar el registro?'" })
+                                    <td>
+                                        @Html.ActionLink("Modificar", "modificarAditivo", new { id = item.Id_Aditivo }) |
+                                        @Html.ActionLink("Eliminar", "eliminarAditivo", new { id = item.Id_Aditivo },
+                                                  new { onclick = "return confirm('¿Está seguro de borrar el registro?'" })
 
-                                </td>
-                            </tr>
+                                    </td>
+                                </tr>
                             }
 
                         </table>
@@ -240,6 +247,17 @@
     </form>
 
     <footer style="text-align: center; background-color: #006bff; color: #ffffff">Fructa CR S.A</footer>
+
+    <script>
+
+        window.onload = function () {
+            var contenedor = document.getElementById('contenedor_carga');
+
+            contenedor.style.visibility = 'hidden';
+            contenedor.style.opacity = '0';
+        }
+
+    </script>
 
 </body>
 

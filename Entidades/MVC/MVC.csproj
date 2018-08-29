@@ -92,6 +92,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="css\main.css" />
     <Content Include="css\style.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -101,6 +102,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Models\Prueba.html" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
@@ -129,6 +131,7 @@
     <Compile Include="Controllers\InventarioProductoTerminadoController.cs" />
     <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Controllers\ModuloController.cs" />
+    <Compile Include="Controllers\PersonaController.cs" />
     <Compile Include="Controllers\ProcesoBPBJCController.cs" />
     <Compile Include="Controllers\ProcesoIngresoPiñaController.cs" />
     <Compile Include="Controllers\ProcesoLlenadoController.cs" />
@@ -210,6 +213,7 @@
     <Content Include="Views\Usuario\Listado.cshtml" />
     <Content Include="Views\Usuario\modificarUsuario.cshtml" />
     <Content Include="Views\Menu\Menu.cshtml" />
+    <Content Include="Views\Persona\Listado.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -219,7 +223,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CapaEntidades\CapaEntidades.csproj">
