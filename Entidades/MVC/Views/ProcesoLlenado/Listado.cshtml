@@ -4,6 +4,7 @@
     <title>Fructa CR S.A</title>
     @*<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" />*@
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/main.css" rel="stylesheet" />
     <link href="~/img/flsf.png" type="image/x-icon" rel="shortcut icon" />
     <script src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -14,101 +15,107 @@
 </head>
 
 <body style="margin-top: 30px">
-        <form class="form-horizontal" id="form1">
-            <div class="container">
-                <div class="row">
-                    <div class="well well -sm">
-                        <fieldset>
-                            <table class="table table-hover" style="font-size: small">
-                                <thead class="text-primary">
-                                    <tr>
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Id_Proceso_Llenado)
-                                        </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.FK_Id_Articulo_SAP)
-                                        </th>
+    <div id="contenedor_carga">
+        <div id="carga"></div>
+    </div>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.FK_Id_Calidad_SAP)
-                                        </th>
+    <form class="form-horizontal" id="form1">
+        <div class="container">
+            <div class="row">
+                <div class="well well -sm">
+                    <fieldset>
+                        <table class="table table-hover" style="font-size: small">
+                            <thead class="text-primary">
+                                <tr>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Id_Proceso_Llenado)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Numero_Tanque)
-                                        </th>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.FK_Id_Articulo_SAP)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Numero_Aseptica)
-                                        </th>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.FK_Id_Calidad_SAP)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Numero_Llenadora)
-                                        </th>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Numero_Tanque)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Lote_Proceso)
-                                        </th>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Numero_Aseptica)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Fecha_Llenado)
-                                        </th>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Numero_Llenadora)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Unidad_Inicial)
-                                        </th>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Lote_Proceso)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Unidad_Final)
-                                        </th>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Fecha_Llenado)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Cantidad_Muestras)
-                                        </th>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Unidad_Inicial)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Cantidad_Bolsas_Mezcla)
-                                        </th>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Unidad_Final)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Cantidad_Unidades_Segunda)
-                                        </th>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Cantidad_Muestras)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.FK_Id_Articulo_Bolsa_SAP)
-                                        </th>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Cantidad_Bolsas_Mezcla)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Lote_Bolsa)
-                                        </th>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Cantidad_Unidades_Segunda)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Comentarios)
-                                        </th>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.FK_Id_Articulo_Bolsa_SAP)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Estado)
-                                        </th>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Lote_Bolsa)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Usuario_Ingreso)
-                                        </th>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Comentarios)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Fecha_Ingreso)
-                                        </th>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Estado)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Usuario_Modificacion)
-                                        </th>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Usuario_Ingreso)
+                                    </th>
 
-                                        <th scope="row">
-                                            @Html.DisplayNameFor(model => model.Fecha_Modificacion)
-                                        </th>
-                                    </tr>
-                                </thead>
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Fecha_Ingreso)
+                                    </th>
 
-                                @foreach (var item in Model){
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Usuario_Modificacion)
+                                    </th>
+
+                                    <th scope="row">
+                                        @Html.DisplayNameFor(model => model.Fecha_Modificacion)
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            @foreach (var item in Model)
+                            {
 
                                 <tr>
                                     <td>
@@ -198,25 +205,36 @@
                                     <td>
                                         @Html.ActionLink("Modificar", "modificarProcesoLlenado", new { id = item.Id_Proceso_Llenado }) |
                                         @Html.ActionLink("Eliminar", "eliminarProcesoLlenado", new { id = item.Id_Proceso_Llenado },
-                                        new { onclick = "return confirm('¿Está seguro de borrar el registro?'" })
+                                                  new { onclick = "return confirm('¿Está seguro de borrar el registro?'" })
 
                                     </td>
                                 </tr>
-                        }
+                            }
 
-                            </table>
-                            <span>
-                                @Html.ActionLink("Nuevo Registro", "agregarProcesoLlenado", "ProcesoLlenado", null,
-                             new { @class = "btn btn-primary btn.large" })
-                                @Html.ActionLink("Regresar", "Menu", "Menu", null, new { @class = "btn btn-primary btn-large" })
-                            </span>
-                        </fieldset>
-                    </div>
+                        </table>
+                        <span>
+                            @Html.ActionLink("Nuevo Registro", "agregarProcesoLlenado", "ProcesoLlenado", null,
+                                   new { @class = "btn btn-primary btn.large" })
+                            @Html.ActionLink("Regresar", "Menu", "Menu", null, new { @class = "btn btn-primary btn-large" })
+                        </span>
+                    </fieldset>
                 </div>
             </div>
-        </form>
+        </div>
+    </form>
 
     <footer style="text-align: center; background-color: #006bff; color: #ffffff">Fructa CR S.A</footer>
+
+    <script>
+
+        window.onload = function () {
+            var contenedor = document.getElementById('contenedor_carga');
+
+            contenedor.style.visibility = 'hidden';
+            contenedor.style.opacity = '0';
+        }
+
+    </script>
 
 </body>
 

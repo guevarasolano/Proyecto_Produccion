@@ -214,6 +214,9 @@
     <Content Include="Views\Usuario\modificarUsuario.cshtml" />
     <Content Include="Views\Menu\Menu.cshtml" />
     <Content Include="Views\Persona\Listado.cshtml" />
+    <Content Include="Views\Persona\agregarPersona.cshtml" />
+    <Content Include="Views\Persona\eliminarPersona.cshtml" />
+    <Content Include="Views\Persona\modificarPersona.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

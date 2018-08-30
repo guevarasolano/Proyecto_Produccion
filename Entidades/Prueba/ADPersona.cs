@@ -44,10 +44,10 @@ namespace AccesoDatos{
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = aux.conectar();
                 cmd.Parameters.Add(new SqlParameter("@Id_Persona", persona.Id_Persona));
-                cmd.Parameters.Add(new SqlParameter("@Brix", persona.Nombre));
-                cmd.Parameters.Add(new SqlParameter("@Densidad", persona.Primer_Apellido));
-                cmd.Parameters.Add(new SqlParameter("@Brix", persona.Segundo_Apellido));
-                cmd.Parameters.Add(new SqlParameter("@Densidad", persona.Sexo));
+                cmd.Parameters.Add(new SqlParameter("@Nombre", persona.Nombre));
+                cmd.Parameters.Add(new SqlParameter("@Primer_Apellido", persona.Primer_Apellido));
+                cmd.Parameters.Add(new SqlParameter("@Segundo_Apellido", persona.Segundo_Apellido));
+                cmd.Parameters.Add(new SqlParameter("@Sexo", persona.Sexo));
                 cmd.Parameters.Add(new SqlParameter("@Estado", persona.Estado));
                 cmd.Parameters.Add(new SqlParameter("@Usuario_Ingreso", persona.Usuario_Ingreso));
                 cmd.Parameters.Add(new SqlParameter("@Fecha_Ingreso", persona.Fecha_Ingreso));

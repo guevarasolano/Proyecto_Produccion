@@ -4,6 +4,7 @@
     <title>Fructa CR S.A | Producción</title>
     @*<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" />*@
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/main.css" rel="stylesheet" />
     <link href="~/img/flsf.png" type="image/x-icon" rel="shortcut icon" />
     <script src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -14,6 +15,11 @@
 </head>
 
 <body style="margin-top: 30px">
+
+    <div id="contenedor_carga">
+        <div id="carga"></div>
+    </div>
+
     <form class="form-horizontal" id="form1">
         <div class="container">
             <div class="row">
@@ -68,59 +74,60 @@
                                 </tr>
                             </thead>
 
-                            @foreach (var item in Model){
+                            @foreach (var item in Model)
+                            {
 
-                            <tr>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Id_Modulo)
-                                </td>
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Id_Modulo)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.FK_Id_Aplicacion)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.FK_Id_Aplicacion)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Codigo)
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Codigo)
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Descripcion)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Descripcion)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Controlador)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Controlador)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Estado)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Estado)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Estado_Accion)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Estado_Accion)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Usuario_Ingreso)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Usuario_Ingreso)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Fecha_Ingreso)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Fecha_Ingreso)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Usuario_Modificacion)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Usuario_Modificacion)
+                                    </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Fecha_Modificacion)
-                                </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Fecha_Modificacion)
+                                    </td>
 
-                                <td>
-                                    @Html.ActionLink("Modificar", "modificarModulo", new { id = item.Id_Modulo }) |
-                                    @Html.ActionLink("Eliminar", "eliminarModulo", new { id = item.Id_Modulo },
-                                    new { onclick = "return confirm('¿Está seguro de borrar el registro?'" })
+                                    <td>
+                                        @Html.ActionLink("Modificar", "modificarModulo", new { id = item.Id_Modulo }) |
+                                        @Html.ActionLink("Eliminar", "eliminarModulo", new { id = item.Id_Modulo },
+                                                  new { onclick = "return confirm('¿Está seguro de borrar el registro?'" })
 
-                                </td>
-                            </tr>
+                                    </td>
+                                </tr>
                             }
 
                         </table>
@@ -135,6 +142,17 @@
     </form>
 
     <footer style="text-align: center; background-color: #006bff; color: #ffffff">Fructa CR S.A</footer>
+
+    <script>
+
+        window.onload = function () {
+            var contenedor = document.getElementById('contenedor_carga');
+
+            contenedor.style.visibility = 'hidden';
+            contenedor.style.opacity = '0';
+        }
+
+    </script>
 
 </body>
 
