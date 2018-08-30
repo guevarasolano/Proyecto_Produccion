@@ -11,7 +11,7 @@ namespace AccesoDatos{
 
     public class ADPersona {
 
-            //MÉTODO PARA INSERTAR BRIX:
+            //MÉTODO PARA INSERTAR PERSONA:
             public Boolean insertarPersona(Persona persona) {
 
                 Conexion aux = new Conexion();
@@ -37,7 +37,7 @@ namespace AccesoDatos{
                 }
             }
 
-            //MÉTODO PARA ACTUALIZAR BRIX:
+            //MÉTODO PARA ACTUALIZAR PERSONA:
             public void actualizarPersona(Persona persona) {
 
                 Conexion aux = new Conexion();
@@ -59,7 +59,7 @@ namespace AccesoDatos{
                 aux.conectar();
             }
 
-            //MÉTODO PARA ELIMINAR BRIX:
+            //MÉTODO PARA ELIMINAR PERSONA:
             public Boolean eliminarPersona(int Id_Persona) {
 
                 Conexion aux = new Conexion();
@@ -77,7 +77,7 @@ namespace AccesoDatos{
                 }
             }
 
-            //MÉTODO PARA BUSCAR BRIX:
+            //MÉTODO PARA BUSCAR PERSONA:
             public Persona buscarPersona(int Id_Persona) {
 
                 Persona persona = new Persona();
@@ -109,7 +109,7 @@ namespace AccesoDatos{
                 return persona;
             }
 
-            //MÉTODO PARA LISTAR BRIX:
+            //MÉTODO PARA LISTAR PERSONA:
             public List<Persona> listarPersona() {
 
                 Conexion aux = new Conexion();
