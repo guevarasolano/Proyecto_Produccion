@@ -3,7 +3,7 @@
 Autor: Adrián Guevara Solano. 
 Descripción: Hoja de estilos básica para aplicación adaptativa.
 Fecha: 24/08/2018.
-Institución: Fructa CR S.A.
+Empresa: Fructa CR S.A.
 
 */
 
@@ -44,6 +44,7 @@ nav {
     padding: 0px;
     margin-left: 0px;
     margin-right: 0px;
+    
 }
 
 nav ul{
@@ -55,11 +56,12 @@ nav ul li{
 	position: relative;
 }
 
-nav ul li a{
-	display: block;
-	padding: 20px;
-	text-decoration: none;
-	color: #fff;
+nav ul li a {
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
 }
 
 nav ul li:hover{
@@ -113,7 +115,7 @@ section{
 	margin: 20px auto;
 }
 
-    section h2 {
+section h2 {
         color: #d23f0e;
         /*color: #336699;*/
         font-weight: normal;
@@ -123,7 +125,7 @@ section{
         margin-bottom: 20px;
         padding-bottom: 5px;
         text-align: left;
-    }
+}
 
 section h3{
 	color: #FFF;
@@ -168,7 +170,7 @@ article {
         margin-bottom: 20px;
         padding-bottom: 5px;
         text-align: left;
-    }
+}
 
 /* FORMULARIOS */
 
@@ -190,7 +192,7 @@ form input:focus, form input:hover{
 	color:#336699;
 }
 
-    form input[type=submit] {
+form input[type=submit] {
         background-color: #d23f0e;
         /*background-color: #699a2f; VERDE*/
         /*background-color: #0d7f4e;*/
@@ -204,11 +206,11 @@ form input:focus, form input:hover{
         width: auto;
         padding: 10px 20px;
         border-bottom: 3px solid rgba(0,0,0,.2);
-    }
+}
 
-        form input[type=submit]:focus, form input[type=submit]:hover {
+form input[type=submit]:focus, form input[type=submit]:hover {
             background-color: #eeb850;
-        }
+}
 
 
 /* MENSAJES */
@@ -304,7 +306,6 @@ footer {
 }
 
 
-
 /*-------- RESPONSIVE WEB DESIGN (RWD) --------*/
 
 @media screen and (max-width:970px){
@@ -320,7 +321,7 @@ footer {
 
 @media screen and (max-width:670px){
 	
-	header{
+header{
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -329,10 +330,10 @@ footer {
 		padding: 15px;
 		box-shadow: 0px 5px 25px -10px #000;
 		border-bottom: 1px solid rgba(255,255,255,.7);
-	}
+}
 	
-	body{
+body{
 		padding-top:50px;
-	}
+}
 	
 }
