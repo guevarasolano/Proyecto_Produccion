@@ -214,11 +214,12 @@
     <Content Include="Views\Usuario\eliminarUsuario.cshtml" />
     <Content Include="Views\Usuario\Listado.cshtml" />
     <Content Include="Views\Usuario\modificarUsuario.cshtml" />
-    <Content Include="Views\Menu\Menu.cshtml" />
+    <Content Include="Views\Modulo\Menu.cshtml" />
     <Content Include="Views\Persona\Listado.cshtml" />
     <Content Include="Views\Persona\agregarPersona.cshtml" />
     <Content Include="Views\Persona\eliminarPersona.cshtml" />
     <Content Include="Views\Persona\modificarPersona.cshtml" />
+    <Content Include="Views\Menu\Menu.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

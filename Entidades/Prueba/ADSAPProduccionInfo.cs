@@ -17,7 +17,7 @@ namespace AccesoDatos{
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = aux.conectar();
             cmd.Parameters.Add(new SqlParameter("@Id_Orden_Fabricacion", sap.Id_Orden_Fabricacion));
-            cmd.Parameters.Add(new SqlParameter("@Id_Recibo_Producccion", sap.Id_Recibo_Produccion));
+            cmd.Parameters.Add(new SqlParameter("@Id_Recibo_Produccion", sap.Id_Recibo_Produccion));
             cmd.Parameters.Add(new SqlParameter("@Id_Emision_Produccion", sap.Id_Emision_Produccion));
             cmd.Parameters.Add(new SqlParameter("@Tipo_Fruta", sap.Tipo_Fruta));
             cmd.Parameters.Add(new SqlParameter("@Estado", sap.Estado));
@@ -44,7 +44,7 @@ namespace AccesoDatos{
             cmd.Connection = aux.conectar();
             cmd.Parameters.Add(new SqlParameter("@Id_SAP_Produccion_Info", sap.Id_SAP_Produccion_Info));
             cmd.Parameters.Add(new SqlParameter("@Id_Orden_Fabricacion", sap.Id_Orden_Fabricacion));
-            cmd.Parameters.Add(new SqlParameter("@Id_Recibo_Producccion", sap.Id_Recibo_Produccion));
+            cmd.Parameters.Add(new SqlParameter("@Id_Recibo_Produccion", sap.Id_Recibo_Produccion));
             cmd.Parameters.Add(new SqlParameter("@Id_Emision_Produccion", sap.Id_Emision_Produccion));
             cmd.Parameters.Add(new SqlParameter("@Tipo_Fruta", sap.Tipo_Fruta));
             cmd.Parameters.Add(new SqlParameter("@Estado", sap.Estado));

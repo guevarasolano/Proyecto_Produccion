@@ -1,0 +1,172 @@
+﻿
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Fructa CR S.A</title>
+    <link href="~/img/flsf.png" type="image/x-icon" rel="shortcut icon" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div id="contenedor_carga">
+        <div id="carga"></div>
+    </div>
+
+    <header>
+        <h1><span id="logo"></span>Fructa CR S.A</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <b>
+                <li><a href="Login.php">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <section>
+
+        <article class="menu">
+
+            <h2>Menú</h2>
+
+            <form>
+
+                @Html.ActionLink("Acción", "Listado", "Accion", null,
+                       new { @class = "btn btn-primary btn.large" })
+
+            </form><br />
+
+            <form>
+
+                @Html.ActionLink("Aditivo", "Listado", "Aditivo", null,
+                       new { @class = "btn btn-primary btn.large" })
+
+            </form><br />
+
+            <form>
+
+                @Html.ActionLink("Aplicación", "Listado", "Aplicacion", null,
+                       new { @class = "btn btn-primary btn.large" })
+
+            </form><br />
+
+            <form>
+
+                @Html.ActionLink("Brix", "Listado", "Brix", null,
+                       new { @class = "btn btn-primary btn.large" })
+
+            </form><br />
+
+            <form>
+
+                @Html.ActionLink("Disposición Producto No Conforme", "Listado", "DisposicionProductoNoConforme", null,
+                       new { @class = "btn btn-primary btn.large" })
+
+            </form><br />
+
+            <form>
+
+                @Html.ActionLink("Distribución Inventario Tanque", "Listado", "DistribucionInventarioTanque", null,
+                       new { @class = "btn btn-primary btn.large" })
+
+            </form><br />
+
+            <form>
+
+                @Html.ActionLink("Inventario Producto Terminado", "Listado", "InventarioProductoTerminado", null,
+                       new { @class = "btn btn-primary btn.large" })
+
+            </form><br />
+
+            <form>
+
+                @Html.ActionLink("Módulo", "Listado", "Modulo", null,
+                       new { @class = "btn btn-primary btn.large" })
+
+            </form><br />
+
+            <form>
+
+                @Html.ActionLink("Persona", "Listado", "Persona", null,
+                       new { @class = "btn btn-primary btn.large" })
+
+            </form><br />
+
+            <form>
+
+                @Html.ActionLink("Proceso BP BJC", "Listado", "ProcesoBPBJC", null,
+                       new { @class = "btn btn-primary btn.large" })
+
+            </form><br />
+
+            <form>
+
+                @Html.ActionLink("Proceso Ingreso Piña", "Listado", "ProcesoIngresoPiña", null,
+                       new { @class = "btn btn-primary btn.large" })
+
+            </form><br />
+
+            <form>
+
+                @Html.ActionLink("Proceso Llenado", "Listado", "ProcesoLlenado", null,
+                       new { @class = "btn btn-primary btn.large" })
+
+            </form><br />
+
+            <form>
+
+                @Html.ActionLink("Proceso Maduración", "Listado", "ProcesoMaduracion", null,
+                       new { @class = "btn btn-primary btn.large" })
+
+            </form><br />
+
+            <form>
+
+                @Html.ActionLink("Producto No Conforme", "Listado", "ProductoNoConforme", null,
+                       new { @class = "btn btn-primary btn.large" })
+
+            </form><br />
+
+            <form>
+
+                @Html.ActionLink("Rol", "Listado", "Rol", null,
+                       new { @class = "btn btn-primary btn.large" })
+
+            </form><br />
+
+            <form>
+
+                @Html.ActionLink("SAP Producción Info", "Listado", "SAPProduccionInfo", null,
+                       new { @class = "btn btn-primary btn.large" })
+
+            </form><br />
+
+            <form>
+
+                @Html.ActionLink("Usuario", "Listado", "Usuario", null,
+                       new { @class = "btn btn-primary btn.large" })
+
+            </form>
+
+        </article>
+
+    </section>
+
+    <footer>Fructa CR S.A © 2018</footer>
+
+    <script>
+
+        window.onload = function () {
+            var contenedor = document.getElementById('contenedor_carga');
+
+                contenedor.style.visibility = 'hidden';
+            contenedor.style.opacity = '0';
+        }
+
+    </script>
+
+</body>
+</html>
