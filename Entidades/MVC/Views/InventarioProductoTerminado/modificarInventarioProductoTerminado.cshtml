@@ -1,137 +1,170 @@
 ﻿@model CapaEntidades.InventarioProductoTerminado
 
-<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
-<link href="~/img/flsf.png" type="image/x-icon" rel="shortcut icon" />
-<title>Fructa CR S.A</title>
+<!doctype html>
+<html>
+<head>
+    @*<link href="~/Content/bootstrap.min.css" rel="stylesheet" />*@
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/img/flsf.png" type="image/x-icon" rel="shortcut icon" />
+    <title>Fructa CR S.A</title>
+</head>
 
-@using (Html.BeginForm())
-{
-<div class="form-horizontal">
-    <hr />
+<body>
 
-    <hr />
+    <header>
+        <h1><span id="logo"></span>Fructa CR S.A</h1>
+    </header>
 
-    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-    @Html.HiddenFor(model => model.Id_Inventario_Producto_Terminado)
+    <nav>
+        <ul>
+            <b>
+                <li><a href="">MENÚ</a></li>
+                @*@Html.ActionLink("Menú", "Menu", "Menu", null,
+                    new { @class = "btn btn-primary btn.large" })*@
+            </b>
+        </ul>
+    </nav>
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.Tipo_Proceso, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-5">
-            @Html.EditorFor(model => model.Tipo_Proceso, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.Tipo_Proceso, "", new { @class = "text-danger" })
-        </div>
-    </div>
+    <section>
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.Producto_Inicial, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-5">
-            @Html.EditorFor(model => model.Producto_Inicial, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.Producto_Inicial, "", new { @class = "text-danger" })
-        </div>
-    </div>
+        <article class="menu">
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.Producto_Proceso, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-5">
-            @Html.EditorFor(model => model.Producto_Proceso, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.Producto_Proceso, "", new { @class = "text-danger" })
-        </div>
-    </div>
+            <h2>ACTUALIZAR INVENTARIO PRODUCTO TERMINADO</h2>
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.Producto_Final, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-5">
-            @Html.EditorFor(model => model.Producto_Final, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.Producto_Final, "", new { @class = "text-danger" })
-        </div>
-    </div>
+            @using (Html.BeginForm())
+            {
+                <div class="form-horizontal">
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.Fecha_Inicial_Periodo, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-5">
-            @Html.EditorFor(model => model.Fecha_Inicial_Periodo, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.Fecha_Inicial_Periodo, "", new { @class = "text-danger" })
-        </div>
-    </div>
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.Id_Inventario_Producto_Terminado)
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.Fecha_Final_Periodo, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-5">
-            @Html.EditorFor(model => model.Fecha_Final_Periodo, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.Fecha_Final_Periodo, "", new { @class = "text-danger" })
-        </div>
-    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Tipo_Proceso, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-5">
+                            @Html.EditorFor(model => model.Tipo_Proceso, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Tipo_Proceso, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.Estado, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-5">
-            @Html.EditorFor(model => model.Estado, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.Estado, "", new { @class = "text-danger" })
-        </div>
-    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Producto_Inicial, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-5">
+                            @Html.EditorFor(model => model.Producto_Inicial, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Producto_Inicial, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.Usuario_Ingreso, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-5">
-            @Html.EditorFor(model => model.Usuario_Ingreso, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.Usuario_Ingreso, "", new { @class = "text-danger" })
-        </div>
-    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Producto_Proceso, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-5">
+                            @Html.EditorFor(model => model.Producto_Proceso, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Producto_Proceso, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.Fecha_Ingreso, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-5">
-            @Html.EditorFor(model => model.Fecha_Ingreso, new { htmlAttributes = new { @class = "datepicker" } })
-            @Html.ValidationMessageFor(model => model.Fecha_Ingreso, "", new { @class = "text-danger" })
-        </div>
-    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Producto_Final, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-5">
+                            @Html.EditorFor(model => model.Producto_Final, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Producto_Final, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.Usuario_Modificacion, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-5">
-            @Html.EditorFor(model => model.Usuario_Modificacion, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.Usuario_Modificacion, "", new { @class = "text-danger" })
-        </div>
-    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Fecha_Inicial_Periodo, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-5">
+                            @Html.EditorFor(model => model.Fecha_Inicial_Periodo, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Fecha_Inicial_Periodo, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.Fecha_Modificacion, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-5">
-            @Html.EditorFor(model => model.Fecha_Modificacion, new { htmlAttributes = new { @class = "datepicker" } })
-            @Html.ValidationMessageFor(model => model.Fecha_Modificacion, "", new { @class = "text-danger" })
-        </div>
-    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Fecha_Final_Periodo, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-5">
+                            @Html.EditorFor(model => model.Fecha_Final_Periodo, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Fecha_Final_Periodo, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
 
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" value="Aceptar" class="btn btn-success" />
-            <input type="submit" value="Cancelar" class="btn btn-danger" />
-        </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Estado, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-5">
+                            @Html.EditorFor(model => model.Estado, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Estado, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
 
-    </div>
-</div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Usuario_Ingreso, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-5">
+                            @Html.EditorFor(model => model.Usuario_Ingreso, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Usuario_Ingreso, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
 
-}
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Fecha_Ingreso, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-5">
+                            @Html.EditorFor(model => model.Fecha_Ingreso, new { htmlAttributes = new { @class = "datepicker" } })
+                            @Html.ValidationMessageFor(model => model.Fecha_Ingreso, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
 
-<div>
-    @*Html.ActionLink("Regresar", "Listado")*@
-</div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Usuario_Modificacion, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-5">
+                            @Html.EditorFor(model => model.Usuario_Modificacion, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Usuario_Modificacion, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
 
-<script src="~/Script/jquery-1.12.4.min.js"></script>
-<script src="~/Script/jquery.validate.min.js"></script>
-<script src="~/Script/jquery.validate.unobtrusive.min.js"></script>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Fecha_Modificacion, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-5">
+                            @Html.EditorFor(model => model.Fecha_Modificacion, new { htmlAttributes = new { @class = "datepicker" } })
+                            @Html.ValidationMessageFor(model => model.Fecha_Modificacion, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
 
-<script>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Aceptar" class="btn btn-success" />
+                            <input type="submit" value="Cancelar" class="btn btn-danger" />
+                        </div>
 
-    $(document).ready(
-        function () {
-            $('.datepicker').datepicker({
-                changeMonth: true,
-                changeYear: true,
-                minDate: "-99Y",
-                dateFormat: "dd/mm/yyyy"
-            });
-        });
+                    </div>
+                </div>
 
-</script>
+            }
 
+            <div>
+                @*Html.ActionLink("Regresar", "Listado")*@
+            </div>
+
+            <script src="~/Script/jquery-1.12.4.min.js"></script>
+            <script src="~/Script/jquery.validate.min.js"></script>
+            <script src="~/Script/jquery.validate.unobtrusive.min.js"></script>
+
+            <script>
+
+                $(document).ready(
+                    function () {
+                        $('.datepicker').datepicker({
+                            changeMonth: true,
+                            changeYear: true,
+                            minDate: "-99Y",
+                            dateFormat: "dd/mm/yyyy"
+                        });
+                    });
+
+            </script>
+
+        </article>
+
+    </section>
+
+    <footer>Fructa CR S.A © 2018</footer>
+
+</body>
+
+</html>
